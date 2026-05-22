@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pockigo Mobile App Design — UX/UI case study by Bahareh Ahrabi. Tracking the itinerary on the go." />
+  <title>Pockigo App — Bahareh Ahrabi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-fonts.css" />
+</head>
+<body>
+
+  <!-- Back nav -->
+  <nav class="cs-nav" id="csNav">
+    <div class="cs-nav__inner">
+      <a href="index.html" class="cs-nav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M13 8H3M3 8l4-4M3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Bahareh Ahrabi" class="cs-nav__logo">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="cs-hero">
+    <img src="assets/images/Pockigo - Application.png" alt="Pockigo Mobile App Design" class="cs-hero__img">
+    <div class="cs-hero__overlay">
+      <div class="cs-hero__content">
+        <span class="cs-hero__tag">UX/UI Design · Mobile App</span>
+        <h1 class="cs-hero__title">Pockigo</h1>
+        <p class="cs-hero__sub">Tracking the Itinerary — Mobile Application</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta -->
+  <div class="cs-meta">
+    <div class="cs-meta__grid">
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Role</p>
+        <p class="cs-meta__value">UX/UI Designer</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Duration</p>
+        <p class="cs-meta__value">3 Months</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Team</p>
+        <p class="cs-meta__value">Group of 5</p>
+      </div>
+      <div class="cs-meta__item">
+        <p class="cs-meta__label">Tools</p>
+        <p class="cs-meta__value">Figma<span>Miro · Zoom</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <main class="cs-body">
+
+    <!-- Overview -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--overview">Overview</span>
+      <h2 class="cs-section__title">What is Pockigo?</h2>
+      <div class="cs-section__body">
+        <p>Pockigo is a travel planning platform that creates personalised itineraries based on users' preferences. Travellers can view, edit, and optimise their plans while accessing all essential information in one place.</p>
+        <p>This case study focuses on the mobile experience — specifically the <strong>"Tracking the Itinerary"</strong> task. While the web platform handles planning before travel, the mobile app is the companion during the trip itself.</p>
+      </div>
+
+      <div class="cs-problem">
+        <p class="cs-problem__label">Problem Statement</p>
+        <p class="cs-problem__text">"Users struggle to stay on track and adapt their itineraries while travelling — needing real-time guidance, offline access, and easy modification on the go."</p>
+      </div>
+
+      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=1716-9653&viewport=158%2C-1557%2C0.52&t=6o6PvfJPlulm7srZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1716%3A9653&show-proto-sidebar=1&page-id=641%3A6693" target="_blank" rel="noopener" class="btn-pill-outline" style="align-self:flex-start;margin-top:.5rem;">View Prototype →</a>
+    </section>
+
+    
+
+    <!-- Business needs + goals -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--overview">Goals & Needs</span>
+      <h2 class="cs-section__title">What we set out to build</h2>
+      <div class="cs-split">
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:1rem;">Business Needs</h3>
+          <ul class="cs-list">
+            <li>Offline access to itinerary data</li>
+            <li>Interactive map with route optimisation</li>
+            <li>Real-time location tracking — auto-updates the itinerary</li>
+            <li>Easy itinerary sharing with travel companions</li>
+            <li>Flexible modification and filtering</li>
+            <li>Activity rating system</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:1rem;">Design Goals</h3>
+          <ul class="cs-list">
+            <li>Visually appealing and functional interface</li>
+            <li>Smooth and convenient navigation and tracking</li>
+            <li>Enable users to quickly find and choose alternative activities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Discover -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--discover">Discover</span>
+      <h2 class="cs-section__title">Research & insights</h2>
+      <div class="cs-section__body">
+        <p>We used the Double Diamond method, bouncing between stages as the project evolved. We started with <strong>20 user interviews</strong> to understand how travellers manage their itineraries on the go, what frustrates them mid-trip, and what information they need most.</p>
+      </div>
+
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);">Key Insights from Affinity Diagram</h3>
+      <div class="cs-insights">
+        <div class="cs-insight">
+          <span class="cs-insight__num">01</span>
+          <p class="cs-insight__title">Information Fragmentation</p>
+          <p class="cs-insight__text">Users switch between multiple sources — maps, blogs, transport apps, reviews — just to access basic trip info during travel.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight__num">02</span>
+          <p class="cs-insight__title">Personalisation & Flexibility</p>
+          <p class="cs-insight__text">Plans always change. Users want to quickly adjust their itinerary and get smart alternatives when circumstances shift.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight__num">03</span>
+          <p class="cs-insight__title">Social Proof</p>
+          <p class="cs-insight__text">Users rely heavily on others' experiences when choosing activities. Ratings and reviews drive confident decision-making.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight__num">04</span>
+          <p class="cs-insight__title">Route Optimisation</p>
+          <p class="cs-insight__text">Users prefer to group nearby places and need clarity on transport options between stops to minimise wasted time.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight__num">05</span>
+          <p class="cs-insight__title">Offline Accessibility</p>
+          <p class="cs-insight__text">Travellers frequently lose connection abroad and need core itinerary details available without internet access.</p>
+        </div>
+        <div class="cs-insight">
+          <span class="cs-insight__num">06</span>
+          <p class="cs-insight__title">Collaborative Planning</p>
+          <p class="cs-insight__text">Groups need shared access so everyone can view and update the trip plan together in real time.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:0.5rem;">Competitive Analysis</h3>
+      <ul class="cs-list">
+        <li><strong>Tripadvisor</strong> — Missing "Get Itinerary" button, limiting quick access to plans.</li>
+        <li><strong>GetYourGuide</strong> — Low task efficiency and no direct itinerary access.</li>
+        <li><strong>Tripographer</strong> — Poor navigation, limited category variety, weak activity readability.</li>
+      </ul>
+
+      <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:0.5rem;">Card Sorting</h3>
+      <div class="cs-section__body">
+        <p>To define clear and intuitive activity categories, we ran a card-sorting session where participants organised activities into groups and named each cluster. This validated our category structure and helped us choose labels that match real users' mental models.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- Define -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--define">Define</span>
+      <h2 class="cs-section__title">Turning research into direction</h2>
+      <div class="cs-section__body">
+        <p>We built a <strong>persona</strong> around a traveller who needs real-time guidance during their trip — someone relying on their phone to stay on schedule, adapt plans, and navigate efficiently.</p>
+        <p>A <strong>user flow</strong> was mapped for the core task: opening the app on arrival, viewing today's itinerary, tracking location, and modifying an activity on the fly. This guided every design decision.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- Develop -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--develop">Develop</span>
+      <h2 class="cs-section__title">Wireframing & iteration</h2>
+
+      <div class="cs-section__body">
+        <p>After low-fidelity wireframing and usability testing, two major screens required redesign based on user feedback:</p>
+      </div>
+
+      <div class="cs-split">
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;">Home Screen Redesign</h3>
+          <div class="cs-section__body">
+            <p>The initial home screen distracted users with too many options. The progress bar for the trip day was impractical. We redesigned it with a <strong>timeline view</strong> showing all activities, their scheduled time and location. Day/night activities are distinguished with sun and moon icons. Activity suggestions were removed to keep focus on managing the current day.</p>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;">Itinerary Screen Redesign</h3>
+          <div class="cs-section__body">
+            <p>We removed the unnecessary city photo for a cleaner layout, added a <strong>reservation section</strong> for quick access to bookings, highlighted the map button, and showed the user's current location at the top — including time and route to their first destination.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-size:1rem;font-weight:700;color:var(--text);">Itinerary Editing Redesign</h3>
+      <div class="cs-section__body">
+        <p>Previously, deleting an activity required a long-press or tapping an edit icon. In the new design, long-pressing offers both <strong>delete and replace</strong> options. An Add Activity section was consolidated directly on the itinerary screen, creating a more focused editing experience.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- Deliver -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--deliver">Deliver</span>
+      <h2 class="cs-section__title">Final design</h2>
+      <div class="cs-section__body">
+        <p><strong>Green</strong> was chosen as the primary colour to convey life, movement, and the spirit of travel. Lighter and darker shades maintain visual harmony, while <strong>orange</strong> was selected as the accent colour to highlight key actions and bring energy to the interface.</p>
+        <p>All primary and secondary button colour combinations were tested for colour blindness contrast accessibility before finalisation.</p>
+      </div>
+      <ul class="cs-list">
+        <li>Timeline-based home screen for clear daily overview</li>
+        <li>Real-time GPS tracking with automatic itinerary updates</li>
+        <li>Offline mode for core itinerary data</li>
+        <li>Flexible activity editing — replace or delete from one long-press</li>
+        <li>Interactive map with route and transport visibility</li>
+        <li>High-fidelity prototype validated through usability testing</li>
+      </ul>
+
+      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=1716-9653&viewport=158%2C-1557%2C0.52&t=6o6PvfJPlulm7srZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1716%3A9653&show-proto-sidebar=1&page-id=641%3A6693" target="_blank" rel="noopener" class="btn-pill-outline cs-cta-large" style="align-self:center;margin-top:1rem;">
+        View Prototype →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Next project -->
+  <div class="cs-next">
+    <div class="cs-next__inner">
+      <div>
+        <p class="cs-next__label">Next Project</p>
+        <p class="cs-next__title">Saving Faces — Website Redesign</p>
+      </div>
+      <a href="saving-faces.html" class="cs-next__link">
+        View Case Study
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const nav = document.getElementById('csNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('cs-nav--scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('is-visible');
+        observer.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

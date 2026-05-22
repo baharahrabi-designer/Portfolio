@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bahareh Ahrabi — UX/UI Designer & Brand Identity based in Istanbul, Turkey." />
+  <title>Bahareh Ahrabi — UX/UI Designer & Brand Identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+
+  <!-- Liquid glass SVG filter (hidden) -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+    <defs>
+      <filter id="liquid-glass-filter" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence"/>
+        <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise"/>
+        <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced"/>
+        <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur"/>
+        <feComposite in="finalBlur" in2="finalBlur" operator="over"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       PAGE LOADER
+  ============================================================ -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <img src="assets/images/logo.png" alt="" class="page-loader__logo">
+    <div class="page-loader__bar"></div>
+  </div>
+
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       FLOATING "AVAILABLE FOR WORK" BADGE
+  ============================================================ -->
+  <div class="avail-badge" id="availBadge" aria-label="Available for work">
+    <img src="assets/images/hero-portrait.jpg" alt="" class="avail-badge__avatar">
+    <span class="avail-badge__text" data-i18n="avail.text">Available for work</span>
+    <span class="avail-badge__dot" aria-hidden="true"></span>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION — centered pill
+  ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__pill">
+      <a href="#hero" class="nav__avatar-link" aria-label="Home">
+        <img src="assets/images/logo.png" alt="Bahareh Ahrabi Logo" class="nav__logo-img">
+      </a>
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#hero"     class="nav__link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf" class="nav__link" data-i18n="nav.resume">Resume</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-switch__btn" data-lang="en" type="button">EN</button>
+        <button class="lang-switch__btn" data-lang="tr" type="button">TR</button>
+      </div>
+      <a href="#contact" class="nav__cta" data-i18n="nav.contact">Contact</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#hero">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — editorial split
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="Introduction" style="position:relative;">
+    <canvas id="heroCanvas" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.55;"></canvas>
+    <div class="container hero__inner" style="position:relative;z-index:1;">
+
+      <div class="hero__toprow" data-reveal>
+        <span class="hero__fullname">Bahareh Ahrabi</span>
+        <div class="hero__meta" data-i18n="hero.location">
+          <span>UX/UI Design</span>
+          <span class="hero__sep">·</span>
+          <span>Brand Identity</span>
+          <span class="hero__sep">·</span>
+          <span>Istanbul, Turkey</span>
+        </div>
+      </div>
+
+      <div class="hero__stage" data-reveal data-delay="60">
+        <span class="hero__word" aria-hidden="true">UX/UI</span>
+        <div class="hero__photo-wrap">
+          <div class="hero__photo-rot">
+            <div class="hero__photo">
+              <img src="assets/images/hero-portrait.jpg" alt="Bahareh Ahrabi" class="hero__photo-img">
+            </div>
+            <div class="hero__badge" aria-hidden="true" data-i18n="hero.greeting">Hi</div>
+          </div>
+        </div>
+        <span class="hero__word hero__word--r" aria-hidden="true">Designer</span>
+      </div>
+
+      <h1 class="visually-hidden">Bahareh Ahrabi — UX/UI Designer &amp; Brand Identity</h1>
+
+      <div class="hero__btmrow" data-reveal data-delay="120">
+        <p class="hero__tagline" data-i18n="hero.tagline">Hi! I'm a UX/UI Designer and Brand Identity Specialist based in Istanbul.<br>Let's create something meaningful together.</p>
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--dark" data-i18n="hero.viewWork">View My Work</a>
+          <a href="#contact" class="btn btn--outline" data-i18n="hero.getInTouch">Get In Touch</a>
+        </div>
+        <a href="#services" class="hero__scroll-link" aria-label="Scroll to services">
+          <span data-i18n="hero.scroll">Scroll</span>
+          <svg width="14" height="20" viewBox="0 0 14 20" fill="none" aria-hidden="true">
+            <path d="M7 2v16M7 18L2 13M7 18l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE STRIP
+  ============================================================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span class="marquee__item">UX/UI Design</span>
+        <span class="marquee__item">Brand Identity</span>
+        <span class="marquee__item">Content Creator With AI</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span class="marquee__item">UX/UI Design</span>
+        <span class="marquee__item">Brand Identity</span>
+        <span class="marquee__item">Content Creator With AI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SERVICES — accordion
+  ============================================================ -->
+  <section class="section services" id="services" aria-label="Services">
+    <div class="container services__inner">
+      <div class="services__left" data-reveal>
+        <h2 class="section-heading" data-i18n="services.heading">WHAT I CAN<br>DO FOR YOU</h2>
+        <p class="services__sub" data-i18n="services.sub">I craft digital experiences where design meets purpose combining UX thinking, visual clarity, and brand identity to create meaningful impact.</p>
+
+        <div class="svc-accordion">
+          <div class="svc-acc__item is-open">
+            <button class="svc-acc__btn" aria-expanded="true">
+              <span data-i18n="services.uiux">1.&nbsp; UX/UI DESIGN</span>
+              <svg class="svc-acc__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 12.5L10 7.5L15 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="svc-acc__body">
+              <ul class="svc-acc__list">
+                <li>Wireframing &amp; Prototyping</li>
+                <li>User Interface Design (Web / Mobile)</li>
+                <li>Usability Testing &amp; Analysis</li>
+                <li>Interaction Design with Micro-animations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-acc__item">
+            <button class="svc-acc__btn" aria-expanded="false">
+              <span data-i18n="services.brand">2.&nbsp; BRAND IDENTITY</span>
+              <svg class="svc-acc__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="svc-acc__body">
+              <ul class="svc-acc__list">
+                <li>Logo &amp; Brand Design</li>
+                <li>Social Media Graphics</li>
+                <li>Infographics &amp; Data Visualisation</li>
+                <li>Custom Illustrations &amp; Icons</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services__right" data-reveal data-delay="100">
+        <div class="services__img-wrap">
+          <img src="assets/images/Whatcanidoforyou-homepage.png" alt="Bahareh at her design workspace with dual monitors showing geometric design work" class="services__img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="section about" id="about" aria-label="About Bahareh">
+    <div class="container about__inner">
+
+      <div class="about__left" data-reveal>
+        <h2 class="section-heading">ABOUT ME</h2>
+        <p class="about__bio" data-i18n="about.bio">
+          Hi, I'm Bahareh — I craft digital experiences where design meets purpose combining UX thinking, visual clarity, and brand identity to create meaningful impact. I bridge strategy with creativity — solving real problems through thoughtful design and impactful storytelling.
+        </p>
+
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num" data-target="2">0</span>
+            <span class="stat__lbl" data-i18n="about.years">Years of Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="4">0</span>
+            <span class="stat__lbl" data-i18n="about.projects">Completed Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-target="2" data-suffix="+">0</span>
+            <span class="stat__lbl" data-i18n="about.clients">Clients on Worldwide</span>
+          </div>
+        </div>
+
+        <div class="about__contact-row">
+          <div class="about__contact-item">
+            <span class="about__contact-label" data-i18n="about.callToday">Call Today :</span>
+            <a href="tel:+905530558855" class="about__contact-val">+90 (553) 055-8855</a>
+          </div>
+          <div class="about__contact-item">
+            <span class="about__contact-label" data-i18n="about.emailLabel">Email :</span>
+            <a href="mailto:Baharahrabi@gmail.com" class="about__contact-val">Baharahrabi@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="about__socials">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/bahareh-ahrabi-565275302" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="about__ctas">
+          <a href="about.html" class="btn-pill-outline" data-i18n="about.myStory">MY STORY</a>
+          <a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf" class="btn-pill-filled">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1V10M7 10L3 6M7 10L11 6M2 12H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="about.downloadResume">Download Resume</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="about__right" data-reveal data-delay="100">
+        <div class="about__img-wrap">
+          <img src="assets/images/hero-portrait.jpg" alt="Bahareh Ahrabi" class="about__img" id="aboutImg">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS — full-width stacked cards
+  ============================================================ -->
+  <section class="section projects" id="projects" aria-label="Featured Projects">
+    <div class="container projects__header" data-reveal>
+      <h2 class="section-heading" data-i18n="projects.heading">FEATURED PROJECTS</h2>
+    </div>
+
+    <div class="proj-stack">
+
+      <!-- Pockigo Website -->
+      <div class="proj-flip" data-reveal>
+        <div class="proj-flip__inner">
+          <a href="pockigo-website.html" class="proj-stack-card proj-flip__front">
+            <img src="assets/images/Pockigo-Website.png" alt="Pockigo Website Design" class="proj-stack-card__bg">
+            <div class="proj-stack-card__overlay"></div>
+            <div class="proj-stack-card__content">
+              <span class="proj-pill">UX/UI · Website</span>
+              <h3 class="proj-stack-card__title">POCKIGO</h3>
+            </div>
+          </a>
+          <div class="proj-flip__back">
+            <span class="proj-flip__back-pill">UX/UI · Website</span>
+            <h3 class="proj-flip__back-title">POCKIGO</h3>
+            <p class="proj-flip__back-desc">A travel planning platform that creates personalised itineraries based on users' preferences and needs.</p>
+            <a href="pockigo-website.html" class="btn-pill-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pockigo App -->
+      <div class="proj-flip" data-reveal>
+        <div class="proj-flip__inner">
+          <a href="pockigo-app.html" class="proj-stack-card proj-flip__front">
+            <img src="assets/images/Pockigo - Application.png" alt="Pockigo Mobile App" class="proj-stack-card__bg">
+            <div class="proj-stack-card__overlay"></div>
+            <div class="proj-stack-card__content">
+              <span class="proj-pill">UX/UI · App</span>
+              <h3 class="proj-stack-card__title">POCKIGO APP</h3>
+            </div>
+          </a>
+          <div class="proj-flip__back">
+            <span class="proj-flip__back-pill">UX/UI · App</span>
+            <h3 class="proj-flip__back-title">POCKIGO APP</h3>
+            <p class="proj-flip__back-desc">Mobile companion for tracking and adapting itineraries in real time while travelling.</p>
+            <a href="pockigo-app.html" class="btn-pill-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saving Faces -->
+      <div class="proj-flip" data-reveal>
+        <div class="proj-flip__inner">
+          <a href="saving-faces.html" class="proj-stack-card proj-flip__front">
+            <img src="assets/images/Saving Faces - Redesign Website.png" alt="Saving Faces Redesign" class="proj-stack-card__bg">
+            <div class="proj-stack-card__overlay"></div>
+            <div class="proj-stack-card__content">
+              <span class="proj-pill">UX/UI · Redesign</span>
+              <h3 class="proj-stack-card__title">SAVING FACES</h3>
+            </div>
+          </a>
+          <div class="proj-flip__back">
+            <span class="proj-flip__back-pill">UX/UI · Redesign</span>
+            <h3 class="proj-flip__back-title">SAVING FACES</h3>
+            <p class="proj-flip__back-desc">A boutique skincare studio's website redesigned for clarity, trust, and a seamless booking experience.</p>
+            <a href="saving-faces.html" class="btn-pill-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Velora Stonecraft -->
+      <div class="proj-flip" data-reveal>
+        <div class="proj-flip__inner">
+          <div class="proj-stack-card proj-flip__front">
+            <img src="assets/images/Velora stonecraft.png" alt="Velora Stonecraft" class="proj-stack-card__bg">
+            <div class="proj-stack-card__overlay"></div>
+            <div class="proj-stack-card__content">
+              <span class="proj-pill">Brand Identity · UX/UI</span>
+              <h3 class="proj-stack-card__title">VELORA STONECRAFT</h3>
+            </div>
+          </div>
+          <div class="proj-flip__back">
+            <span class="proj-flip__back-pill">Brand Identity · UX/UI</span>
+            <h3 class="proj-flip__back-title">VELORA STONECRAFT</h3>
+            <p class="proj-flip__back-desc">A Tehran-based luxury stone-sculpture atelier — full brand identity system and a quiet, photography-led website to match.</p>
+            <div class="proj-flip__back-ctas">
+              <a href="velora-stonecraft.html" class="proj-card-cta">Brand Identity <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="velora-stonecraft-ux.html" class="proj-card-cta">UX/UI Website <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section class="section faq" id="faq" aria-label="Frequently Asked Questions">
+    <div class="container faq__inner">
+
+      <div class="faq__left" data-reveal>
+        <h2 class="section-heading">FREQUENTLY ASKED<br>QUESTIONS</h2>
+        <p class="faq__sub">Here are answers to some of the most common questions I receive as a freelance designer. If you don't see your question here, feel free to reach out — I'm happy to help!</p>
+      </div>
+
+      <div class="faq__list" data-reveal data-delay="80">
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>1. What services do you offer?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>I offer UX/UI Design (wireframing, prototyping, usability testing, micro-animations) and Brand Identity (logo design, social media graphics, infographics, custom illustrations). Both are available as standalone or combined engagements.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>2. What is your design process?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>I follow a Double Diamond process: Discover → Define → Design → Deliver. I keep you involved at every stage — from research and wireframes to final handoff with specs and a style guide.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>3. How long does a project usually take?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>Brand identity projects typically take 2–3 weeks. UX/UI projects for a website or app usually run 4–8 weeks from kickoff to final delivery. I always agree a clear timeline before we begin.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>4. What do I need to provide before starting?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>A brief overview of your project goals, target audience, any existing brand materials, and examples of styles you like. We'll align on everything in a discovery call before work begins.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>5. Do you offer revisions?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>Yes — I include two structured revision rounds in all projects. These are dedicated review points, not ad-hoc patches. Additional rounds can be arranged if needed.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>6. How do I get started?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a">
+            <p>Send me a message via the contact form below or email me at <a href="mailto:Baharahrabi@gmail.com">Baharahrabi@gmail.com</a>. I'll reply within 24 hours to schedule a free discovery call. No commitment required.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       AI CONTENT — Creating with AI tools
+  ============================================================ -->
+  <section class="section blog" id="blog" aria-label="Creating Content with AI Tools">
+    <div class="container">
+      <div class="blog__header" data-reveal>
+        <span class="ai-tag-eyebrow">AI-Assisted Workflow</span>
+        <h2 class="section-heading">CREATING CONTENT<br>WITH AI TOOLS</h2>
+        <p class="blog__sub">A behind-the-scenes look at how I use AI tools alongside traditional design — for image generation, ideation, copywriting, and visual exploration. Each piece below pairs a brief with the AI tool that helped shape it.</p>
+      </div>
+
+      <div class="blog__grid">
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card__img" style="position:relative;overflow:hidden;background:linear-gradient(145deg,#EDE8DF 0%,#D9CFB8 50%,#C4B89A 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.25rem;">
+            <!-- Decorative corner marks -->
+            <span style="position:absolute;top:16px;left:16px;width:20px;height:20px;border-top:1.5px solid #8C7A5F;border-left:1.5px solid #8C7A5F;opacity:.6;"></span>
+            <span style="position:absolute;top:16px;right:16px;width:20px;height:20px;border-top:1.5px solid #8C7A5F;border-right:1.5px solid #8C7A5F;opacity:.6;"></span>
+            <span style="position:absolute;bottom:16px;left:16px;width:20px;height:20px;border-bottom:1.5px solid #8C7A5F;border-left:1.5px solid #8C7A5F;opacity:.6;"></span>
+            <span style="position:absolute;bottom:16px;right:16px;width:20px;height:20px;border-bottom:1.5px solid #8C7A5F;border-right:1.5px solid #8C7A5F;opacity:.6;"></span>
+            <!-- Central icon -->
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
+              <rect x="4" y="10" width="44" height="32" rx="4" stroke="#4A4843" stroke-width="1.5"/>
+              <circle cx="26" cy="26" r="9" stroke="#4A4843" stroke-width="1.5"/>
+              <circle cx="26" cy="26" r="4" fill="#4A4843" opacity=".3"/>
+              <circle cx="38" cy="16" r="2.5" fill="#4A4843" opacity=".4"/>
+            </svg>
+            <!-- Sparkle dots -->
+            <span style="position:absolute;top:30%;left:22%;font-size:.7rem;color:#8C7A5F;opacity:.7;">✦</span>
+            <span style="position:absolute;top:55%;right:20%;font-size:.5rem;color:#8C7A5F;opacity:.5;">✦</span>
+            <span style="position:absolute;bottom:28%;left:30%;font-size:.6rem;color:#8C7A5F;opacity:.6;">✦</span>
+            <p style="font-family:'Inter',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#4A4843;opacity:.7;margin:0;">ChatGPT · Higgsfield</p>
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">Image Generation</span>
+            </div>
+            <h3 class="blog-card__title">AI Image Generation</h3>
+            <p class="blog-card__desc">All product photography for Velora Stonecraft's Instagram — candle holders, sculptures, bowls and tableware — generated and art-directed using AI tools.</p>
+            <a href="velora-stonecraft.html" class="blog-card__link">View Work →</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-reveal data-delay="120">
+          <div class="blog-card__img" style="position:relative;overflow:hidden;background:linear-gradient(145deg,#1F1E1B 0%,#2E2C27 50%,#4A4843 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.25rem;">
+            <!-- Pulse rings -->
+            <span style="position:absolute;width:120px;height:120px;border-radius:50%;border:1px solid rgba(255,255,255,.08);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
+            <span style="position:absolute;width:170px;height:170px;border-radius:50%;border:1px solid rgba(255,255,255,.05);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
+            <span style="position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid rgba(255,255,255,.03);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
+            <!-- Play button -->
+            <div style="width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M6 4l11 6-11 6V4z" fill="rgba(255,255,255,0.7)"/>
+              </svg>
+            </div>
+            <!-- Timeline bar -->
+            <div style="position:absolute;bottom:20px;left:20px;right:20px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;">
+              <div style="width:38%;height:100%;background:rgba(255,255,255,.35);border-radius:2px;"></div>
+            </div>
+            <p style="font-family:'Inter',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0;">Higgsfield AI</p>
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">Video Generation</span>
+            </div>
+            <h3 class="blog-card__title">AI Video Generation</h3>
+            <p class="blog-card__desc">Stone sculptures brought to life with cinematic AI animation — generated using Higgsfield AI for Velora Stonecraft's Instagram Reels and Stories.</p>
+            <a href="velora-stonecraft.html" class="blog-card__link">View Work →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STORY SCROLL — GSAP pinned sections (translated from story-scroll.tsx)
+  ============================================================ -->
+  <div id="story-scroll" aria-label="What I do" class="story-scroll-root">
+
+    <!-- Section 1: UX/UI Design -->
+    <section data-flow-section class="story-section" style="background:#346739;color:#fff;">
+      <div class="flow-art-container" style="transform-origin:bottom left;">
+        <p class="story-eyebrow">01 — UX/UI Design</p>
+        
+        <div>
+          <h2 class="story-heading">Design<br>That Works</h2>
+        </div>
+        
+        <p class="story-body">From wireframe to high-fidelity — I design digital experiences that are clear, purposeful, and built for real users. Every decision is grounded in research and tested against reality.</p>
+        
+        <div class="story-cols">
+          <div class="story-col">
+            <p class="story-col-title">Research</p>
+            <p class="story-col-text">User interviews, affinity mapping, competitive audits — building empathy before touching a screen.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Interaction</p>
+            <p class="story-col-text">Wireframes, prototypes, micro-animations — every detail considered for how it feels to use.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Delivery</p>
+            <p class="story-col-text">Figma handoffs, design systems, dev-ready specs. No gaps between design and build.</p>
+          </div>
+        </div>
+        
+        <p class="story-body story-body--right">Browse cases — Pockigo Website · Pockigo App · Saving Faces · Velora UX</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Brand Identity -->
+    <section data-flow-section class="story-section" style="background:#1F1E1B;color:#fff;">
+      <div class="flow-art-container" style="transform-origin:bottom left;">
+        <p class="story-eyebrow">02 — Brand Identity</p>
+        
+        <div>
+          <h2 class="story-heading">Brands Built<br>To Last</h2>
+        </div>
+        
+        <p class="story-body">I craft visual identities that hold their ground across every touchpoint — from a 3cm business card to a full-bleed billboard. Calm, precise, and unmistakably yours.</p>
+        
+        <div class="story-cols">
+          <div class="story-col">
+            <p class="story-col-title">Logo & Mark</p>
+            <p class="story-col-text">Custom marks drawn for longevity — not trend. Built to work at any size, in any context.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Visual System</p>
+            <p class="story-col-text">Colour palette, typography, layout rules — every element considered as part of the whole.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Collateral</p>
+            <p class="story-col-text">Business cards, packaging, catalogues, social templates — the system applied in full.</p>
+          </div>
+        </div>
+        
+        <p class="story-body story-body--right">Browse cases — Velora Stonecraft Brand Identity</p>
+      </div>
+    </section>
+
+    <!-- Section 3: AI Content -->
+    <section data-flow-section class="story-section" style="background:#F5F1EA;color:#1A1A1A;">
+      <div class="flow-art-container" style="transform-origin:bottom left;">
+        <p class="story-eyebrow">03 — AI-Powered Content</p>
+        
+        <div>
+          <h2 class="story-heading">Content At<br>Speed</h2>
+        </div>
+        
+        <p class="story-body">Product photography. Lifestyle videos. Brand imagery — generated, art-directed, and refined with AI tools before a single studio shoot is commissioned.</p>
+        
+        <div class="story-cols">
+          <div class="story-col">
+            <p class="story-col-title">Image Generation</p>
+            <p class="story-col-text">ChatGPT + Higgsfield AI — product-in-scene photography art-directed to match brand palette and tone.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Video Generation</p>
+            <p class="story-col-text">Stone sculptures brought to life with cinematic AI animation — ready for Instagram Reels and Stories.</p>
+          </div>
+          <div class="story-col">
+            <p class="story-col-title">Social Direction</p>
+            <p class="story-col-text">Full Instagram feed direction — content calendar, copy, watermark system, and highlight design.</p>
+          </div>
+        </div>
+        
+        <p class="story-body story-body--right">Browse cases — Velora Stonecraft AI Content</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container contact__inner">
+
+      <div class="contact__photo-side" data-reveal>
+        <div class="contact__photo-wrap">
+          <img src="assets/images/hero-portrait.jpg" alt="Bahareh Ahrabi" class="contact__photo">
+          <div class="contact__hi" aria-hidden="true">Hi</div>
+        </div>
+      </div>
+
+      <div class="contact__form-side" data-reveal data-delay="80">
+        <h2 class="section-heading">LET'S WORK<br>TOGETHER</h2>
+        <p class="contact__sub" data-i18n="contact.sub">Let's build something impactful together — whether it's your brand, your website, or your next big idea.</p>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" class="form-label" data-i18n="contact.formName">Name</label>
+              <input type="text" id="fname" name="name" class="form-input" placeholder="John Smith" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail" class="form-label" data-i18n="contact.formEmail">Email</label>
+              <input type="email" id="femail" name="email" class="form-input" placeholder="johnsmith@gmail.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fservice" class="form-label" data-i18n="contact.formService">Service Needed ?</label>
+            <select id="fservice" name="service" class="form-input form-select">
+              <option value="" disabled selected>Select...</option>
+              <option value="ux-ui">UX/UI Design</option>
+              <option value="brand">Brand Identity</option>
+              <option value="both">Both</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg" class="form-label" data-i18n="contact.formMessage">What Can I Help You...</label>
+            <textarea id="fmsg" name="message" class="form-input form-textarea" placeholder="Hello, I'd like to enquire about..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-pill-outline btn-submit">SUBMIT</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER — purple
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <span class="footer__col-label" data-i18n="footer.email">Email :</span>
+        <a href="mailto:Baharahrabi@gmail.com" class="footer__col-val">Baharahrabi@gmail.com</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label" data-i18n="footer.callToday">Call Today :</span>
+        <a href="tel:+905530558855" class="footer__col-val">+90 (553) 055-8855</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__col-label" data-i18n="footer.social">Social :</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/bahareh-ahrabi-565275302" target="_blank" rel="noopener" class="footer__social" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="container footer__bottom">
+      <p>&copy; Copyright 2025. All Rights Reserved by Bahareh Ahrabi</p>
+      <a href="#hero" class="footer__back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- GSAP + ScrollTrigger CDN (for story-scroll section) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    // ── Smooth scroll with nav offset
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        const off = document.getElementById('nav').offsetHeight + 12;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
+      });
+    });
+
+    // ── Nav active link
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav__link');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
+      navLinks.forEach(a => a.classList.toggle('nav__link--active', a.getAttribute('href') === '#' + cur));
+    }, { passive: true });
+
+    // ── Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      hamburger.classList.toggle('is-open', !open);
+      mobileMenu.classList.toggle('is-open', !open);
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
+      });
+    });
+
+    // ── "Available for work" badge — show after hero
+    // ── "Available for work" badge appears, nav hides — when scrolling past hero
+    const badge  = document.getElementById('availBadge');
+    const hero   = document.getElementById('hero');
+    const navEl  = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      const past = heroBottom < 0;
+      badge.classList.toggle('is-visible', past);
+      navEl.classList.toggle('nav--hidden', past);
+    }, { passive: true });
+
+    // ── Services accordion
+    document.querySelectorAll('.svc-acc__btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item   = btn.closest('.svc-acc__item');
+        const body   = item.querySelector('.svc-acc__body');
+        const isOpen = item.classList.contains('is-open');
+
+        document.querySelectorAll('.svc-acc__item').forEach(el => {
+          el.classList.remove('is-open');
+          el.querySelector('.svc-acc__btn').setAttribute('aria-expanded', 'false');
+          el.querySelector('.svc-acc__body').style.maxHeight = null;
+        });
+
+        if (!isOpen) {
+          item.classList.add('is-open');
+          btn.setAttribute('aria-expanded', 'true');
+          body.style.maxHeight = body.scrollHeight + 'px';
+        }
+      });
+      // Init open items
+      const item = btn.closest('.svc-acc__item');
+      if (item.classList.contains('is-open')) {
+        const body = item.querySelector('.svc-acc__body');
+        btn.setAttribute('aria-expanded', 'true');
+        requestAnimationFrame(() => { body.style.maxHeight = body.scrollHeight + 'px'; });
+      }
+    });
+
+    // ── FAQ accordion
+    document.querySelectorAll('.faq__q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item   = btn.closest('.faq__item');
+        const answer = item.querySelector('.faq__a');
+        const open   = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq__item').forEach(el => {
+          el.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+          el.querySelector('.faq__a').style.maxHeight = null;
+          el.classList.remove('is-open');
+        });
+        if (!open) {
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          item.classList.add('is-open');
+        }
+      });
+    });
+
+    // ── Animated stat counters
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1500;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current) + suffix;
+      }, 16);
+    }
+
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        animateCounter(e.target);
+        counterObs.unobserve(e.target);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat__num').forEach(el => counterObs.observe(el));
+
+    // ── Scroll reveal
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const delay = Number(e.target.dataset.delay || 0);
+        setTimeout(() => e.target.classList.add('is-visible'), delay);
+        revealObs.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
+
+    // ── Contact form
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      btn.textContent = 'Message Sent ✓';
+      btn.disabled = true;
+    });
+
+    // ════════════════════════════════════════════════════════════
+    //  ADVANCED ANIMATIONS
+    // ════════════════════════════════════════════════════════════
+
+    // ── Page loader → fade out when page is ready
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('pageLoader').classList.add('is-done');
+      }, 400);
+    });
+
+    // ── Cursor follower (desktop only)
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const dot = document.getElementById('cursorDot');
+      let mx = 0, my = 0, dx = 0, dy = 0;
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        dot.classList.add('is-active');
+      });
+      const lerp = () => {
+        dx += (mx - dx) * 0.18;
+        dy += (my - dy) * 0.18;
+        dot.style.transform = `translate(${dx}px, ${dy}px) translate(-50%, -50%)`;
+        requestAnimationFrame(lerp);
+      };
+      lerp();
+
+      // Grow on hover over interactive elements
+      document.querySelectorAll('a, button, .proj-flip, .blog-card').forEach(el => {
+        el.addEventListener('mouseenter', () => dot.classList.add('is-hover'));
+        el.addEventListener('mouseleave', () => dot.classList.remove('is-hover'));
+      });
+    }
+
+    // ── Letter-by-letter reveal for section headings
+    function splitLetters(el) {
+      const text = el.textContent;
+      el.textContent = '';
+      [...text].forEach((ch, i) => {
+        const span = document.createElement('span');
+        span.className = 'split-letter';
+        if (ch === ' ') {
+          span.classList.add('split-letter--space');
+        } else if (ch === '\n') {
+          el.appendChild(document.createElement('br'));
+          return;
+        } else {
+          span.textContent = ch;
+        }
+        span.style.transitionDelay = (i * 28) + 'ms';
+        el.appendChild(span);
+      });
+    }
+
+    document.querySelectorAll('.section-heading').forEach(h => {
+      // Preserve <br> tags by splitting on them
+      const parts = h.innerHTML.split(/<br\s*\/?>/i);
+      h.innerHTML = '';
+      parts.forEach((part, idx) => {
+        const span = document.createElement('span');
+        span.style.display = 'inline-block';
+        span.textContent = part.trim();
+        h.appendChild(span);
+        splitLetters(span);
+        if (idx < parts.length - 1) h.appendChild(document.createElement('br'));
+      });
+    });
+
+    const headObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-revealed');
+          headObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.section-heading').forEach(h => headObs.observe(h));
+
+    // ── 3D scroll-linked rotation on photos (matches the Framer reference video)
+    // Photo stays FLAT while in the center 50% of viewport, then rotates sharply
+    // toward ±max as it leaves the top or enters from the bottom — like a card
+    // flipping away/toward the viewer.
+    function setupScrollRotate(selector, opts = {}) {
+      const el = document.querySelector(selector);
+      if (!el) return;
+      const wrap = opts.wrap ? el.closest(opts.wrap) : el;
+      const maxRotY = opts.maxRotY ?? 60;
+      const tiltX   = opts.tiltX ?? 0;
+      const deadzone = opts.deadzone ?? 0.18; // % of viewport on each side that stays flat
+      // ease curve — quick flat zone, accelerate at edges
+      const easeOutQuad = t => t * (2 - t);
+
+      const onScroll = () => {
+        const rect = wrap.getBoundingClientRect();
+        const winH = window.innerHeight;
+        // centerProgress: 0 = element center at viewport top, 0.5 = middle, 1 = bottom
+        const centerProgress = (rect.top + rect.height / 2) / winH;
+
+        // Map to t: -1 (above viewport, leaving) → 0 (center) → +1 (below, entering)
+        // with a deadzone in the middle where t = 0
+        let t = 0;
+        const upper = 0.5 - deadzone;
+        const lower = 0.5 + deadzone;
+        if (centerProgress < upper) {
+          // leaving above — clamp & ease
+          const raw = (upper - centerProgress) / upper;
+          t = -easeOutQuad(Math.min(1, raw));
+        } else if (centerProgress > lower) {
+          // entering from below
+          const raw = (centerProgress - lower) / (1 - lower);
+          t = easeOutQuad(Math.min(1, raw));
+        }
+
+        // Direction: when leaving above (t = -1) we want photo to rotate AWAY (its right side moves back).
+        // That means rotateY(-X). When entering from below (t = +1), photo rotates from the other side: rotateY(+X).
+        const rotY = -t * maxRotY;
+        const rotX = tiltX ? (t * tiltX) : 0;
+        el.style.setProperty('--rot-y', rotY.toFixed(1) + 'deg');
+        if (tiltX) el.style.setProperty('--rot-x', rotX.toFixed(1) + 'deg');
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // Apply to all the photos
+    setupScrollRotate('.hero__photo-rot',    { maxRotY: 65 });
+
+    // ── Hero badge: "Hi" → 👋 on photo hover
+    (function () {
+      const photoWrap = document.querySelector('.hero__photo-wrap');
+      const badge = document.querySelector('.hero__badge');
+      if (!photoWrap || !badge) return;
+      photoWrap.addEventListener('mouseenter', () => {
+        badge.style.transform = 'scale(1.2)';
+        badge.style.transition = 'transform 0.2s var(--ease-o)';
+        setTimeout(() => {
+          badge.textContent = '👋';
+          badge.style.transform = 'scale(1)';
+        }, 100);
+      });
+      photoWrap.addEventListener('mouseleave', () => {
+        badge.style.transform = 'scale(1.15)';
+        setTimeout(() => {
+          badge.textContent = 'Hi';
+          badge.style.transform = 'scale(1)';
+        }, 100);
+      });
+    })();
+    setupScrollRotate('.services__img-wrap', { maxRotY: 55 });
+    setupScrollRotate('.about__img',         { wrap: '.about__img-wrap',   maxRotY: 65, tiltX: 6 });
+    setupScrollRotate('.contact__photo',     { wrap: '.contact__photo-wrap', maxRotY: 45 });
+
+    // ── 3D card tilt on hover (project cards + blog cards)
+    document.querySelectorAll('.proj-stack-card, .blog-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width  - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        card.style.transform = `perspective(1200px) rotateX(${-y*5}deg) rotateY(${x*5}deg) scale(1.01)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+
+    // ── Magnetic buttons (CTAs)
+    document.querySelectorAll('.btn, .nav__cta, .btn-pill-outline').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width / 2;
+        const y = e.clientY - r.top  - r.height / 2;
+        btn.style.transform = `translate(${x*0.18}px, ${y*0.18}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = '';
+      });
+    });
+
+    // ── Pulse stat numbers when they finish counting (already animated, just add the pulse class)
+    document.querySelectorAll('.stat__num').forEach(el => {
+      const obs = new IntersectionObserver(es => {
+        es.forEach(en => {
+          if (en.isIntersecting) {
+            setTimeout(() => el.classList.add('is-counted'), 1500);
+            obs.unobserve(el);
+          }
+        });
+      }, { threshold: 0.5 });
+      obs.observe(el);
+    });
+
+    // ── Parallax on services tilted image
+    const svcImg = document.querySelector('.services__img-wrap');
+    if (svcImg) {
+      window.addEventListener('scroll', () => {
+        const r = svcImg.getBoundingClientRect();
+        const winH = window.innerHeight;
+        if (r.top < winH && r.bottom > 0) {
+          const progress = (winH - r.top) / (winH + r.height);
+          const rot = 3 - progress * 6;
+          svcImg.style.transform = `rotate(${rot}deg)`;
+        }
+      }, { passive: true });
+    }
+
+    // ── Hero particle canvas
+    (function () {
+      const canvas = document.getElementById('heroCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const COLORS = ['#D9CFB8','#C4B89A','#8C7A5F','#F5F1EA','#4A4843'];
+      let W, H, particles;
+
+      function resize() {
+        W = canvas.width  = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+      }
+
+      function Particle() {
+        this.x  = Math.random() * W;
+        this.y  = Math.random() * H;
+        this.vx = (Math.random() - 0.5) * 0.4;
+        this.vy = (Math.random() - 0.5) * 0.4;
+        this.r  = Math.random() * 2 + 1;
+        this.c  = COLORS[Math.floor(Math.random() * COLORS.length)];
+        this.a  = Math.random() * 0.5 + 0.15;
+      }
+
+      function init() {
+        resize();
+        particles = Array.from({ length: 72 }, () => new Particle());
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+
+          // dot
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.c;
+          ctx.globalAlpha = p.a;
+          ctx.fill();
+
+          // connect nearby particles
+          for (let j = i + 1; j < particles.length; j++) {
+            const q = particles[j];
+            const dx = p.x - q.x, dy = p.y - q.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 110) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.strokeStyle = '#D9CFB8';
+              ctx.globalAlpha = (1 - dist / 110) * 0.12;
+              ctx.lineWidth = 0.8;
+              ctx.stroke();
+            }
+          }
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', () => { resize(); });
+      init();
+      draw();
+    })();
+
+    // ── Story Scroll — GSAP pinned sections (translated from story-scroll.tsx)
+    (function () {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reducedMotion) return;
+
+      const sections = Array.from(document.querySelectorAll('#story-scroll [data-flow-section]'));
+      if (sections.length === 0) return;
+
+      sections.forEach((section, i) => {
+        gsap.set(section, { zIndex: i + 1 });
+
+        const inner = section.querySelector('.flow-art-container');
+        if (!inner) return;
+
+        // Every section except the first rotates in from 30° as it enters
+        if (i > 0) {
+          gsap.set(inner, { rotation: 30, transformOrigin: 'bottom left' });
+          gsap.to(inner, {
+            rotation: 0,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: section,
+              start: 'top bottom',
+              end: 'top 25%',
+              scrub: true,
+            },
+          });
+        }
+
+        // Every section except the last is pinned while the next sweeps in
+        if (i < sections.length - 1) {
+          ScrollTrigger.create({
+            trigger: section,
+            start: 'bottom bottom',
+            end: 'bottom top',
+            pin: true,
+            pinSpacing: false,
+          });
+        }
+      });
+
+      ScrollTrigger.refresh();
+    })();
+  </script>
+
+</body>
+</html>

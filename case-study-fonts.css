@@ -1,0 +1,46 @@
+/* ============================================================
+   CASE STUDY FONTS — Gilroy (body) + Benzin (titles)
+   Loaded by pockigo-website.html, pockigo-app.html, saving-faces.html
+============================================================ */
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/benzin');
+
+/* Body text — Gilroy */
+body,
+.cs-section__body,
+.cs-section__body p,
+.cs-list li,
+.cs-meta__value,
+.cs-meta__value span,
+.cs-meta__label,
+.cs-meta__title,
+.cs-insight__title,
+.cs-insight__text,
+.cs-problem__text,
+.cs-problem__label,
+.cs-chip,
+.cs-hero__sub,
+.cs-hero__tag,
+.cs-nav__back,
+.cs-next__label,
+.cs-next__title,
+.cs-next__link,
+.cs-phase,
+.cs-tri__phase .cs-list li,
+.btn-pill-outline,
+.cs-cta-large {
+  font-family: 'Gilroy', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Titles + headings — Benzin */
+.cs-section__title,
+.cs-hero__title,
+.cs-hero__title--dark,
+.cs-tri__label,
+.cs-section h3,
+.cs-section h4,
+h1, h2, h3, h4 {
+  font-family: 'Benzin', 'Bebas Neue', Impact, sans-serif !important;
+  letter-spacing: 0.01em;
+}

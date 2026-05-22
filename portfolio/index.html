@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahareh — UX/UI & Brand Designer</title>
+  <meta name="description" content="UX/UI & Brand Designer crafting clean, playful, high-end digital experiences." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__pill">
+      <span class="nav__logo">Bahareh</span>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Stack</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero">
+
+    <!-- Floating 3D shapes -->
+    <div class="hero__shapes">
+
+      <!-- Orange Pyramid — top left -->
+      <div class="shape shape-pyramid float-a" style="top:14%; left:10%;">
+        <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pyg" x1="0" y1="0" x2="120" y2="140" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFA040"/>
+              <stop offset="0.5" stop-color="#FF6A00"/>
+              <stop offset="1" stop-color="#C93B00"/>
+            </linearGradient>
+            <linearGradient id="pyg2" x1="60" y1="0" x2="120" y2="140" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF8020"/>
+              <stop offset="1" stop-color="#A83000"/>
+            </linearGradient>
+          </defs>
+          <!-- Left face -->
+          <polygon points="60,4 4,136 60,110" fill="url(#pyg)"/>
+          <!-- Right face -->
+          <polygon points="60,4 116,136 60,110" fill="url(#pyg2)"/>
+          <!-- Bottom -->
+          <polygon points="4,136 116,136 60,110" fill="#7A2500"/>
+        </svg>
+      </div>
+
+      <!-- Teal Star — top right -->
+      <div class="shape shape-star float-b" style="top:12%; right:9%;">
+        <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="stg" cx="38%" cy="32%" r="65%">
+              <stop stop-color="#99F6E4"/>
+              <stop offset="0.5" stop-color="#14B8A6"/>
+              <stop offset="1" stop-color="#0D7266"/>
+            </radialGradient>
+          </defs>
+          <path d="M55 8 C55 8 62 34 80 34 C80 34 58 46 68 68 C68 68 50 54 32 68 C32 68 42 46 20 34 C20 34 38 34 55 8 Z" fill="url(#stg)"/>
+          <ellipse cx="55" cy="25" rx="16" ry="8" fill="rgba(255,255,255,0.25)" transform="rotate(-10 55 25)"/>
+        </svg>
+      </div>
+
+      <!-- Purple Sphere — left -->
+      <div class="shape shape-sphere float-c" style="top:52%; left:6%;"></div>
+
+      <!-- Green Blob — bottom right -->
+      <div class="shape shape-blob float-d" style="bottom:16%; right:7%;"></div>
+
+      <!-- Blue Cylinder — bottom left -->
+      <div class="shape shape-cylinder float-e" style="bottom:14%; left:14%;"></div>
+
+      <!-- Yellow Cube — right middle -->
+      <div class="shape shape-cube float-f" style="top:48%; right:6%;"></div>
+
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero__stage">
+      <p class="hero__sub">UX/UI Designer</p>
+
+      <img
+        src="../Bahareh 01.png"
+        alt="Bahareh"
+        class="hero__photo"
+        onerror="this.outerHTML='<div class=\'hero__photo-placeholder\'>Your Photo</div>'"
+      />
+
+      <h1 class="hero__text">Hi, I'm <em>Bahareh!</em></h1>
+
+      <a href="contact.html" class="btn btn--pill">
+        Let's Work Together! <span class="btn__arrow">→</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>UX Design</span><span class="dot">✦</span>
+      <span>UI Design</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Design Systems</span><span class="dot">✦</span>
+      <span>Creative Direction</span><span class="dot">✦</span>
+      <span>Figma</span><span class="dot">✦</span>
+      <span>Mobile Apps</span><span class="dot">✦</span>
+      <span>AI Visuals</span><span class="dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>UX Design</span><span class="dot">✦</span>
+      <span>UI Design</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Design Systems</span><span class="dot">✦</span>
+      <span>Creative Direction</span><span class="dot">✦</span>
+      <span>Figma</span><span class="dot">✦</span>
+      <span>Mobile Apps</span><span class="dot">✦</span>
+      <span>AI Visuals</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ======================== ABOUT PREVIEW ======================== -->
+  <section class="section container">
+    <div class="about-preview">
+
+      <div class="about-preview__photo">
+        <img
+          src="../Bahareh 01.png"
+          alt="Bahareh — Designer"
+          class="about-preview__img"
+          onerror="this.style.background='#F0F0F0'; this.style.minHeight='400px';"
+        />
+        <div class="about-preview__badge">
+          4+
+          <span class="about-preview__badge-label">Years of Experience</span>
+        </div>
+      </div>
+
+      <div class="about-preview__body">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title" style="margin-bottom: 1.5rem;">
+          Designing digital experiences<br>people <em>actually remember.</em>
+        </h2>
+        <p>I'm a UX/UI and Brand Designer who works at the intersection of clarity and craft. Every project I take on gets the same thing: clear thinking, strong visuals, and zero compromise on quality.</p>
+        <p>I work with startups and brands that want to stand out — not just show up.</p>
+        <div style="display:flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="about.html" class="btn btn--pill">More About Me <span class="btn__arrow">→</span></a>
+          <a href="projects.html" class="btn btn--pill-outline">See My Work</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SERVICES ======================== -->
+  <section class="section container">
+    <div style="text-align:center; margin-bottom: 3rem;">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-card__icon" style="background:#FFF0EC;">🎨</div>
+        <div class="service-card__title">UX/UI Design</div>
+        <p class="service-card__body">End-to-end product design for web and mobile — from user research and wireframes to pixel-perfect, handoff-ready interfaces.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon" style="background:#F0F9FF;">✦</div>
+        <div class="service-card__title">Brand Identity</div>
+        <p class="service-card__body">Visual identity systems that go the distance — logo, typography, colour, and brand guidelines built to scale.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon" style="background:#F0FDF4;">🤖</div>
+        <div class="service-card__title">AI Creative Direction</div>
+        <p class="service-card__body">Concept development and AI-assisted visual generation for campaigns, platforms, and brand launches.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon" style="background:#FFF9F0;">💡</div>
+        <div class="service-card__title">Design Consulting</div>
+        <p class="service-card__body">Clear design strategy and direction for startups and founders before committing to full execution.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== SELECTED PROJECTS ======================== -->
+  <section class="section container">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom: 2.5rem; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+      <a href="projects.html" class="btn btn--pill-outline">All Projects <span class="btn__arrow">→</span></a>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card project-card--wide" onclick="location.href='projects.html'">
+        <img src="../Homepage.png" alt="Luminary" class="project-card__visual"
+             onerror="this.outerHTML='<div class=\'project-card__visual-placeholder\' style=\'background:linear-gradient(135deg,#FFF0EC,#FFD5C8)\'>Luminary</div>'" />
+        <div class="project-card__body">
+          <span class="project-card__tag">Web UX/UI</span>
+          <div class="project-card__title">Luminary — Wellness Platform</div>
+          <p class="project-card__desc">Full redesign of a premium wellness e-commerce platform. Streamlined the purchase journey, rebuilt the design system, and reduced cart abandonment significantly.</p>
+        </div>
+        <div class="project-card__footer">
+          <span class="project-card__year">2025</span>
+          <a href="projects.html" class="btn btn--pill" style="padding: 0.55rem 1.4rem; font-size: 0.82rem;">View Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="location.href='projects.html'">
+        <img src="../Homepage2.png" alt="Noor Financial" class="project-card__visual"
+             onerror="this.outerHTML='<div class=\'project-card__visual-placeholder\' style=\'background:linear-gradient(135deg,#F0F9FF,#BAE6FD)\'>Noor Financial</div>'" />
+        <div class="project-card__body">
+          <span class="project-card__tag">Web UX/UI</span>
+          <div class="project-card__title">Noor Financial</div>
+          <p class="project-card__desc">Digital banking redesigned for clarity and trust.</p>
+        </div>
+        <div class="project-card__footer">
+          <span class="project-card__year">2025</span>
+          <a href="projects.html" class="btn btn--pill" style="padding: 0.55rem 1.4rem; font-size: 0.82rem;">View →</a>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="location.href='projects.html'">
+        <img src="../Activity Card.png" alt="Pockigo" class="project-card__visual"
+             onerror="this.outerHTML='<div class=\'project-card__visual-placeholder\' style=\'background:linear-gradient(135deg,#F0FDF4,#BBF7D0)\'>Pockigo</div>'" />
+        <div class="project-card__body">
+          <span class="project-card__tag">Mobile App</span>
+          <div class="project-card__title">Pockigo</div>
+          <p class="project-card__desc">Travel planning app designed for frictionless use.</p>
+        </div>
+        <div class="project-card__footer">
+          <span class="project-card__year">2024</span>
+          <a href="projects.html" class="btn btn--pill" style="padding: 0.55rem 1.4rem; font-size: 0.82rem;">View →</a>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="location.href='projects.html'" style="grid-column: 1 / -1;">
+        <img src="../hf_20260420_163018_2abc3d3d-c556-4b69-bf55-a7ea61c2044b.png" alt="Velora Stonecraft" class="project-card__visual" style="aspect-ratio: 21/6; object-fit:cover;"
+             onerror="this.outerHTML='<div class=\'project-card__visual-placeholder\' style=\'background:linear-gradient(135deg,#FAFAF8,#D1CBC1); aspect-ratio:21/6;\'>Velora Stonecraft</div>'" />
+        <div class="project-card__body">
+          <span class="project-card__tag">Brand Identity</span>
+          <div class="project-card__title">Velora Stonecraft — Luxury Brand</div>
+          <p class="project-card__desc">Complete visual identity for a luxury natural stone brand. Mark, type system, colour palette, and brand language built to command a high-end market.</p>
+        </div>
+        <div class="project-card__footer">
+          <span class="project-card__year">2024</span>
+          <a href="projects.html" class="btn btn--pill" style="padding: 0.55rem 1.4rem; font-size: 0.82rem;">View Case Study →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <div class="container" style="padding-bottom: 6rem;">
+    <div class="cta-band">
+      <div class="cta-band__title">Have a project<br>in mind?</div>
+      <p class="cta-band__sub">I take on a limited number of projects each quarter. Let's see if we're a good fit.</p>
+      <a href="contact.html" class="btn--white">
+        Let's Work Together <span class="btn__arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">&copy; 2026 Bahareh · UX/UI & Brand Designer</span>
+      <div class="footer__links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

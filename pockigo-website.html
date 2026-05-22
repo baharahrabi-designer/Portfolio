@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pockigo Website — UX Case Study by Bahareh Ahrabi." />
+  <title>Pockigo Website — Bahareh Ahrabi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-fonts.css" />
+</head>
+<body>
+
+  <!-- Back nav -->
+  <nav class="cs-nav" id="csNav">
+    <div class="cs-nav__inner">
+      <a href="index.html" class="cs-nav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M13 8H3M3 8l4-4M3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Bahareh Ahrabi" class="cs-nav__logo">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="cs-hero">
+    <img src="assets/images/Pockigo-Website.png" alt="Pockigo Website on Desktop" class="cs-hero__img">
+    <div class="cs-hero__overlay">
+      <div class="cs-hero__content">
+        <span class="cs-hero__tag">UX/UI Design · Website</span>
+        <h1 class="cs-hero__title">Pockigo</h1>
+        <p class="cs-hero__sub">Travel Planning — Website Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT OVERVIEW strip -->
+  <div class="cs-meta">
+    <div class="cs-meta__container">
+      <p class="cs-meta__title">PROJECT OVERVIEW</p>
+      <div class="cs-meta__grid">
+        <div class="cs-meta__item">
+          <p class="cs-meta__label">PRODUCT</p>
+          <p class="cs-meta__value">Website</p>
+        </div>
+        <div class="cs-meta__item">
+          <p class="cs-meta__label">TEAM</p>
+          <p class="cs-meta__value">Team of five</p>
+        </div>
+        <div class="cs-meta__item">
+          <p class="cs-meta__label">MY ROLE</p>
+          <p class="cs-meta__value">UX/UI Designer</p>
+        </div>
+        <div class="cs-meta__item">
+          <p class="cs-meta__label">DURATION</p>
+          <p class="cs-meta__value">3 Months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="cs-body">
+
+    <!-- 1. What is Pockigo -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">What is Pockigo ?</h2>
+      <div class="cs-section__body">
+        <p>Pockigo is a travel planning platform designed for both web and mobile.</p>
+        <p>On this case study we worked on the first task "Getting a personalized itinerary" on the web.</p>
+        <p>We worked on the second task "Tracking the itinerary" on mobile in <a href="pockigo-app.html" style="color:var(--purple);border-bottom:1px solid rgba(52,103,57,0.3);">another case study</a>.</p>
+      </div>
+      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=73-11&t=nGJ9deqsWcpG91Qe-1" target="_blank" rel="noopener" class="btn-pill-outline" style="margin-top:.5rem;align-self:flex-start;">View Prototype</a>
+    </section>
+
+    
+
+    <!-- 2. Business Needs -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Business Needs</h2>
+      <ul class="cs-list">
+        <li>Provide a personalized itinerary based on destination, date or trip duration, and user's interests.</li>
+        <li>Allow user to modify the itinerary with ease.</li>
+        <li>Offer an interactive map view.</li>
+        <li>Allow user to share the itinerary with their travel buddy.</li>
+        <li>User can access their past, active and upcoming plans anytime.</li>
+      </ul>
+    </section>
+
+    
+
+    <!-- 3. Design Goals -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Design Goals</h2>
+      <ul class="cs-list">
+        <li>Comprehensive and accurate filtering system</li>
+        <li>Easy to use for people of all ages</li>
+        <li>A smooth and convenient navigation</li>
+        <li>Visually appealing and functional interface.</li>
+      </ul>
+    </section>
+
+    
+
+    <!-- 4. Research and Design (Double Diamond — TRIANGLES) -->
+    <section class="cs-section cs-section--center" data-reveal>
+      <h2 class="cs-section__title">Research and Design</h2>
+
+      <div class="cs-triangle-wrap">
+        <!-- LEFT — Research (Discover + Define) -->
+        <div class="cs-tri-block">
+          <div class="cs-tri">
+            <span class="cs-tri__label">Research</span>
+          </div>
+          <div class="cs-tri__phases">
+            <div class="cs-tri__phase">
+              <span class="cs-phase cs-phase--discover">Discover</span>
+              <ul class="cs-list" style="margin-top:.65rem;">
+                <li>User interviews</li>
+                <li>Affinity Diagram</li>
+                <li>Competitive Analysis</li>
+              </ul>
+            </div>
+            <div class="cs-tri__phase">
+              <span class="cs-phase cs-phase--define">Define</span>
+              <ul class="cs-list" style="margin-top:.65rem;">
+                <li>Persona</li>
+                <li>Scenario</li>
+                <li>User flow</li>
+                <li>Card sorting</li>
+                <li>Site map</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT — Design (Develop + Deliver) -->
+        <div class="cs-tri-block">
+          <div class="cs-tri cs-tri--alt">
+            <span class="cs-tri__label">Design</span>
+          </div>
+          <div class="cs-tri__phases">
+            <div class="cs-tri__phase">
+              <span class="cs-phase cs-phase--develop">Develop</span>
+              <ul class="cs-list" style="margin-top:.65rem;">
+                <li>Mid Sketch</li>
+                <li>Low fidelity</li>
+                <li>Mood Board</li>
+                <li>Mid fidelity</li>
+              </ul>
+            </div>
+            <div class="cs-tri__phase">
+              <span class="cs-phase cs-phase--deliver">Deliver</span>
+              <ul class="cs-list" style="margin-top:.65rem;">
+                <li>User Testing</li>
+                <li>Iteration</li>
+                <li>High Fidelity Designs</li>
+                <li>Prototype</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-section__body" style="margin-top:1.5rem;">
+        <p>We started the research for "Getting a personalized itinerary" on the website.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- 5. Discover -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--discover">Discover</span>
+      <h2 class="cs-section__title">Discover</h2>
+
+      <!-- 6. Interview -->
+      <h3 style="font-size:1.6rem;font-weight:700;color:var(--text);margin-top:1.25rem;">Interview</h3>
+      <div class="cs-section__body">
+        <p>We started by conducting interviews with 20 potential participants to understand their common needs and pain points.</p>
+      </div>
+
+      <!-- 7. Affinity Diagram -->
+      <h3 style="font-size:1.6rem;font-weight:700;color:var(--text);margin-top:1.5rem;">Affinity Diagram</h3>
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:.5rem;">Common User Needs and Pain Points</h4>
+      <ul class="cs-list">
+        <li>An overwhelming number of options to choose from.</li>
+        <li>Concerns about travel distances between activities that could affect time efficiency.</li>
+        <li>Difficulty finding precise informations about activities scattered on the internet.</li>
+      </ul>
+      <figure class="cs-figure">
+        <img src="assets/images/Affinity-Diagram.jpg" alt="Affinity diagram — Activity categories, Detail of activity, Access &amp; Distance themes from user interviews">
+      </figure>
+
+      <!-- 8. Comprative & Competitive analysis -->
+      <h3 style="font-size:1.6rem;font-weight:700;color:var(--text);margin-top:1.5rem;">Comprative &amp; Competitive analysis</h3>
+      <div class="cs-section__body">
+        <p>We looked at some of the most popular travel planning platforms and compared their features side-by-side and analyzed how closely they compare to what we're building. These insights guided our design decisions, ensuring the user interface directly addresses unmet needs and delivers a smoother experience.</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Compertive-Analysis.png" alt="Comparative analysis table">
+      </figure>
+
+      <div class="cs-section__body">
+        <p>We identified Tripadvisor, GetYourGuide, and Tripographer as our main competitors and analyzed their weaknesses:</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Competitve-Analysis.jpg" alt="Competitive analysis table">
+      </figure>
+      <ul class="cs-list">
+        <li>Tripadvisor – Missing "Get Itinerary" button, limiting quick access to plans.</li>
+        <li>GetYourGuide – Low task efficiency and no direct itinerary access.</li>
+        <li>Tripographer – Poor navigation, limited category variety, and weak activity readability.</li>
+      </ul>
+      <div class="cs-section__body">
+        <p>By studying these pain points, we ensured Pockigo avoids the same issues. We also drew from their strongest features to create a user flow that is intuitive, efficient, and easy to follow for our target audience.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- 9. Persona -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Persona</h2>
+      <div class="cs-section__body">
+        <p>To define key tasks for our design and clearly convey the user insights gathered during research, we created a persona along with a scenario.</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Persona.png" alt="Persona — Bahar, Traveller, 28, Graphic Designer">
+      </figure>
+    </section>
+
+    
+
+    <!-- 10. Task Flow -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Task Flow</h2>
+      <figure class="cs-figure">
+        <img src="assets/images/Task-flow.jpg" alt="Task Flow — Start, Get itinerary, Where to?, When do you wanna go?, Who is coming with you, Select your interests, Name your itinerary, Submit, Exploring the itinerary, End">
+      </figure>
+    </section>
+
+    
+
+    <!-- 11. Scenario -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Scenario</h2>
+      <div class="cs-section__body">
+        <p>Bahar is gonna travel to Granada, Spain with a friend for the first time. She needs an itinerary suitable for a friends trip. She opens Pockigo's website and start to get an itinerary. She answers the questions about the destination, date and choose their interests. She gets the itinerary and shares it with her friend.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- 12. Card sorting -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Card sorting</h2>
+      <div class="cs-section__body">
+        <p>To organize the categories and find the most suitable labels, we conducted a card sorting exercise with 6 participants. Based on the definition of our task, we explored activities in Granada and used card sorting to identify and refine the appropriate category names.</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Card-Sorting.jpg" alt="Card sorting categories">
+      </figure>
+    </section>
+
+    
+
+    <!-- 13. Site Map -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Site Map</h2>
+      <figure class="cs-figure">
+        <img src="assets/images/Site-Map.jpg" alt="Site Map — full hierarchical structure">
+      </figure>
+    </section>
+
+    
+
+    <!-- 13b. Mood Board -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Mood Board</h2>
+      <div class="cs-section__body">
+        <p>The mood board defined Pockigo's visual tone — friendly, modern, and adventurous — and guided every colour, type and imagery decision in the high-fidelity stage.</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Moodboard -pockigo-website.webp" alt="Pockigo mood board — competitor inspiration, travel imagery and proposed colour palette">
+      </figure>
+    </section>
+
+    
+
+    <!-- 13c. UI Kit -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">UI Kit</h2>
+      <div class="cs-section__body">
+        <p>A complete UI kit was built to ensure visual consistency across every screen — covering typography, colour palette, grid system, iconography, CTAs, components, cards and the menu pattern.</p>
+      </div>
+      <figure class="cs-figure">
+        <img src="assets/images/Designsystem-pockigo-website.webp" alt="Pockigo UI Kit — Typography, Color Palette, Grid System, Icons, CTAs, Components, Logo, Spaces, Menu and Cards">
+      </figure>
+    </section>
+
+    
+
+    <!-- 14. Mid Fidelity version 1 -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">Mid Fidelity version 1</h2>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1rem;">Home page</h4>
+      <div class="cs-mockup-grid cs-mockup-grid--2">
+        <figure class="cs-figure"><img src="assets/images/Midfidelity-version1-Homepage1.png" alt="Homepage variation 1"></figure>
+        <figure class="cs-figure"><img src="assets/images/Midfidelity-version1-Homepage2.png" alt="Homepage variation 2"></figure>
+      </div>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.5rem;">Itinerary Page</h4>
+      <figure class="cs-figure"><img src="assets/images/Midfidelity-version1-itinerypage.png" alt="Itinerary Page"></figure>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.5rem;">Map View</h4>
+      <figure class="cs-figure"><img src="assets/images/Midfidelity-version1-map.png" alt="Map View"></figure>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.5rem;">Activity Card</h4>
+      <figure class="cs-figure"><img src="assets/images/Midfidelity-version1-activity-card.png" alt="Activity Card"></figure>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.5rem;">Category Page</h4>
+      <figure class="cs-figure"><img src="assets/images/Mid Fidelity-version1- category-page.png" alt="Category Page"></figure>
+    </section>
+
+    
+
+    <!-- 15. High Fidelity -->
+    <section class="cs-section" data-reveal>
+      <h2 class="cs-section__title">High Fidelity</h2>
+      <div class="cs-section__body">
+        <p>Final visual design system applied to all screens — colour, typography, components and imagery brought together into a cohesive product.</p>
+      </div>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.25rem;">Getting Itinerary Process</h4>
+      <figure class="cs-figure">
+        <img src="assets/images/Highfidelity-pockigo-website.png" alt="High fidelity — Getting Itinerary process: Where to, When, Who is coming, Select interests, Name itinerary">
+      </figure>
+
+      <h4 style="font-size:1.15rem;font-weight:600;color:var(--text-dim);margin-top:1.5rem;">Homepage · Itinerary · Booking Process</h4>
+      <figure class="cs-figure">
+        <img src="assets/images/Highfidelity-1-pockigo-website.png" alt="High fidelity — Homepage, Itinerary timeline, and Booking Process screens">
+      </figure>
+    </section>
+
+    
+
+    <!-- 16. Prototype -->
+    <section class="cs-section cs-section--center" id="prototype" data-reveal>
+      <h2 class="cs-section__title">Prototype</h2>
+      <div class="cs-section__body">
+        <p>Interactive end-to-end prototype of the personalised itinerary flow.</p>
+      </div>
+      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=73-11&t=nGJ9deqsWcpG91Qe-1" class="btn-pill-outline cs-cta-large" target="_blank" rel="noopener">
+        View the Prototype
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Next project -->
+  <div class="cs-next">
+    <div class="cs-next__inner">
+      <div>
+        <p class="cs-next__label">Next Project</p>
+        <p class="cs-next__title">Pockigo — Mobile App</p>
+      </div>
+      <a href="pockigo-app.html" class="cs-next__link">
+        View Case Study
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const nav = document.getElementById('csNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('cs-nav--scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('is-visible');
+        observer.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
