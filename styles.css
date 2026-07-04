@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/benzin');
+@import url('https://fonts.cdnfonts.com/css/gilroy');
+
 /* ============================================================
    CUSTOM FONTS
 ============================================================ */
@@ -55,8 +58,8 @@
   --green:   #22C55E;                /* legacy alias for the pulsing dot */
 
   /* ── Typography ── */
-  --font-hero: 'DxGrafik', 'Bebas Neue', Impact, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-hero: 'Benzin', 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Gilroy', 'Inter', system-ui, -apple-system, sans-serif;
   --font-disp:    'Fraunces', 'Playfair Display', Georgia, serif;
   --font-serif:   'Fraunces', 'Playfair Display', Georgia, serif;
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;  /* alias */
