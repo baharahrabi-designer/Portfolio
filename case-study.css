@@ -1,9 +1,9 @@
 /* ============================================================
-   CASE STUDY Ã¢ÂÂ shared styles
+   CASE STUDY ÃÂ¢ÃÂÃÂ shared styles
    Requires styles.css to be loaded first (uses its variables)
 ============================================================ */
 
-/* Ã¢ÂÂÃ¢ÂÂ Back nav Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Back nav ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -48,7 +48,7 @@
 }
 .cs-nav__logo:hover { opacity: 1; }
 
-/* Ã¢ÂÂÃ¢ÂÂ Hero Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Hero ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-hero {
   position: relative;
   height: 65vh;
@@ -107,7 +107,7 @@
   color: rgba(255,255,255,0.55);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Hero variant: clean white showcase (for desktop mockup images) Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Hero variant: clean white showcase (for desktop mockup images) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-hero--showcase {
   height: auto;
   min-height: 0;
@@ -167,7 +167,7 @@
   padding: .35rem .9rem;
 }
 
-/* Meta strip Ã¢ÂÂ title row */
+/* Meta strip ÃÂ¢ÃÂÃÂ title row */
 .cs-meta__container {
   max-width: var(--max-w);
   margin-inline: auto;
@@ -186,7 +186,7 @@
   max-width: none;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Meta strip Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Meta strip ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-meta {
   background: var(--bg-card);
   border-bottom: 1px solid var(--border-soft);
@@ -227,7 +227,7 @@
   color: var(--text-dim);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Body layout Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Body layout ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-body {
   max-width: var(--max-w);
   margin-inline: auto;
@@ -238,7 +238,7 @@
   gap: clamp(3rem, 6vw, 5rem);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Section Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Section ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-section { display: flex; flex-direction: column; gap: 1.75rem; }
 
 .cs-phase {
@@ -274,7 +274,7 @@
 .cs-section__body p + p { margin-top: 1rem; }
 .cs-section__body strong { color: var(--text); font-weight: 600; }
 
-/* Ã¢ÂÂÃ¢ÂÂ Problem statement callout Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Problem statement callout ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-problem {
   background: var(--bg-alt);
   border: 1px solid var(--border);
@@ -297,7 +297,7 @@
   line-height: 1.7;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Insight cards Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Insight cards ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-insights {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -336,7 +336,7 @@
   line-height: 1.7;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ List Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ List ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-list {
   display: flex;
   flex-direction: column;
@@ -360,7 +360,7 @@
   margin-top: 0.55em;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Triangle / Double Diamond visual Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Triangle / Double Diamond visual ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-section--center { align-items: center; text-align: center; }
 .cs-section--center .cs-section__title { text-align: center; }
 .cs-section--center .cs-section__body { max-width: 60ch; margin-inline: auto; text-align: center; }
@@ -431,7 +431,7 @@
   .cs-tri__phases { grid-template-columns: 1fr; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Large CTA button Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Large CTA button ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-cta-large {
   font-size: 1rem !important;
   padding: 1rem 2.25rem !important;
@@ -440,7 +440,7 @@
   align-self: center;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Brand identity: palette swatches Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Brand identity: palette swatches ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-palette {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -481,7 +481,7 @@
   .cs-palette { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Typography spec block Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Typography spec block ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-type-spec {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -506,7 +506,7 @@
   line-height: 1.7;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ AI photography disclosure callout Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ AI photography disclosure callout ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .ai-disclosure {
   display: flex;
   align-items: flex-start;
@@ -555,7 +555,7 @@
   .ai-disclosure__icon { width: 36px; height: 36px; font-size: 1.2rem; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Mockup grid (2-up wireframes) Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Mockup grid (2-up wireframes) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-mockup-grid {
   display: grid;
   gap: 1rem;
@@ -567,7 +567,7 @@
   .cs-mockup-grid--2 { grid-template-columns: 1fr; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Figure / inline image Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Figure / inline image ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-figure {
   margin: 1.5rem 0 1rem;
   padding: 0;
@@ -589,7 +589,7 @@
   border-top: 1px solid var(--border);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Phases grid (Discover / Define / Develop / Deliver) Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Phases grid (Discover / Define / Develop / Deliver) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-phases-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -620,7 +620,7 @@
   .cs-phases-grid { grid-template-columns: 1fr; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Two-column split Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Two-column split ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -628,13 +628,13 @@
   align-items: start;
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Horizontal rule Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Horizontal rule ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-divider {
   border: none;
   border-top: 1px solid var(--border-soft);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Next project nav Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Next project nav ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 .cs-next {
   background: var(--bg-alt);
   border-top: 1px solid var(--border-soft);
@@ -680,7 +680,7 @@
   background: var(--bg-card);
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Responsive Ã¢ÂÂ Ã¢ÂÂ¤ 900px Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Responsive ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 900px ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 @media (max-width: 900px) {
   .cs-body { padding-inline: clamp(1rem, 4vw, 2rem); }
   .cs-insights { grid-template-columns: repeat(2, 1fr); }
@@ -698,7 +698,7 @@
   .cs-next__inner { flex-direction: column; gap: 1.25rem; align-items: flex-start; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Responsive Ã¢ÂÂ Ã¢ÂÂ¤ 768px Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Responsive ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 768px ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 @media (max-width: 768px) {
   .cs-meta__grid { grid-template-columns: 1fr 1fr; }
   .cs-meta__item { padding: 0.75rem 0; border-right: none; border-bottom: 1px solid var(--border); }
@@ -714,7 +714,7 @@
   .cs-problem { padding: 1.25rem; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Responsive Ã¢ÂÂ Ã¢ÂÂ¤ 600px Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Responsive ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 600px ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 @media (max-width: 600px) {
   .cs-insights { grid-template-columns: 1fr; }
   .cs-mockup-grid--2 { grid-template-columns: 1fr !important; }
@@ -733,7 +733,7 @@
   .cs-cta-large { width: 100%; justify-content: center; }
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Responsive Ã¢ÂÂ Ã¢ÂÂ¤ 480px Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Responsive ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 480px ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 @media (max-width: 480px) {
   .cs-meta__grid { grid-template-columns: 1fr; }
   .cs-meta__container { padding: 1.25rem var(--gutter); }
