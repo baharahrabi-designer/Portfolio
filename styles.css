@@ -65,8 +65,8 @@
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;  /* alias */
 
   /* ── Layout ── */
-  --max-w:  1200px;
-  --gutter: clamp(1.25rem, 5vw, 3rem);
+  --max-w:  1440px;
+  --gutter: clamp(1rem, 3vw, 2rem);
   --ease:   cubic-bezier(0.25,0.1,0.25,1);
   --ease-o: cubic-bezier(0,0,0.2,1);
 }
