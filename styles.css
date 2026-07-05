@@ -70,6 +70,9 @@
   --ease:   cubic-bezier(0.25,0.1,0.25,1);
   --ease-o: cubic-bezier(0,0,0.2,1);
 }
+/* ── Global: all headings uppercase ── */
+h1, h2, h3 { text-transform: uppercase; }
+
 
 /* ============================================================
    QUIET-FOREST ACCENT TOUCHES (skill-recommended)
