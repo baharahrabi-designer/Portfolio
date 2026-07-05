@@ -3,40 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Bahareh Ahrabi</title>
+  <title>Projects &#8212; Bahareh Ahrabi</title>
   <meta name="description" content="UX/UI and Brand Identity case studies by Bahareh Ahrabi, a designer based in Istanbul.">
   <link rel="icon" href="assets/images/logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="animations.css">
   <style>
-    .prj-hero{padding:160px 0 80px;border-bottom:1px solid rgba(26,26,26,.1)}
-    .prj-hero__eyebrow{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#5C5C5C;margin-bottom:16px;font-family:'Gilroy',Inter,sans-serif}
-    .prj-hero__title{font-family:'Benzin','Bebas Neue',Impact,sans-serif;font-size:clamp(3.5rem,10vw,8rem);font-weight:700;letter-spacing:.02em;line-height:.95;color:#1A1A1A;margin:0}
-    .prj-hero__subtitle{margin-top:24px;font-size:1rem;color:#5C5C5C;max-width:520px;line-height:1.6}
-    .prj-section{padding:96px 0}
-    .prj-section+.prj-section{border-top:1px solid rgba(26,26,26,.1)}
-    .prj-section__head{display:flex;align-items:baseline;gap:20px;margin-bottom:64px}
-    .prj-section__num{font-size:.75rem;letter-spacing:.15em;color:#9E9E9E;font-family:'Gilroy',Inter,sans-serif}
-    .prj-section__label{font-family:'Benzin','Bebas Neue',Impact,sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:.04em;color:#1A1A1A}
-    .prj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
-    .prj-grid--single{grid-template-columns:1fr;max-width:600px}
-    .prj-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border-radius:16px;overflow:hidden;background:#fff;border:1px solid rgba(26,26,26,.08);transition:transform .3s ease,box-shadow .3s ease}
-    .prj-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(26,26,26,.12)}
-    .prj-card__img-wrap{overflow:hidden;aspect-ratio:16/10;background:#f0f0ec}
-    .prj-card__img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
-    .prj-card:hover .prj-card__img{transform:scale(1.04)}
-    .prj-card__body{padding:28px 28px 32px;display:flex;flex-direction:column;flex:1}
-    .prj-card__tag{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#5C5C5C;margin-bottom:10px;font-family:'Gilroy',Inter,sans-serif}
-    .prj-card__title{font-family:'Benzin','Bebas Neue',Impact,sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:.04em;color:#1A1A1A;margin:0 0 12px;line-height:1.1}
-    .prj-card__desc{font-size:.9rem;color:#5C5C5C;line-height:1.65;margin:0 0 24px;flex:1}
-    .prj-card__cta{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:#346739;font-weight:600;transition:gap .2s ease}
-    .prj-card:hover .prj-card__cta{gap:12px}
-    @media(max-width:768px){.prj-hero{padding:120px 0 56px}.prj-section{padding:64px 0}.prj-section__head{margin-bottom:40px}.prj-grid{grid-template-columns:1fr;gap:24px}.container{padding:0 24px}}
+    /* ── Projects Page ─────────────────────────── */
+    .prj-hero {
+      padding: 160px 0 80px;
+      border-bottom: 1px solid rgba(26,26,26,.1);
+    }
+    .prj-hero__eyebrow {
+      font-size: .72rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #5C5C5C;
+      margin-bottom: 16px;
+      font-family: 'Gilroy', Inter, sans-serif;
+    }
+    .prj-hero__title {
+      font-family: 'Benzin', 'Bebas Neue', Impact, sans-serif;
+      font-size: clamp(3.5rem, 10vw, 8rem);
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: .92;
+      color: #1A1A1A;
+      margin: 0;
+    }
+    .prj-hero__sub {
+      margin-top: 24px;
+      font-size: 1rem;
+      color: #5C5C5C;
+      max-width: 520px;
+      line-height: 1.65;
+    }
+
+    /* ── Section header ─────────────────────────── */
+    .prj-sec-head {
+      padding: 64px 0 44px;
+      border-top: 1px solid rgba(26,26,26,.1);
+      margin-top: 40px;
+    }
+    .prj-sec-head__inner {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
+    .prj-sec-head__num {
+      font-size: .72rem;
+      letter-spacing: .15em;
+      color: #9E9E9E;
+      font-family: 'Gilroy', Inter, sans-serif;
+    }
+    .prj-sec-head__label {
+      font-family: 'Benzin', 'Bebas Neue', Impact, sans-serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #1A1A1A;
+    }
+
+    /* ── Project list ───────────────────────────── */
+    .prj-list {
+      border-top: 1px solid rgba(26,26,26,.1);
+      margin-bottom: 0;
+    }
+    .prj-row {
+      border-bottom: 1px solid rgba(26,26,26,.1);
+    }
+    .prj-row__inner {
+      display: flex;
+      align-items: stretch;
+      min-height: 460px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .prj-row:nth-child(even) .prj-row__inner {
+      flex-direction: row-reverse;
+    }
+
+    /* Image column */
+    .prj-row__img-col {
+      flex: 0 0 62%;
+      position: relative;
+      overflow: hidden;
+      background: #EDEEE9;
+    }
+    .prj-row__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .7s cubic-bezier(.25,.46,.45,.94);
+    }
+    .prj-row__inner:hover .prj-row__img {
+      transform: scale(1.05);
+    }
+
+    /* Hover overlay */
+    .prj-row__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(20,20,18,.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 44px 48px;
+      opacity: 0;
+      transition: opacity .4s ease;
+    }
+    .prj-row__inner:hover .prj-row__overlay {
+      opacity: 1;
+    }
+    .prj-row__overlay-desc {
+      color: rgba(255,255,255,.88);
+      font-size: .95rem;
+      line-height: 1.65;
+      margin: 0 0 28px;
+      max-width: 500px;
+      transform: translateY(14px);
+      transition: transform .4s ease .04s;
+      font-family: 'Gilroy', Inter, sans-serif;
+    }
+    .prj-row__inner:hover .prj-row__overlay-desc {
+      transform: translateY(0);
+    }
+    .prj-row__overlay-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-size: .76rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'Gilroy', Inter, sans-serif;
+      transform: translateY(14px);
+      transition: transform .4s ease .09s;
+    }
+    .prj-row__inner:hover .prj-row__overlay-cta {
+      transform: translateY(0);
+    }
+    .prj-row__overlay-cta svg {
+      transition: transform .25s ease;
+    }
+    .prj-row__inner:hover .prj-row__overlay-cta svg {
+      transform: translateX(4px);
+    }
+
+    /* Text column */
+    .prj-row__text-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 56px 60px;
+      transition: background .35s ease;
+    }
+    .prj-row__inner:hover .prj-row__text-col {
+      background: rgba(52,103,57,.05);
+    }
+    .prj-row__tag {
+      font-size: .7rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #5C5C5C;
+      margin-bottom: 14px;
+      font-family: 'Gilroy', Inter, sans-serif;
+    }
+    .prj-row__title {
+      font-family: 'Benzin', 'Bebas Neue', Impact, sans-serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #1A1A1A;
+      margin: 0 0 36px;
+      line-height: 1;
+    }
+    .prj-row__arrow {
+      width: 50px;
+      height: 50px;
+      border: 1.5px solid rgba(26,26,26,.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1A1A1A;
+      transition: background .3s ease, border-color .3s ease, color .3s ease, transform .3s ease;
+    }
+    .prj-row__inner:hover .prj-row__arrow {
+      background: #346739;
+      border-color: #346739;
+      color: #fff;
+      transform: rotate(45deg);
+    }
+
+    /* footer spacing */
+    .footer { margin-top: 40px; }
+
+    /* ── Mobile ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .prj-hero { padding: 120px 0 56px; }
+      .prj-row__inner,
+      .prj-row:nth-child(even) .prj-row__inner { flex-direction: column; }
+      .prj-row__img-col { flex: 0 0 auto; height: 260px; }
+      .prj-row__text-col { padding: 36px 28px; }
+      .prj-row__overlay { padding: 28px; }
+      .prj-sec-head { padding: 48px 0 32px; margin-top: 24px; }
+    }
   </style>
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="abt-nav" id="abtNav">
     <div class="abt-nav__inner container">
       <a href="index.html" class="abt-nav__back">
@@ -52,98 +233,135 @@
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="prj-hero">
     <div class="container">
       <p class="prj-hero__eyebrow">All Work</p>
       <h1 class="prj-hero__title">PROJECTS</h1>
-      <p class="prj-hero__subtitle">A collection of UX/UI and Brand Identity work — from research and strategy to final design.</p>
+      <p class="prj-hero__sub">A collection of UX/UI and Brand Identity work &#8212; from research and strategy to final design.</p>
     </div>
   </section>
 
-  <section class="prj-section">
-    <div class="container">
-      <div class="prj-section__head">
-        <span class="prj-section__num">01</span>
-        <h2 class="prj-section__label">UX / UI DESIGN</h2>
-      </div>
-      <div class="prj-grid">
-
-        <a href="pockigo-website.html" class="prj-card">
-          <div class="prj-card__img-wrap">
-            <img class="prj-card__img" src="assets/images/Pockigo-Website.png" alt="Pockigo Website Design">
-          </div>
-          <div class="prj-card__body">
-            <p class="prj-card__tag">UX/UI · Website</p>
-            <h3 class="prj-card__title">POCKIGO</h3>
-            <p class="prj-card__desc">A travel planning platform that creates personalised itineraries based on users' preferences and needs.</p>
-            <span class="prj-card__cta">View Case Study →</span>
-          </div>
-        </a>
-
-        <a href="pockigo-app.html" class="prj-card">
-          <div class="prj-card__img-wrap">
-            <img class="prj-card__img" src="assets/images/Pockigo - Application.png" alt="Pockigo Mobile App">
-          </div>
-          <div class="prj-card__body">
-            <p class="prj-card__tag">UX/UI · App</p>
-            <h3 class="prj-card__title">POCKIGO APP</h3>
-            <p class="prj-card__desc">Mobile companion for tracking and adapting itineraries in real time while travelling.</p>
-            <span class="prj-card__cta">View Case Study →</span>
-          </div>
-        </a>
-
-        <a href="saving-faces.html" class="prj-card">
-          <div class="prj-card__img-wrap">
-            <img class="prj-card__img" src="assets/images/Saving Faces - Redesign Website.png" alt="Saving Faces Redesign">
-          </div>
-          <div class="prj-card__body">
-            <p class="prj-card__tag">UX/UI · Redesign</p>
-            <h3 class="prj-card__title">SAVING FACES</h3>
-            <p class="prj-card__desc">A boutique skincare studio's website redesigned for clarity, trust, and a seamless booking experience.</p>
-            <span class="prj-card__cta">View Case Study →</span>
-          </div>
-        </a>
-
-        <a href="velora-stonecraft-ux.html" class="prj-card">
-          <div class="prj-card__img-wrap">
-            <img class="prj-card__img" src="assets/images/Velora stonecraft.png" alt="Velora Stonecraft UX">
-          </div>
-          <div class="prj-card__body">
-            <p class="prj-card__tag">UX/UI · Website</p>
-            <h3 class="prj-card__title">VELORA STONECRAFT</h3>
-            <p class="prj-card__desc">A quiet, photography-led website for a Tehran-based luxury stone-sculpture atelier.</p>
-            <span class="prj-card__cta">View Case Study →</span>
-          </div>
-        </a>
-
-      </div>
+  <!-- 01: UX / UI DESIGN -->
+  <div class="prj-sec-head">
+    <div class="container prj-sec-head__inner">
+      <span class="prj-sec-head__num">01</span>
+      <h2 class="prj-sec-head__label">UX / UI DESIGN</h2>
     </div>
-  </section>
+  </div>
 
-  <section class="prj-section">
-    <div class="container">
-      <div class="prj-section__head">
-        <span class="prj-section__num">02</span>
-        <h2 class="prj-section__label">BRAND IDENTITY</h2>
-      </div>
-      <div class="prj-grid prj-grid--single">
+  <div class="prj-list">
 
-        <a href="velora-stonecraft.html" class="prj-card">
-          <div class="prj-card__img-wrap">
-            <img class="prj-card__img" src="assets/images/Velora stonecraft.png" alt="Velora Stonecraft Brand Identity">
+    <article class="prj-row">
+      <a href="pockigo-website.html" class="prj-row__inner">
+        <div class="prj-row__img-col">
+          <img class="prj-row__img" src="assets/images/Pockigo-Website.png" alt="Pockigo Website">
+          <div class="prj-row__overlay">
+            <p class="prj-row__overlay-desc">A travel planning platform that creates personalised itineraries based on users&#8217; preferences and needs.</p>
+            <span class="prj-row__overlay-cta">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
           </div>
-          <div class="prj-card__body">
-            <p class="prj-card__tag">Brand Identity</p>
-            <h3 class="prj-card__title">VELORA STONECRAFT</h3>
-            <p class="prj-card__desc">A Tehran-based luxury stone-sculpture atelier — full brand identity system including logo, colour palette, typography, and visual language.</p>
-            <span class="prj-card__cta">View Case Study →</span>
+        </div>
+        <div class="prj-row__text-col">
+          <p class="prj-row__tag">UX/UI &#183; Website</p>
+          <h3 class="prj-row__title">POCKIGO</h3>
+          <div class="prj-row__arrow">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
           </div>
-        </a>
+        </div>
+      </a>
+    </article>
 
-      </div>
+    <article class="prj-row">
+      <a href="pockigo-app.html" class="prj-row__inner">
+        <div class="prj-row__img-col">
+          <img class="prj-row__img" src="assets/images/Pockigo - Application.png" alt="Pockigo App">
+          <div class="prj-row__overlay">
+            <p class="prj-row__overlay-desc">Mobile companion for tracking and adapting itineraries in real time while travelling.</p>
+            <span class="prj-row__overlay-cta">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
+          </div>
+        </div>
+        <div class="prj-row__text-col">
+          <p class="prj-row__tag">UX/UI &#183; App</p>
+          <h3 class="prj-row__title">POCKIGO APP</h3>
+          <div class="prj-row__arrow">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="prj-row">
+      <a href="saving-faces.html" class="prj-row__inner">
+        <div class="prj-row__img-col">
+          <img class="prj-row__img" src="assets/images/Saving Faces - Redesign Website.png" alt="Saving Faces">
+          <div class="prj-row__overlay">
+            <p class="prj-row__overlay-desc">A boutique skincare studio&#8217;s website redesigned for clarity, trust, and a seamless booking experience.</p>
+            <span class="prj-row__overlay-cta">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
+          </div>
+        </div>
+        <div class="prj-row__text-col">
+          <p class="prj-row__tag">UX/UI &#183; Redesign</p>
+          <h3 class="prj-row__title">SAVING FACES</h3>
+          <div class="prj-row__arrow">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <article class="prj-row">
+      <a href="velora-stonecraft-ux.html" class="prj-row__inner">
+        <div class="prj-row__img-col">
+          <img class="prj-row__img" src="assets/images/Velora stonecraft.png" alt="Velora Stonecraft UX">
+          <div class="prj-row__overlay">
+            <p class="prj-row__overlay-desc">A quiet, photography-led website for a Tehran-based luxury stone-sculpture atelier.</p>
+            <span class="prj-row__overlay-cta">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
+          </div>
+        </div>
+        <div class="prj-row__text-col">
+          <p class="prj-row__tag">UX/UI &#183; Website</p>
+          <h3 class="prj-row__title">VELORA STONECRAFT</h3>
+          <div class="prj-row__arrow">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </a>
+    </article>
+
+  </div>
+
+  <!-- 02: BRAND IDENTITY -->
+  <div class="prj-sec-head">
+    <div class="container prj-sec-head__inner">
+      <span class="prj-sec-head__num">02</span>
+      <h2 class="prj-sec-head__label">BRAND IDENTITY</h2>
     </div>
-  </section>
+  </div>
 
+  <div class="prj-list">
+
+    <article class="prj-row">
+      <a href="velora-stonecraft.html" class="prj-row__inner">
+        <div class="prj-row__img-col">
+          <img class="prj-row__img" src="assets/images/Velora stonecraft.png" alt="Velora Stonecraft Brand Identity">
+          <div class="prj-row__overlay">
+            <p class="prj-row__overlay-desc">A Tehran-based luxury stone-sculpture atelier &#8212; full brand identity system including logo, colour palette, typography, and visual language.</p>
+            <span class="prj-row__overlay-cta">View Case Study <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M8 3l5 5-5 5"/></svg></span>
+          </div>
+        </div>
+        <div class="prj-row__text-col">
+          <p class="prj-row__tag">Brand Identity</p>
+          <h3 class="prj-row__title">VELORA STONECRAFT</h3>
+          <div class="prj-row__arrow">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M9 3l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </a>
+    </article>
+
+  </div>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__top">
       <div class="footer__col">
