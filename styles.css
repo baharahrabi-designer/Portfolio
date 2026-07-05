@@ -23,33 +23,33 @@
    VARIABLES
 ============================================================ */
 :root {
-  /* ── Backgrounds ── */
-  --bg:           #FAFAF7;          /* off-white — body */
+  /* ââ Backgrounds ââ */
+  --bg:           #FAFAF7;          /* off-white â body */
   --surface:      #FFFFFF;          /* card / elevated */
   --bg-alt:       #F4F2EC;          /* section alternation */
-  --bg-alt-soft:  #F7F6F3;          /* gentler alt — kept for compat */
+  --bg-alt-soft:  #F7F6F3;          /* gentler alt â kept for compat */
 
-  /* ── Borders ── */
+  /* ââ Borders ââ */
   --border:        #E5E2DC;
   --border-strong: #C9C5BC;
 
-  /* ── Text ── */
+  /* ââ Text ââ */
   --text:       #1A1A1A;
   --text-dim:   #5C5C5C;
   --text-muted: #8F8F8F;
 
-  /* ── Primary (Forest Green) ── */
-  --purple:        #346739;          /* Forest 600 — main accent */
+  /* ââ Primary (Forest Green) ââ */
+  --purple:        #346739;          /* Forest 600 â main accent */
   --purple-dim:    rgba(52,103,57,0.1);
-  --purple-lt:     #4F8E54;          /* Forest 500 — focus/hover */
-  --purple-darker: #1F4423;          /* Forest 800 — deep hover */
-  --purple-tint:   #E8F0E9;          /* Forest 50 — soft fill */
+  --purple-lt:     #4F8E54;          /* Forest 500 â focus/hover */
+  --purple-darker: #1F4423;          /* Forest 800 â deep hover */
+  --purple-tint:   #E8F0E9;          /* Forest 50 â soft fill */
 
-  /* ── Secondary (Warm Sand) ── */
+  /* ââ Secondary (Warm Sand) ââ */
   --accent-warm:      #C8956D;       /* highlights, badges */
   --accent-warm-soft: #F5E9DC;       /* gentle fill */
 
-  /* ── Semantic ── */
+  /* ââ Semantic ââ */
   --success: #22C55E;
   --warning: #F59E0B;
   --error:   #EF4444;
@@ -57,26 +57,26 @@
 
   --green:   #22C55E;                /* legacy alias for the pulsing dot */
 
-  /* ── Typography ── */
+  /* ââ Typography ââ */
   --font-hero: 'Benzin', 'Bebas Neue', Impact, sans-serif;
   --font-body: 'Gilroy', 'Inter', system-ui, -apple-system, sans-serif;
   --font-disp:    'Fraunces', 'Playfair Display', Georgia, serif;
   --font-serif:   'Fraunces', 'Playfair Display', Georgia, serif;
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;  /* alias */
 
-  /* ── Layout ── */
+  /* ââ Layout ââ */
   --max-w:  1440px;
   --gutter: clamp(1rem, 3vw, 2rem);
   --ease:   cubic-bezier(0.25,0.1,0.25,1);
   --ease-o: cubic-bezier(0,0,0.2,1);
 }
-/* ── Global: all headings uppercase ── */
+/* ââ Global: all headings uppercase ââ */
 h1, h2, h3 { text-transform: uppercase; }
 
 
 /* ============================================================
    QUIET-FOREST ACCENT TOUCHES (skill-recommended)
-   Use Warm Sand sparingly — only on premium-feel highlights
+   Use Warm Sand sparingly â only on premium-feel highlights
 ============================================================ */
 .hero__fullname { color: var(--accent-warm); font-weight: 600; }
 .hero__sep { color: var(--accent-warm); opacity: 0.5; }
@@ -103,7 +103,7 @@ input,textarea,select{font:inherit}
 .section{padding-block:clamp(4rem,8vw,7rem)}
 
 /* ============================================================
-   TYPOGRAPHY — section headings
+   TYPOGRAPHY â section headings
 ============================================================ */
 .section-heading{
   font-family:var(--font-hero);
@@ -220,7 +220,7 @@ input,textarea,select{font:inherit}
 .avail-badge__dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;box-shadow:0 0 6px var(--green)}
 
 /* ============================================================
-   NAVIGATION — centered pill
+   NAVIGATION â centered pill
 ============================================================ */
 .nav{
   position:fixed;
@@ -321,7 +321,7 @@ input,textarea,select{font:inherit}
 .hero__scroll-link svg{animation:bounce-y 2s ease-in-out infinite}
 
 /* ============================================================
-   SERVICES — accordion
+   SERVICES â accordion
 ============================================================ */
 .services{background:var(--bg);border-top:1px solid var(--border)}
 .services__inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
@@ -376,7 +376,7 @@ input,textarea,select{font:inherit}
 .about__img-wrap:hover .about__img{transform:scale(1.03)}
 
 /* ============================================================
-   PROJECTS — full-width stacked
+   PROJECTS â full-width stacked
 ============================================================ */
 .projects{background:var(--bg);border-top:1px solid var(--border)}
 .projects__header{margin-bottom:2rem}
@@ -398,7 +398,7 @@ input,textarea,select{font:inherit}
   box-shadow:0 24px 60px rgba(0,0,0,.18);
 }
 
-/* Image — fill card; centered on the laptop/device */
+/* Image â fill card; centered on the laptop/device */
 .proj-stack-card__bg{
   position:absolute;
   inset:0;
@@ -462,7 +462,7 @@ input,textarea,select{font:inherit}
   text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 
-/* Dual-CTA project card (Velora — Brand Identity + UX/UI) */
+/* Dual-CTA project card (Velora â Brand Identity + UX/UI) */
 .proj-stack-card--dual { cursor: default; }
 .proj-stack-card--dual:hover .proj-stack-card__bg { transform: scale(1.02); }
 .proj-stack-card__ctas {
@@ -693,7 +693,7 @@ input,textarea,select{font:inherit}
 .blog__sub{font-size:.95rem;color:var(--text-dim);line-height:1.8;max-width:52ch}
 .blog__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .ai-tag-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--purple);background:var(--purple-tint);border:1px solid rgba(52,103,57,.2);border-radius:999px;padding:.35rem .9rem;margin-bottom:1rem}
-.ai-tag-eyebrow::before{content:'✦';font-size:.85em}
+.ai-tag-eyebrow::before{content:'â¦';font-size:.85em}
 .blog-card__img--placeholder{display:flex;align-items:center;justify-content:center;position:relative}
 .blog-card__placeholder-label{position:relative;z-index:1;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .blog-card__img-photo{width:100%;height:100%;object-fit:cover;display:block}
@@ -745,7 +745,7 @@ input,textarea,select{font:inherit}
 .form-textarea{resize:vertical;min-height:120px;line-height:1.6}
 
 /* ============================================================
-   FOOTER — purple
+   FOOTER â purple
 ============================================================ */
 .footer{background:var(--purple);color:#fff}
 .footer__top{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding-top:3rem;padding-bottom:2rem}
@@ -774,10 +774,10 @@ input,textarea,select{font:inherit}
 @keyframes bounce-y{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
 /* ============================================================
-   RESPONSIVE — ≤ 900px
+   RESPONSIVE â â¤ 900px
 ============================================================ */
 /* ============================================================
-   RESPONSIVE — ≤ 900px  (tablets)
+   RESPONSIVE â â¤ 900px  (tablets)
 ============================================================ */
 @media(max-width:900px){
   .hero__meta{display:none}
@@ -797,7 +797,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE — ≤ 768px  (large phones / small tablets)
+   RESPONSIVE â â¤ 768px  (large phones / small tablets)
 ============================================================ */
 @media(max-width:768px){
   .section-heading{font-size:clamp(2rem,7vw,3rem)}
@@ -812,7 +812,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE — ≤ 600px  (phones)
+   RESPONSIVE â â¤ 600px  (phones)
 ============================================================ */
 @media(max-width:600px){
   .nav__links{display:none}
@@ -848,7 +848,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE — ≤ 480px  (small phones)
+   RESPONSIVE â â¤ 480px  (small phones)
 ============================================================ */
 @media(max-width:480px){
   :root{--gutter:1rem}
@@ -862,3 +862,6 @@ input,textarea,select{font:inherit}
   .svc-acc__btn{font-size:clamp(1.1rem,5vw,1.5rem)}
   .faq__q{font-size:clamp(1rem,4vw,1.2rem)}
 }
+
+/* ── Global: all headings uppercase ── */
+h1, h2, h3 { text-transform: uppercase; }
