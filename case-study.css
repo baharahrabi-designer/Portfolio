@@ -1,9 +1,9 @@
 /* ============================================================
-   CASE STUDY — shared styles
+   CASE STUDY â shared styles
    Requires styles.css to be loaded first (uses its variables)
 ============================================================ */
 
-/* ── Back nav ── */
+/* ââ Back nav ââ */
 .cs-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -48,7 +48,7 @@
 }
 .cs-nav__logo:hover { opacity: 1; }
 
-/* ── Hero ── */
+/* ââ Hero ââ */
 .cs-hero {
   position: relative;
   height: 65vh;
@@ -107,7 +107,7 @@
   color: rgba(255,255,255,0.55);
 }
 
-/* ── Hero variant: clean white showcase (for desktop mockup images) ── */
+/* ââ Hero variant: clean white showcase (for desktop mockup images) ââ */
 .cs-hero--showcase {
   height: auto;
   min-height: 0;
@@ -167,7 +167,7 @@
   padding: .35rem .9rem;
 }
 
-/* Meta strip — title row */
+/* Meta strip â title row */
 .cs-meta__container {
   max-width: var(--max-w);
   margin-inline: auto;
@@ -186,7 +186,7 @@
   max-width: none;
 }
 
-/* ── Meta strip ── */
+/* ââ Meta strip ââ */
 .cs-meta {
   background: var(--bg-card);
   border-bottom: 1px solid var(--border-soft);
@@ -227,7 +227,7 @@
   color: var(--text-dim);
 }
 
-/* ── Body layout ── */
+/* ââ Body layout ââ */
 .cs-body {
   max-width: var(--max-w);
   margin-inline: auto;
@@ -238,7 +238,7 @@
   gap: clamp(3rem, 6vw, 5rem);
 }
 
-/* ── Section ── */
+/* ââ Section ââ */
 .cs-section { display: flex; flex-direction: column; gap: 1.75rem; }
 
 .cs-phase {
@@ -274,7 +274,7 @@
 .cs-section__body p + p { margin-top: 1rem; }
 .cs-section__body strong { color: var(--text); font-weight: 600; }
 
-/* ── Problem statement callout ── */
+/* ââ Problem statement callout ââ */
 .cs-problem {
   background: var(--bg-alt);
   border: 1px solid var(--border);
@@ -292,12 +292,12 @@
 }
 .cs-problem__text {
   font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-  font-style: italic;
+  font-style: normal;
   color: var(--text);
   line-height: 1.7;
 }
 
-/* ── Insight cards ── */
+/* ââ Insight cards ââ */
 .cs-insights {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -336,7 +336,7 @@
   line-height: 1.7;
 }
 
-/* ── List ── */
+/* ââ List ââ */
 .cs-list {
   display: flex;
   flex-direction: column;
@@ -360,7 +360,7 @@
   margin-top: 0.55em;
 }
 
-/* ── Triangle / Double Diamond visual ── */
+/* ââ Triangle / Double Diamond visual ââ */
 .cs-section--center { align-items: center; text-align: center; }
 .cs-section--center .cs-section__title { text-align: center; }
 .cs-section--center .cs-section__body { max-width: 60ch; margin-inline: auto; text-align: center; }
@@ -431,7 +431,7 @@
   .cs-tri__phases { grid-template-columns: 1fr; }
 }
 
-/* ── Large CTA button ── */
+/* ââ Large CTA button ââ */
 .cs-cta-large {
   font-size: 1rem !important;
   padding: 1rem 2.25rem !important;
@@ -440,7 +440,7 @@
   align-self: center;
 }
 
-/* ── Brand identity: palette swatches ── */
+/* ââ Brand identity: palette swatches ââ */
 .cs-palette {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -481,7 +481,7 @@
   .cs-palette { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ── Typography spec block ── */
+/* ââ Typography spec block ââ */
 .cs-type-spec {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -506,7 +506,7 @@
   line-height: 1.7;
 }
 
-/* ── AI photography disclosure callout ── */
+/* ââ AI photography disclosure callout ââ */
 .ai-disclosure {
   display: flex;
   align-items: flex-start;
@@ -555,7 +555,7 @@
   .ai-disclosure__icon { width: 36px; height: 36px; font-size: 1.2rem; }
 }
 
-/* ── Mockup grid (2-up wireframes) ── */
+/* ââ Mockup grid (2-up wireframes) ââ */
 .cs-mockup-grid {
   display: grid;
   gap: 1rem;
@@ -567,7 +567,7 @@
   .cs-mockup-grid--2 { grid-template-columns: 1fr; }
 }
 
-/* ── Figure / inline image ── */
+/* ââ Figure / inline image ââ */
 .cs-figure {
   margin: 1.5rem 0 1rem;
   padding: 0;
@@ -589,7 +589,7 @@
   border-top: 1px solid var(--border);
 }
 
-/* ── Phases grid (Discover / Define / Develop / Deliver) ── */
+/* ââ Phases grid (Discover / Define / Develop / Deliver) ââ */
 .cs-phases-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -620,7 +620,7 @@
   .cs-phases-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Two-column split ── */
+/* ââ Two-column split ââ */
 .cs-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -628,13 +628,13 @@
   align-items: start;
 }
 
-/* ── Horizontal rule ── */
+/* ââ Horizontal rule ââ */
 .cs-divider {
   border: none;
   border-top: 1px solid var(--border-soft);
 }
 
-/* ── Next project nav ── */
+/* ââ Next project nav ââ */
 .cs-next {
   background: var(--bg-alt);
   border-top: 1px solid var(--border-soft);
@@ -680,7 +680,7 @@
   background: var(--bg-card);
 }
 
-/* ── Responsive — ≤ 900px ── */
+/* ââ Responsive â â¤ 900px ââ */
 @media (max-width: 900px) {
   .cs-body { padding-inline: clamp(1rem, 4vw, 2rem); }
   .cs-insights { grid-template-columns: repeat(2, 1fr); }
@@ -698,7 +698,7 @@
   .cs-next__inner { flex-direction: column; gap: 1.25rem; align-items: flex-start; }
 }
 
-/* ── Responsive — ≤ 768px ── */
+/* ââ Responsive â â¤ 768px ââ */
 @media (max-width: 768px) {
   .cs-meta__grid { grid-template-columns: 1fr 1fr; }
   .cs-meta__item { padding: 0.75rem 0; border-right: none; border-bottom: 1px solid var(--border); }
@@ -714,7 +714,7 @@
   .cs-problem { padding: 1.25rem; }
 }
 
-/* ── Responsive — ≤ 600px ── */
+/* ââ Responsive â â¤ 600px ââ */
 @media (max-width: 600px) {
   .cs-insights { grid-template-columns: 1fr; }
   .cs-mockup-grid--2 { grid-template-columns: 1fr !important; }
@@ -733,7 +733,7 @@
   .cs-cta-large { width: 100%; justify-content: center; }
 }
 
-/* ── Responsive — ≤ 480px ── */
+/* ââ Responsive â â¤ 480px ââ */
 @media (max-width: 480px) {
   .cs-meta__grid { grid-template-columns: 1fr; }
   .cs-meta__container { padding: 1.25rem var(--gutter); }
