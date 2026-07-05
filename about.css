@@ -84,8 +84,8 @@
   margin-bottom: 1.5rem;
 }
 .abt-hero__tagline {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: 'Benzin', sans-serif;
+  font-style: normal;
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   color: var(--text-dim);
   line-height: 1.6;
@@ -191,8 +191,8 @@
 
 /* Pull quote */
 .abt-pullquote {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: 'Benzin', sans-serif;
+  font-style: normal;
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);
   line-height: 1.55;
   color: var(--text);
