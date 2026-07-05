@@ -56,7 +56,7 @@
   position: relative;
   overflow: hidden;
 }
-.abt-hero__inner { max-width: 900px; }
+.abt-hero__inner { /* uses full .container width */ }
 .abt-hero__label {
   display: inline-flex;
   align-items: center;
