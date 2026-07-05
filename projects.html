@@ -223,6 +223,37 @@
       .prj-row__text-col { padding: 32px 20px; }
       .prj-sec-head { padding: 48px 0 28px; margin-top: 24px; }
     }
+
+    /* ── Filter CTAs ──────────────────────────── */
+    .prj-filters {
+      display: flex;
+      gap: 12px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .prj-filter {
+      font-family: 'Benzin', 'Bebas Neue', Impact, sans-serif;
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 12px 28px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(26,26,26,.25);
+      background: transparent;
+      color: #5C5C5C;
+      cursor: pointer;
+      transition: all .25s ease;
+    }
+    .prj-filter:hover {
+      border-color: #1A1A1A;
+      color: #1A1A1A;
+    }
+    .prj-filter.is-active {
+      background: #346739;
+      border-color: #346739;
+      color: #FAFAF7;
+    }
+    [data-cat].is-hidden { display: none; }
   </style>
 </head>
 <body>
@@ -258,14 +289,6 @@
       <a href="index.html#contact">Contact</a>
     </div>
   </nav>
-  <div class="nav__mobile" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="index.html#services">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf">Resume</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
 
   <!-- HERO -->
   <section class="prj-hero">
@@ -273,18 +296,23 @@
       <p class="prj-hero__eyebrow">All Work</p>
       <h1 class="prj-hero__title">PROJECTS</h1>
       <p class="prj-hero__sub">A collection of UX/UI and Brand Identity work &#8212; from research and strategy to final design.</p>
+      <!-- Filter CTAs -->
+      <div class="prj-filters" id="prjFilters">
+        <button class="prj-filter" data-filter="uxui" type="button">UX/UI DESIGN</button>
+        <button class="prj-filter" data-filter="brand" type="button">BRAND IDENTITY</button>
+      </div>
     </div>
   </section>
 
   <!-- 01: UX / UI DESIGN -->
-  <div class="prj-sec-head">
+  <div class="prj-sec-head" data-cat="uxui">
     <div class="container prj-sec-head__inner">
       <span class="prj-sec-head__num">01</span>
       <h2 class="prj-sec-head__label">UX / UI DESIGN</h2>
     </div>
   </div>
 
-  <div class="prj-list">
+  <div class="prj-list" data-cat="uxui">
 
     <article class="prj-row">
       <a href="pockigo-website.html" class="prj-row__inner">
@@ -365,14 +393,14 @@
   </div>
 
   <!-- 02: BRAND IDENTITY -->
-  <div class="prj-sec-head">
+  <div class="prj-sec-head" data-cat="brand">
     <div class="container prj-sec-head__inner">
       <span class="prj-sec-head__num">02</span>
       <h2 class="prj-sec-head__label">BRAND IDENTITY</h2>
     </div>
   </div>
 
-  <div class="prj-list">
+  <div class="prj-list" data-cat="brand">
 
     <article class="prj-row">
       <a href="velora-stonecraft.html" class="prj-row__inner">
@@ -422,5 +450,26 @@
     </div>
   </footer>
 
+
+  <script>
+    (function() {
+      var filters = document.querySelectorAll('.prj-filter');
+      var sections = document.querySelectorAll('[data-cat]');
+      filters.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var filter = btn.dataset.filter;
+          var alreadyActive = btn.classList.contains('is-active');
+          filters.forEach(function(b) { b.classList.remove('is-active'); });
+          sections.forEach(function(sec) { sec.classList.remove('is-hidden'); });
+          if (!alreadyActive) {
+            btn.classList.add('is-active');
+            sections.forEach(function(sec) {
+              if (sec.dataset.cat !== filter) sec.classList.add('is-hidden');
+            });
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
