@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pockigo Mobile App Design — UX/UI case study by Bahareh Ahrabi. Tracking the itinerary on the go." />
-  <title>Pockigo App — Bahareh Ahrabi</title>
+  <meta name="description" content="Pockigo Mobile App Design â UX/UI case study by Bahareh Ahrabi. Tracking the itinerary on the go." />
+  <title>Pockigo App â Bahareh Ahrabi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,57 +12,91 @@
   <link rel="stylesheet" href="animations.css" />
   <link rel="stylesheet" href="case-study.css" />
   <link rel="stylesheet" href="case-study-fonts.css" />
+  <style>
+    /* ââ Pockigo-specific additions ââ */
+
+    /* Figure modifiers */
+    .cs-figure--wide  { max-width: 100%; }
+    .cs-figure--phone {
+      max-width: 360px;
+      margin-inline: auto;
+      background: #f8f8f8;
+    }
+
+    /* Side-by-side phone pair */
+    .cs-figure-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 1.5rem 0 1rem;
+    }
+    .cs-figure-row .cs-figure { margin: 0; }
+    @media (max-width: 640px) {
+      .cs-figure-row { grid-template-columns: 1fr; }
+      .cs-figure--phone { max-width: 100%; }
+    }
+
+    /* Journey steps */
+    .cs-journey {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border-soft);
+    }
+    .cs-journey__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+    .cs-journey__num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--amber-dk);
+      opacity: 0.45;
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 2.5rem;
+    }
+    .cs-journey__title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .cs-journey__desc {
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.75;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Back nav -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__pill">
-      <a href="index.html" class="nav__avatar-link" aria-label="Home">
-        <img src="assets/images/logo.png" alt="Bahareh Ahrabi Logo" class="nav__logo-img">
+  <nav class="cs-nav" id="csNav">
+    <div class="cs-nav__inner">
+      <a href="index.html" class="cs-nav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M13 8H3M3 8l4-4M3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Portfolio
       </a>
-      <ul class="nav__links" id="navLinks" role="list">
-        <li><a href="index.html"     class="nav__link" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" class="nav__link" data-i18n="nav.about">About</a></li>
-        <li><a href="projects.html" class="nav__link" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf" class="nav__link" data-i18n="nav.resume">Resume</a></li>
-      </ul>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button class="lang-switch__btn" data-lang="en" type="button">EN</button>
-        <button class="lang-switch__btn" data-lang="tr" type="button">TR</button>
-      </div>
-      <a href="index.html#contact" class="nav__cta" data-i18n="nav.contact">Contact</a>
-      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div class="nav__mobile" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="index.html#services">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf">Resume</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Bahareh Ahrabi" class="cs-nav__logo">
+      </a>
     </div>
   </nav>
-  <div class="nav__mobile" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="index.html#services">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" download="Bahareh-Ahrabi-Resume.pdf">Resume</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
 
   <!-- Hero -->
   <section class="cs-hero">
     <img src="assets/images/Pockigo - Application.png" alt="Pockigo Mobile App Design" class="cs-hero__img">
     <div class="cs-hero__overlay">
       <div class="cs-hero__content">
-        <span class="cs-hero__tag">UX/UI Design · Mobile App</span>
+        <span class="cs-hero__tag">UX/UI Design Â· Mobile App</span>
         <h1 class="cs-hero__title">Pockigo</h1>
-        <p class="cs-hero__sub">Tracking the Itinerary — Mobile Application</p>
+        <p class="cs-hero__sub">Tracking the Itinerary â Mobile Application</p>
       </div>
     </div>
   </section>
@@ -84,7 +118,7 @@
       </div>
       <div class="cs-meta__item">
         <p class="cs-meta__label">Tools</p>
-        <p class="cs-meta__value">Figma<span>Miro · Zoom</span></p>
+        <p class="cs-meta__value">Figma<span>Miro Â· Zoom</span></p>
       </div>
     </div>
   </div>
@@ -94,24 +128,31 @@
 
     <!-- Overview -->
     <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--overview">Overview</span>
       <h2 class="cs-section__title">What is Pockigo?</h2>
       <div class="cs-section__body">
         <p>Pockigo is a travel planning platform that creates personalised itineraries based on users' preferences. Travellers can view, edit, and optimise their plans while accessing all essential information in one place.</p>
-        <p>This case study focuses on the mobile experience — specifically the <strong>"Tracking the Itinerary"</strong> task. While the web platform handles planning before travel, the mobile app is the companion during the trip itself.</p>
+        <p>This case study focuses on the mobile experience â specifically the <strong>"Tracking the Itinerary"</strong> task. While the web platform handles planning before travel, the mobile app is the companion during the trip itself.</p>
       </div>
+
+      <figure class="cs-figure">
+        <img src="assets/images/Pockigo-Website.jpg" alt="Pockigo web platform homepage" class="cs-figure__img">
+        <figcaption class="cs-figure__caption">The Pockigo web platform â where users plan their trips before departure</figcaption>
+      </figure>
 
       <div class="cs-problem">
         <p class="cs-problem__label">Problem Statement</p>
-        <p class="cs-problem__text">"Users struggle to stay on track and adapt their itineraries while travelling — needing real-time guidance, offline access, and easy modification on the go."</p>
+        <p class="cs-problem__text">"Users struggle to stay on track and adapt their itineraries while travelling â needing real-time guidance, offline access, and easy modification on the go."</p>
       </div>
 
-      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=1716-9653&viewport=158%2C-1557%2C0.52&t=6o6PvfJPlulm7srZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1716%3A9653&show-proto-sidebar=1&page-id=641%3A6693" target="_blank" rel="noopener" class="btn-pill-outline" style="align-self:flex-start;margin-top:.5rem;">View Prototype →</a>
+      <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=1716-9653&viewport=158%2C-1557%2C0.52&t=6o6PvfJPlulm7srZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1716%3A9653&show-proto-sidebar=1&page-id=641%3A6693" target="_blank" rel="noopener" class="btn-pill-outline" style="align-self:flex-start;margin-top:.5rem;">View Prototype â</a>
     </section>
 
-    
+
 
     <!-- Business needs + goals -->
     <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--overview">Goals & Needs</span>
       <h2 class="cs-section__title">What we set out to build</h2>
       <div class="cs-split">
         <div>
@@ -119,7 +160,7 @@
           <ul class="cs-list">
             <li>Offline access to itinerary data</li>
             <li>Interactive map with route optimisation</li>
-            <li>Real-time location tracking — auto-updates the itinerary</li>
+            <li>Real-time location tracking â auto-updates the itinerary</li>
             <li>Easy itinerary sharing with travel companions</li>
             <li>Flexible modification and filtering</li>
             <li>Activity rating system</li>
@@ -136,10 +177,11 @@
       </div>
     </section>
 
-    
+
 
     <!-- Discover -->
     <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--discover">Discover</span>
       <h2 class="cs-section__title">Research & insights</h2>
       <div class="cs-section__body">
         <p>We used the Double Diamond method, bouncing between stages as the project evolved. We started with <strong>20 user interviews</strong> to understand how travellers manage their itineraries on the go, what frustrates them mid-trip, and what information they need most.</p>
@@ -150,7 +192,7 @@
         <div class="cs-insight">
           <span class="cs-insight__num">01</span>
           <p class="cs-insight__title">Information Fragmentation</p>
-          <p class="cs-insight__text">Users switch between multiple sources — maps, blogs, transport apps, reviews — just to access basic trip info during travel.</p>
+          <p class="cs-insight__text">Users switch between multiple sources â maps, blogs, transport apps, reviews â just to access basic trip info during travel.</p>
         </div>
         <div class="cs-insight">
           <span class="cs-insight__num">02</span>
@@ -178,57 +220,47 @@
           <p class="cs-insight__text">Groups need shared access so everyone can view and update the trip plan together in real time.</p>
         </div>
       </div>
-      
 
       <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:0.5rem;">Competitive Analysis</h3>
       <ul class="cs-list">
-        <li><strong>Tripadvisor</strong> — Missing "Get Itinerary" button, limiting quick access to plans.</li>
-        <li><strong>GetYourGuide</strong> — Low task efficiency and no direct itinerary access.</li>
-        <li><strong>Tripographer</strong> — Poor navigation, limited category variety, weak activity readability.</li>
+        <li><strong>Tripadvisor</strong> â Missing "Get Itinerary" button, limiting quick access to plans.</li>
+        <li><strong>GetYourGuide</strong> â Low task efficiency and no direct itinerary access.</li>
+        <li><strong>Tripographer</strong> â Poor navigation, limited category variety, weak activity readability.</li>
       </ul>
 
       <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:0.5rem;">Card Sorting</h3>
       <div class="cs-section__body">
         <p>To define clear and intuitive activity categories, we ran a card-sorting session where participants organised activities into groups and named each cluster. This validated our category structure and helped us choose labels that match real users' mental models.</p>
       </div>
-      
     </section>
 
-    
+
 
     <!-- Define -->
     <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--define">Define</span>
       <h2 class="cs-section__title">Turning research into direction</h2>
       <div class="cs-section__body">
-        <p>We built a <strong>persona</strong> around a traveller who needs real-time guidance during their trip — someone relying on their phone to stay on schedule, adapt plans, and navigate efficiently.</p>
-      </div>
-      <figure class="cs-figure"><img src="assets/images/Persona.png" alt="User Persona"></figure>
-      <div class="cs-section__body">
+        <p>We built a <strong>persona</strong> around a traveller who needs real-time guidance during their trip â someone relying on their phone to stay on schedule, adapt plans, and navigate efficiently.</p>
         <p>A <strong>user flow</strong> was mapped for the core task: opening the app on arrival, viewing today's itinerary, tracking location, and modifying an activity on the fly. This guided every design decision.</p>
       </div>
-      
+
+      <figure class="cs-figure cs-figure--wide">
+        <img src="assets/images/User-Flow.svg" alt="User flow diagram for the Pockigo tracking task" class="cs-figure__img">
+        <figcaption class="cs-figure__caption">User flow â from app launch through itinerary tracking, editing, and navigation</figcaption>
+      </figure>
     </section>
 
-    
+
 
     <!-- Develop -->
-    <!-- User Flow -->
-<section class="cs-section" data-reveal>
-<h2 class="cs-section__title">User Flow</h2>
-<div class="cs-section__body">
-<p>Before touching Figma, we mapped the complete path a user would take through Pockigo — from first launch to finishing a full travel day. This flow anchored every wireframe and interaction decision that followed: it made the <strong>auth gate</strong>, the <strong>edit-on-the-go detour</strong>, and the <strong>day-complete reward</strong> explicit design requirements rather than afterthoughts.</p>
-<p>The flow is organised into seven phases. Phases 1–3 cover onboarding, authentication, and trip selection — the entry path every new user walks. Phases 4–6 are the core loop: viewing the day, progressing through activities, and editing the plan when reality doesn't match the itinerary. Phase 7 closes the loop with the completion state that motivates the next day of travel.</p>
-</div>
-<figure class="cs-figure" style="margin-top:1.5rem;"><img src="assets/images/User-Flow.svg" alt="Pockigo user flow — seven phases from app launch to day complete" style="border-radius:12px;"></figure>
-</section>
-
-<section class="cs-section" data-reveal>
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--develop">Develop</span>
       <h2 class="cs-section__title">Wireframing & iteration</h2>
 
       <div class="cs-section__body">
         <p>After low-fidelity wireframing and usability testing, two major screens required redesign based on user feedback:</p>
       </div>
-      
 
       <div class="cs-split">
         <div>
@@ -240,11 +272,10 @@
         <div>
           <h3 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;">Itinerary Screen Redesign</h3>
           <div class="cs-section__body">
-            <p>We removed the unnecessary city photo for a cleaner layout, added a <strong>reservation section</strong> for quick access to bookings, highlighted the map button, and showed the user's current location at the top — including time and route to their first destination.</p>
+            <p>We removed the unnecessary city photo for a cleaner layout, added a <strong>reservation section</strong> for quick access to bookings, highlighted the map button, and showed the user's current location at the top â including time and route to their first destination.</p>
           </div>
         </div>
       </div>
-      <figure class="cs-figure" style="padding:0;overflow:hidden;"><iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOGcrdRNF7xHqlKEfLAc6Sv%2FPockigo%3Fnode-id%3D2681-19063%26page-id%3D641%3A6693%26scaling%3Dscale-down%26content-scaling%3Dfixed" style="border:none;width:100%;height:600px;" allowfullscreen title="Pockigo Wireframes"></iframe></figure>
 
       <h3 style="font-size:1rem;font-weight:700;color:var(--text);">Itinerary Editing Redesign</h3>
       <div class="cs-section__body">
@@ -252,10 +283,11 @@
       </div>
     </section>
 
-    
+
 
     <!-- Deliver -->
     <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--deliver">Deliver</span>
       <h2 class="cs-section__title">Final design</h2>
       <div class="cs-section__body">
         <p><strong>Green</strong> was chosen as the primary colour to convey life, movement, and the spirit of travel. Lighter and darker shades maintain visual harmony, while <strong>orange</strong> was selected as the accent colour to highlight key actions and bring energy to the interface.</p>
@@ -265,71 +297,130 @@
         <li>Timeline-based home screen for clear daily overview</li>
         <li>Real-time GPS tracking with automatic itinerary updates</li>
         <li>Offline mode for core itinerary data</li>
-        <li>Flexible activity editing — replace or delete from one long-press</li>
+        <li>Flexible activity editing â replace or delete from one long-press</li>
         <li>Interactive map with route and transport visibility</li>
         <li>High-fidelity prototype validated through usability testing</li>
       </ul>
-      <figure class="cs-figure" style="padding:0;overflow:hidden;"><iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOGcrdRNF7xHqlKEfLAc6Sv%2FPockigo%3Fnode-id%3D1716-9653%26page-id%3D641%3A6693%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D1716%3A9653" style="border:none;width:100%;height:700px;" allowfullscreen title="Pockigo Final Prototype"></iframe></figure>
 
       <a href="https://www.figma.com/proto/OGcrdRNF7xHqlKEfLAc6Sv/Pockigo?node-id=1716-9653&viewport=158%2C-1557%2C0.52&t=6o6PvfJPlulm7srZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1716%3A9653&show-proto-sidebar=1&page-id=641%3A6693" target="_blank" rel="noopener" class="btn-pill-outline cs-cta-large" style="align-self:center;margin-top:1rem;">
-        View Prototype →
+        View Prototype â
       </a>
     </section>
 
-  
-<!-- The Experience -->
-<section class="cs-section" data-reveal>
-<h2 class="cs-section__title">The Experience</h2>
-<div class="cs-section__body">
-<p>To validate the final design, we walked through the complete user journey — from first launch to completing a full day of travel. The scenario follows <strong>Sara</strong>, a solo traveller arriving in Granada, Spain, opening Pockigo to manage her 3-day itinerary on the go.</p>
-</div>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">First Launch</h3>
-<div class="cs-section__body">
-<p>Sara opens Pockigo for the first time. A brief <strong>splash screen</strong> gives way to three onboarding slides introducing the app's core value — personalised itineraries, offline access, and real-time tracking. She taps through and arrives at the <strong>Home screen</strong> with her Granada trip already loaded and ready to begin.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Onboarding.svg" alt="First Launch — Splash Screen, Onboarding Slides, Home Screen"></figure>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">Authentication Gate</h3>
-<div class="cs-section__body">
-<p>Tapping <strong>My Itineraries</strong> surfaces an auth gate — a clear lock screen rather than a broken empty state. One tap on <strong>Continue with Google</strong> signs Sara in and immediately shows her planned trips: Granada (active, Day 1 of 3) and an upcoming Seville trip.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Auth.svg" alt="Authentication Gate — Sign-in and My Itineraries"></figure>
+    <!-- The Experience -->
+    <section class="cs-section" data-reveal>
+      <span class="cs-phase cs-phase--deliver">The Experience</span>
+      <h2 class="cs-section__title">Walking through the app</h2>
+      <div class="cs-section__body">
+        <p>These hi-fidelity screens walk through the core user journey â from first launch through a full day of travel, navigating stops, editing plans, and wrapping up the day.</p>
+      </div>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">Day 1 — Following the Plan</h3>
-<div class="cs-section__body">
-<p>Sara opens Day 1. She checks off Alhambra Palace and Generalife Gardens one by one — the progress bar advances with each completion. Arriving at the third stop, <strong>Casa Morisca Hotel</strong>, she realises it no longer fits her plans. An <strong>Edit badge</strong> appears on the card, inviting her to replace it.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Day1.svg" alt="Day 1 — Two Activities Checked, Third Flagged for Editing"></figure>
+      <!-- Journey: First Launch / Onboarding -->
+      <div class="cs-journey" data-reveal>
+        <div class="cs-journey__header">
+          <span class="cs-journey__num">01</span>
+          <div>
+            <h3 class="cs-journey__title">First Launch</h3>
+            <p class="cs-journey__desc">The user opens Pockigo for the first time. A brief onboarding flow introduces the app's key features â itinerary tracking, map navigation, and offline access â before prompting sign-up.</p>
+          </div>
+        </div>
+        <figure class="cs-figure cs-figure--wide">
+          <img src="assets/images/Journey-Onboarding.svg" alt="First launch onboarding flow" class="cs-figure__img">
+        </figure>
+      </div>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">Edit on the Go</h3>
-<div class="cs-section__body">
-<p>Sara enters edit mode, removes the activity, and taps <strong>Replace activity</strong>. The app shows a category grid — Dining, Culture, Shopping, History. She picks Dining, and Pockigo's AI surfaces three nearby restaurants ranked by proximity and rating. She selects <strong>Restaurante Arrayanes</strong> (1.2 km, 4.7 stars) and adds it to Day 1 in one tap.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Edit.svg" alt="Edit on the Go — Delete Activity, Browse Categories, AI Suggestions"></figure>
+      <!-- Journey: Authentication Gate -->
+      <div class="cs-journey" data-reveal>
+        <div class="cs-journey__header">
+          <span class="cs-journey__num">02</span>
+          <div>
+            <h3 class="cs-journey__title">Authentication Gate</h3>
+            <p class="cs-journey__desc">Before accessing their itinerary, users sign in or create an account. The screen is intentionally minimal â a single call-to-action keeps friction low and momentum high.</p>
+          </div>
+        </div>
+        <figure class="cs-figure cs-figure--phone">
+          <img src="assets/images/App-Login.png" alt="Sign in / Get Started screen" class="cs-figure__img">
+        </figure>
+      </div>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">Map View</h3>
-<div class="cs-section__body">
-<p>Curious about distances, Sara switches to <strong>Map view</strong>. The three activity pins appear on the city map connected by a dotted green route. A bottom sheet confirms 2.1 km total — entirely walkable. The newly added restaurant sits perfectly between her two previous stops, validating the edit. She switches back to list view and continues her day.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Map.svg" alt="Map View — Activity Pins and Walking Route Through Granada"></figure>
+      <!-- Journey: Day 1 â Following the Plan -->
+      <div class="cs-journey" data-reveal>
+        <div class="cs-journey__header">
+          <span class="cs-journey__num">03</span>
+          <div>
+            <h3 class="cs-journey__title">Day 1 â Following the Plan</h3>
+            <p class="cs-journey__desc">The home screen greets the user with today's itinerary as a numbered timeline. Each stop shows its name, scheduled time, and transport indicator â giving a clear overview of the full day at a glance.</p>
+          </div>
+        </div>
+        <figure class="cs-figure cs-figure--phone">
+          <img src="assets/images/App-Day1-Itinerary.png" alt="Granada Trip Day 1 itinerary timeline" class="cs-figure__img">
+        </figure>
+      </div>
 
-<h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-top:2rem;">Day Complete</h3>
-<div class="cs-section__body">
-<p>After visiting all three locations, Pockigo sends a <strong>Day 1 Complete!</strong> push notification. Back in the app, Sara's home screen shows a full progress bar, a summary — 3 places visited, 2.1 km, 1 edit made — and a preview of Day 2: <strong>Sacromonte and Albaicin</strong>, 4 activities planned. The app marks her progress and prepares her for what is next.</p>
-</div>
-<figure class="cs-figure"><img src="assets/images/Journey-Complete.svg" alt="Day Complete — Push Notification and Home Summary"></figure>
+      <!-- Journey: Edit on the Go -->
+      <div class="cs-journey" data-reveal>
+        <div class="cs-journey__header">
+          <span class="cs-journey__num">04</span>
+          <div>
+            <h3 class="cs-journey__title">Edit on the Go</h3>
+            <p class="cs-journey__desc">Plans change. The itinerary shifts into edit mode with a single tap â each activity gains a remove button and a drag handle. When a stop is deleted, the app immediately offers a replacement, surfacing a curated activity grid filtered by category.</p>
+          </div>
+        </div>
+        <div class="cs-figure-row">
+          <figure class="cs-figure cs-figure--phone">
+            <img src="assets/images/App-Edit-Itinerary.png" alt="Itinerary in edit mode with remove buttons" class="cs-figure__img">
+          </figure>
+          <figure class="cs-figure cs-figure--phone">
+            <img src="assets/images/App-Choose-Activity.png" alt="Choose your activity grid with category filters" class="cs-figure__img">
+          </figure>
+        </div>
+      </div>
 
-</section>
+      <!-- Journey: Map View -->
+      <div class="cs-journey" data-reveal>
+        <div class="cs-journey__header">
+          <span class="cs-journey__num">05</span>
+          <div>
+            <h3 class="cs-journey__title">Map View</h3>
+            <p class="cs-journey__desc">Tapping the map icon reveals all stops as numbered pins connected by a green route line. The active destination card slides up from the bottom. One tap on "Directions" switches to turn-by-turn mode â an orange dashed line shows the exact path with an estimated walk time.</p>
+          </div>
+        </div>
+        <div class="cs-figure-row">
+          <figure class="cs-figure cs-figure--phone">
+            <img src="assets/images/App-Map-View.png" alt="Map with numbered stop pins and route overview" class="cs-figure__img">
+          </figure>
+          <figure class="cs-figure cs-figure--phone">
+            <img src="assets/images/App-Map-Directions.png" alt="Turn-by-turn directions with orange dashed route" class="cs-figure__img">
+          </figure>
+        </div>
+      </div>
 
-</main>
+      <!-- Journey: Day Complete -->
+      <div class="cs-journey" data-reveal>
+        <div class="csmjourney__header">
+          <span class="cs-journey__num">06</span>
+          <div>
+            <h3 class="cs-journey__title">Day Complete</h3>
+            <p class="cs-journey__desc">After completing the last activity, the app celebrates the day and invites the user to rate their experience. The star-rating screen closes the loop â feeding the social proof system that helps future travellers.</p>
+          </div>
+        </div>
+        <figure class="cs-figure cs-figure--phone">
+          <img src="assets/images/App-Day-Complete.png" alt="How was your experience? star rating screen" class="cs-figure__img">
+        </figure>
+      </div>
+
+    </section>
+
+  </main>
 
   <!-- Next project -->
   <div class="cs-next">
     <div class="cs-next__inner">
       <div>
         <p class="cs-next__label">Next Project</p>
-        <p class="cs-next__title">Saving Faces — Website Redesign</p>
+        <p class="cs-next__title">Saving Faces â Website Redesign</p>
       </div>
       <a href="saving-faces.html" class="cs-next__link">
         View Case Study
