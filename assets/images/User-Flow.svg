@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 960" style="width:100%;display:block;">
+  <defs>
+    <marker id="a2A7850" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><path d="M0,0 L0,5 L7,2.5 z" fill="#2A7850"/></marker>
+    <marker id="a4A7CC7" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><path d="M0,0 L0,5 L7,2.5 z" fill="#4A7CC7"/></marker>
+    <marker id="aD96030" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><path d="M0,0 L0,5 L7,2.5 z" fill="#D96030"/></marker>
+    <marker id="a2E8BC0" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><path d="M0,0 L0,5 L7,2.5 z" fill="#2E8BC0"/></marker>
+  </defs>
+  <rect width="1640" height="960" fill="#EEF5F0"/>
+  <rect x="20" y="22" width="1600" height="92" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="37" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">01  LAUNCH & ONBOARDING</text>
+  <rect x="20" y="127" width="1600" height="178" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="142" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">02  AUTHENTICATION</text>
+  <rect x="20" y="320" width="1600" height="100" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="335" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">03  TRIP SELECTION</text>
+  <rect x="20" y="433" width="500" height="100" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="448" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">04  MAP VIEW</text>
+  <rect x="534" y="433" width="1086" height="100" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="544" y="448" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">05  ACTIVITY PROGRESS</text>
+  <rect x="20" y="548" width="1600" height="100" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="563" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">06  EDIT FLOW</text>
+  <rect x="20" y="662" width="1600" height="258" rx="10" fill="#C8E6D3" opacity="0.42"/>
+  <text x="30" y="677" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">07  DAY COMPLETE</text>
+  <rect x="36" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="90" y="75" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">App Launch</text>
+  <rect x="176" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="230" y="66" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Splash Screen</text>
+  <text x="230" y="79" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">2 sec</text>
+  <rect x="326" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="380" y="66" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Onboarding 1</text>
+  <text x="380" y="79" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Personalised</text>
+  <rect x="476" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="530" y="66" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Onboarding 2</text>
+  <text x="530" y="79" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Offline Access</text>
+  <rect x="626" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="680" y="66" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Onboarding 3</text>
+  <text x="680" y="79" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Real-time</text>
+  <rect x="796" y="51" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="850" y="66" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Home Screen</text>
+  <text x="850" y="79" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Active trip</text>
+  <line x1="144" y1="70" x2="176" y2="70" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="284" y1="70" x2="326" y2="70" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="434" y1="70" x2="476" y2="70" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="584" y1="70" x2="626" y2="70" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="734" y1="70" x2="796" y2="70" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="850" y1="89" x2="850" y2="166" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="796" y="166" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="850" y="190" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">My Itineraries</text>
+  <line x1="904" y1="185" x2="961" y2="185" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <polygon points="1005,159 1048,185 1005,211 962,185" fill="#FEF6E4" stroke="#D4A017" stroke-width="1.5"/>
+  <text x="1005" y="189" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="9" font-weight="600" fill="#1A1A1A">Logged In?</text>
+  <line x1="1049" y1="185" x2="1106" y2="185" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <text x="1082" y="175" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="700" fill="#2A7850">Yes</text>
+  <rect x="1106" y="166" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1160" y="181" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Itinerary List</text>
+  <text x="1160" y="194" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Active / Upcoming</text>
+  <path d="M1005,211 L1005,239" fill="none" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <text x="990" y="235" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="700" fill="#D4A017">No</text>
+  <rect x="951" y="239" width="108" height="38" rx="7" fill="#EBF0FB" stroke="#4A7CC7" stroke-width="1.5"/>
+  <text x="1005" y="254" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Auth Gate</text>
+  <text x="1005" y="267" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Sign-in required</text>
+  <line x1="1059" y1="258" x2="1106" y2="258" stroke="#4A7CC7" stroke-width="1.5" marker-end="url(#a4A7CC7)"/>
+  <rect x="1106" y="239" width="108" height="38" rx="7" fill="#EBF0FB" stroke="#4A7CC7" stroke-width="1.5"/>
+  <text x="1160" y="254" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Google Sign In</text>
+  <text x="1160" y="267" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">One tap</text>
+  <path d="M1160,239 L1160,204" fill="none" stroke="#4A7CC7" stroke-width="1.5" marker-end="url(#a4A7CC7)"/>
+  <line x1="1160" y1="204" x2="1160" y2="351" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="1106" y="351" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1160" y="366" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Select Trip</text>
+  <text x="1160" y="379" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Granada — Day 1</text>
+  <path d="M1106,370 L800,370" fill="none" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="746" y="351" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="800" y="366" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Day 1 Overview</text>
+  <text x="800" y="379" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">3 activities</text>
+  <line x1="746" y1="370" x2="674" y2="370" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="566" y="351" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="620" y="366" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Day View</text>
+  <text x="620" y="379" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Progress bar</text>
+  <line x1="620" y1="389" x2="620" y2="464" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <path d="M566,483 L280+54,483" fill="none" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <line x1="566" y1="483" x2="334" y2="483" stroke="#2E8BC0" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a2E8BC0)"/>
+  <rect x="226" y="464" width="108" height="38" rx="7" fill="#E8F4FE" stroke="#2E8BC0" stroke-width="1.5"/>
+  <text x="280" y="479" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Map View</text>
+  <text x="280" y="492" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Pins + route</text>
+  <path d="M334,491 L566,491" fill="none" stroke="#2E8BC0" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#a2E8BC0)"/>
+  <text x="450" y="472" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="400" fill="#2E8BC0">toggle</text>
+  <line x1="674" y1="483" x2="686" y2="483" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="686" y="464" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="740" y="479" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Activity 1 ✓</text>
+  <text x="740" y="492" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Alhambra</text>
+  <line x1="794" y1="483" x2="826" y2="483" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="826" y="464" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="880" y="479" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Activity 2 ✓</text>
+  <text x="880" y="492" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Generalife</text>
+  <line x1="934" y1="483" x2="966" y2="483" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="966" y="464" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1020" y="479" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Activity 3</text>
+  <text x="1020" y="492" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Casa Morisca</text>
+  <line x1="1074" y1="483" x2="1136" y2="483" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <polygon points="1180,457 1223,483 1180,509 1137,483" fill="#FEF6E4" stroke="#D4A017" stroke-width="1.5"/>
+  <text x="1180" y="487" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="9" font-weight="600" fill="#1A1A1A">Fits Plan?</text>
+  <path d="M1180,509 L1180,579" fill="none" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <text x="1196" y="535" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="700" fill="#2A7850">Yes</text>
+  <rect x="1126" y="579" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1180" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Activity 3 ✓</text>
+  <text x="1180" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Confirmed</text>
+  <path d="M1224,483 L1400,483 L1400,579" fill="none" stroke="#D96030" stroke-width="1.5" marker-end="url(#aD96030)"/>
+  <text x="1290" y="473" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="700" fill="#D96030">No</text>
+  <rect x="1346" y="579" width="108" height="38" rx="7" fill="#FFF0E8" stroke="#D96030" stroke-width="1.5"/>
+  <text x="1400" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Edit Mode</text>
+  <text x="1400" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Remove activity</text>
+  <line x1="1346" y1="598" x2="1216" y2="598" stroke="#D96030" stroke-width="1.5" marker-end="url(#aD96030)"/>
+  <rect x="1216" y="579" width="108" height="38" rx="7" fill="#FFF0E8" stroke="#D96030" stroke-width="1.5"/>
+  <text x="1270" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Browse Categories</text>
+  <text x="1270" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Dining / Culture…</text>
+  <line x1="1216" y1="598" x2="1076" y2="598" stroke="#D96030" stroke-width="1.5" marker-end="url(#aD96030)"/>
+  <rect x="1076" y="579" width="108" height="38" rx="7" fill="#FFF0E8" stroke="#D96030" stroke-width="1.5"/>
+  <text x="1130" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">AI Suggestions</text>
+  <text x="1130" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Nearby places</text>
+  <line x1="1076" y1="598" x2="936" y2="598" stroke="#D96030" stroke-width="1.5" marker-end="url(#aD96030)"/>
+  <rect x="936" y="579" width="108" height="38" rx="7" fill="#FFF0E8" stroke="#D96030" stroke-width="1.5"/>
+  <text x="990" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Select & Add</text>
+  <text x="990" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Arrayanes 4.7★</text>
+  <path d="M990,579 L990,394 L674,394" fill="none" stroke="#D96030" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#aD96030)"/>
+  <text x="804" y="548" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="400" fill="#D96030">updated itinerary</text>
+  <line x1="1180" y1="617" x2="1180" y2="831" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="1126" y="831" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1180" y="846" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Push Notification</text>
+  <text x="1180" y="859" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">"Day 1 Complete!"</text>
+  <line x1="1126" y1="850" x2="986" y2="850" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="986" y="831" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="1040" y="846" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Home — Summary</text>
+  <text x="1040" y="859" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">3 places, 2.1 km</text>
+  <line x1="986" y1="850" x2="846" y2="850" stroke="#2A7850" stroke-width="1.5" marker-end="url(#a2A7850)"/>
+  <rect x="846" y="831" width="108" height="38" rx="7" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.5"/>
+  <text x="900" y="846" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Day 2 Preview</text>
+  <text x="900" y="859" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Sacromonte — 4 acts</text>
+  <rect x="37" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="45" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">1</text>
+  <rect x="177" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="185" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">2</text>
+  <rect x="327" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="335" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">3</text>
+  <rect x="477" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="485" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">4</text>
+  <rect x="627" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="635" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">5</text>
+  <rect x="797" y="52" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="805" y="61" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">6</text>
+  <rect x="797" y="167" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="805" y="176" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">7</text>
+  <rect x="1107" y="167" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1115" y="176" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">8</text>
+  <rect x="567" y="352" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="575" y="361" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">9</text>
+  <rect x="687" y="465" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="695" y="474" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">10</text>
+  <rect x="827" y="465" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="835" y="474" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">11</text>
+  <rect x="967" y="465" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="975" y="474" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">12</text>
+  <rect x="227" y="465" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="235" y="474" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">M</text>
+  <rect x="1127" y="580" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1135" y="589" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">13</text>
+  <rect x="1127" y="832" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1135" y="841" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">14</text>
+  <rect x="987" y="832" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="995" y="841" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">15</text>
+  <rect x="847" y="832" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="855" y="841" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">16</text>
+  <rect x="1347" y="580" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1355" y="589" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">E1</text>
+  <rect x="1217" y="580" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1225" y="589" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">E2</text>
+  <rect x="1077" y="580" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="1085" y="589" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">E3</text>
+  <rect x="937" y="580" width="16" height="12" rx="3" fill="#2A7850"/>
+  <text x="945" y="589" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7" font-weight="700" fill="white">E4</text>
+  <rect x="24" y="872" width="330" height="64" rx="8" fill="#FFFFFF" stroke="#2A7850" stroke-width="1" opacity="0.9"/>
+  <text x="189" y="886" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="9" font-weight="700" fill="#2A7850">LEGEND</text>
+  <rect x="34" y="902" width="52" height="22" rx="4" fill="#FFFFFF" stroke="#2A7850" stroke-width="1.2"/>
+  <text x="60" y="917" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7.5" fill="#1A1A1A">Screen / State</text>
+  <rect x="98" y="902" width="52" height="22" rx="4" fill="#FEF6E4" stroke="#D4A017" stroke-width="1.2"/>
+  <text x="124" y="917" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7.5" fill="#1A1A1A">Decision</text>
+  <rect x="162" y="902" width="52" height="22" rx="4" fill="#EBF0FB" stroke="#4A7CC7" stroke-width="1.2"/>
+  <text x="188" y="917" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7.5" fill="#1A1A1A">Auth Flow</text>
+  <rect x="226" y="902" width="52" height="22" rx="4" fill="#FFF0E8" stroke="#D96030" stroke-width="1.2"/>
+  <text x="252" y="917" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7.5" fill="#1A1A1A">Edit Flow</text>
+  <rect x="290" y="902" width="52" height="22" rx="4" fill="#E8F4FE" stroke="#2E8BC0" stroke-width="1.2"/>
+  <text x="316" y="917" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="7.5" fill="#1A1A1A">Map View</text>
+  <text x="820" y="15" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="11" font-weight="700" fill="#2A7850" letter-spacing="2">USER FLOW — POCKIGO APPLICATION</text>
+</svg>
