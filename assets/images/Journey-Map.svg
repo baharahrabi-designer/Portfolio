@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" style="width:100%;display:block;">
+  <defs><clipPath id="clip-360-50"><rect x="367" y="69" width="186" height="374" rx="18"/></clipPath></defs>
+  <rect width="920" height="520" fill="#EEF5F0"/>
+  <text x="40" y="38" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="13" fill="#8A8A8E" font-weight="600" letter-spacing="1">MAP VIEW — VISUALISE THE DAY</text>
+  
+  <!-- Phone shadow -->
+  <rect x="363" y="53" width="200" height="400" rx="26" fill="rgba(0,0,0,0.12)"/>
+  <!-- Phone body -->
+  <rect x="360" y="50" width="200" height="400" rx="26" fill="#1A1A1A"/>
+  <!-- Screen bg -->
+  <rect x="367" y="69" width="186" height="374" rx="18" fill="#FFFFFF"/>
+  <!-- Notch -->
+  <rect x="425" y="50" width="70" height="22" rx="11" fill="#1A1A1A"/>
+  <!-- Home bar -->
+  <rect x="438" y="441" width="44" height="4" rx="2" fill="rgba(255,255,255,0.35)"/>
+  <!-- Status bar: time -->
+  <text x="375" y="83" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="600">9:41</text>
+  <!-- Screen content -->
+  <g clip-path="url(#clip-360-50)">
+    
+  <rect x="367" y="69" width="186" height="374" fill="#E8EFE8"/>
+  <!-- Map tiles (simplified) -->
+  <rect x="367" y="69" width="186" height="374" fill="#E8EFE8"/>
+  <!-- Streets -->
+  <line x1="367" y1="189" x2="553" y2="209" stroke="#FFFFFF" stroke-width="6"/>
+  <line x1="417" y1="69" x2="427" y2="443" stroke="#FFFFFF" stroke-width="5"/>
+  <line x1="367" y1="269" x2="553" y2="279" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="467" y1="69" x2="477" y2="443" stroke="#FFFFFF" stroke-width="4"/>
+  <line x1="367" y1="349" x2="553" y2="344" stroke="#FFFFFF" stroke-width="5"/>
+  <!-- Green route line -->
+  <polyline points="407,169 442,229 487,269" stroke="#2A7850" stroke-width="3" fill="none" stroke-dasharray="6,3"/>
+  <!-- Activity pins -->
+  <circle cx="407" cy="169" r="12" fill="#2A7850" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="407" y="173" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#FFFFFF" font-weight="700">1</text>
+  <circle cx="442" cy="229" r="12" fill="#2A7850" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="442" y="233" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#FFFFFF" font-weight="700">2</text>
+  <circle cx="487" cy="269" r="12" fill="#4DB97A" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="487" y="273" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#FFFFFF" font-weight="700">3</text>
+  <!-- Activity 3 label -->
+  <rect x="499" y="257" width="48" height="24" rx="5" fill="#FFFFFF" opacity="0.92"/>
+  <text x="523" y="273" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="7.5" fill="#1A1A1A" font-weight="600">Arrayanes</text>
+  <!-- Header bar -->
+  <rect x="367" y="69" width="186" height="40" fill="rgba(255,255,255,0.92)"/>
+  <text x="377" y="92" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="10" fill="#2A7850">← Day 1</text>
+  <text x="460" y="92" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="600">Map View</text>
+  <!-- Bottom sheet -->
+  <rect x="367" y="363" width="186" height="80" rx="0" fill="rgba(255,255,255,0.96)"/>
+  <rect x="442" y="369" width="36" height="4" rx="2" fill="#E5E5EA"/>
+  <text x="460" y="389" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="10" fill="#1A1A1A" font-weight="600">3 stops · 2.1 km total</text>
+  <!-- List/Map toggle -->
+  <rect x="387" y="405" width="146" height="26" rx="13" fill="#F2F2F7"/>
+  <rect x="387" y="405" width="73" height="26" rx="13" fill="#2A7850"/>
+  <text x="423" y="422" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="#FFFFFF" font-weight="600">Map</text>
+  <text x="496" y="422" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="#8A8A8E">List</text>
+  </g>
+  <!-- Label below phone -->
+  
+
+  <text x="200" y="200" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="600">Route confirmed</text>
+  <text x="200" y="217" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="10" fill="#8A8A8E">Activities within walking</text>
+  <text x="200" y="231" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="10" fill="#8A8A8E">distance of each other</text>
+  <line x1="352" y1="212" x2="368" y2="220" stroke="#8A8A8E" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

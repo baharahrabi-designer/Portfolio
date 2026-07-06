@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" style="width:100%;display:block;">
+  <defs><clipPath id="clip-150-80"><rect x="157" y="99" width="161" height="314" rx="18"/></clipPath><clipPath id="clip-470-80"><rect x="477" y="99" width="161" height="314" rx="18"/></clipPath></defs>
+  <rect width="920" height="520" fill="#EEF5F0"/>
+  <text x="40" y="38" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="13" fill="#8A8A8E" font-weight="600" letter-spacing="1">AUTHENTICATION</text>
+  
+  <!-- Phone shadow -->
+  <rect x="153" y="83" width="175" height="340" rx="26" fill="rgba(0,0,0,0.12)"/>
+  <!-- Phone body -->
+  <rect x="150" y="80" width="175" height="340" rx="26" fill="#1A1A1A"/>
+  <!-- Screen bg -->
+  <rect x="157" y="99" width="161" height="314" rx="18" fill="#FFFFFF"/>
+  <!-- Notch -->
+  <rect x="202" y="80" width="70" height="22" rx="11" fill="#1A1A1A"/>
+  <!-- Home bar -->
+  <rect x="215" y="411" width="44" height="4" rx="2" fill="rgba(255,255,255,0.35)"/>
+  <!-- Status bar: time -->
+  <text x="165" y="113" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="600">9:41</text>
+  <!-- Screen content -->
+  <g clip-path="url(#clip-150-80)">
+    
+  <rect x="157" y="99" width="161" height="314" fill="#FFFFFF"/>
+  <rect x="157" y="99" width="161" height="40" fill="#F2F2F7"/>
+  <text x="165" y="124" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="600">My Itineraries</text>
+  <rect x="177" y="169" width="121" height="121" rx="50%" fill="#EEF5F0"/>
+  <text x="237" y="214" text-anchor="middle" font-size="28" fill="#2A7850">🔒</text>
+  <text x="237" y="247" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#1A1A1A" font-weight="700">Sign in required</text>
+  <text x="237" y="263" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="#8A8A8E" text-anchor="middle">Your itinerary is linked to</text>
+  <text x="237" y="275" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="#8A8A8E" text-anchor="middle">your Pockigo account.</text>
+  <rect x="172" y="299" width="131" height="30" rx="15" fill="#2A7850"/>
+  <text x="237" y="318" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9.5" fill="#FFFFFF" font-weight="600">Continue with Google</text>
+  </g>
+  <!-- Label below phone -->
+  <text x="237" y="442" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#8A8A8E" font-weight="500">Sign In Required</text>
+<line x1="329" y1="250" x2="466" y2="250" stroke="#CCCCCC" stroke-width="1.5" stroke-dasharray="4,3"/><polygon points="460,246 467,250 460,254" fill="#CCCCCC"/>
+  <!-- Phone shadow -->
+  <rect x="473" y="83" width="175" height="340" rx="26" fill="rgba(0,0,0,0.12)"/>
+  <!-- Phone body -->
+  <rect x="470" y="80" width="175" height="340" rx="26" fill="#1A1A1A"/>
+  <!-- Screen bg -->
+  <rect x="477" y="99" width="161" height="314" rx="18" fill="#FFFFFF"/>
+  <!-- Notch -->
+  <rect x="522" y="80" width="70" height="22" rx="11" fill="#1A1A1A"/>
+  <!-- Home bar -->
+  <rect x="535" y="411" width="44" height="4" rx="2" fill="rgba(255,255,255,0.35)"/>
+  <!-- Status bar: time -->
+  <text x="485" y="113" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="9" fill="#1A1A1A" font-weight="600">9:41</text>
+  <!-- Screen content -->
+  <g clip-path="url(#clip-470-80)">
+    
+  <rect x="477" y="99" width="161" height="314" fill="#FFFFFF"/>
+  <rect x="477" y="99" width="161" height="46" fill="#2A7850"/>
+  <text x="557" y="127" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">My Itineraries</text>
+  <!-- Granada card (active) -->
+  <rect x="485" y="157" width="145" height="72" rx="10" fill="#2A7850"/>
+  <rect x="491" y="163" width="42" height="15" rx="7" fill="rgba(255,255,255,0.25)"/>
+  <text x="496" y="174" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8" fill="#FFFFFF" font-weight="600">ACTIVE</text>
+  <text x="491" y="195" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">Granada</text>
+  <text x="491" y="209" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.8)">Day 1 of 3 · Today</text>
+  <!-- Seville card -->
+  <rect x="485" y="242" width="145" height="60" rx="10" fill="#F2F2F7"/>
+  <text x="495" y="262" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A" font-weight="600">Seville</text>
+  <text x="495" y="277" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="8.5" fill="#8A8A8E">July 12 – 17 · Upcoming</text>
+  <!-- Bottom nav -->
+  <rect x="477" y="369" width="161" height="44" fill="#FFFFFF" stroke="#E5E5EA" stroke-width="0.5"/>
+  <text x="499" y="395" text-anchor="middle" font-size="13" fill="#8A8A8E">🏠</text>
+  <text x="557" y="395" text-anchor="middle" font-size="13" fill="#2A7850">📋</text>
+  <text x="610" y="395" text-anchor="middle" font-size="13" fill="#8A8A8E">👤</text>
+  </g>
+  <!-- Label below phone -->
+  <text x="557" y="442" text-anchor="middle" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="11" fill="#8A8A8E" font-weight="500">My Itineraries</text>
+
+</svg>
