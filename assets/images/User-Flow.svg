@@ -7,7 +7,7 @@
   </defs>
   <rect width="1640" height="960" fill="#EEF5F0"/>
   <rect x="20" y="22" width="1600" height="92" rx="10" fill="#C8E6D3" opacity="0.42"/>
-  <text x="30" y="37" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">01  LAUNCH & ONBOARDING</text>
+  <text x="30" y="37" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">01  LAUNCH &amp; ONBOARDING</text>
   <rect x="20" y="127" width="1600" height="178" rx="10" fill="#C8E6D3" opacity="0.42"/>
   <text x="30" y="142" font-family="SF Pro Display,Arial,sans-serif" font-size="8.5" font-weight="700" fill="#2A7850" letter-spacing="1.2">02  AUTHENTICATION</text>
   <rect x="20" y="320" width="1600" height="100" rx="10" fill="#C8E6D3" opacity="0.42"/>
@@ -118,7 +118,7 @@
   <text x="1130" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Nearby places</text>
   <line x1="1076" y1="598" x2="936" y2="598" stroke="#D96030" stroke-width="1.5" marker-end="url(#aD96030)"/>
   <rect x="936" y="579" width="108" height="38" rx="7" fill="#FFF0E8" stroke="#D96030" stroke-width="1.5"/>
-  <text x="990" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Select & Add</text>
+  <text x="990" y="594" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="10" font-weight="600" fill="#1A1A1A">Select &amp; Add</text>
   <text x="990" y="607" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" fill="#888">Arrayanes 4.7★</text>
   <path d="M990,579 L990,394 L674,394" fill="none" stroke="#D96030" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#aD96030)"/>
   <text x="804" y="548" text-anchor="middle" font-family="SF Pro Display,Arial,sans-serif" font-size="8" font-weight="400" fill="#D96030">updated itinerary</text>
