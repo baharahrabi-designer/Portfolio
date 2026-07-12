@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AI Content Creation â Case Studies by Bahareh Ahrabi. AI-generated visual content for fashion, food, and luxury brand identity." />
+  <meta name="description" content="AI Content Creation — Case Studies by Bahareh Ahrabi." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Bahareh Ahrabi" />
-  <title>AI Content Creation â Bahareh Ahrabi</title>
+  <title>AI Content Creation — Bahareh Ahrabi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -15,11 +15,10 @@
   <link rel="stylesheet" href="case-study.css" />
   <link rel="stylesheet" href="case-study-fonts.css" />
   <style>
-    /* ââ AI Content page extras ââ */
     .ai-hero {
       background: #0e0e0e;
       color: #f5f1ea;
-      padding: 140px 48px 100px;
+      padding: 140px 48px 72px;
       text-align: center;
     }
     .ai-hero__eyebrow {
@@ -39,50 +38,167 @@
       letter-spacing: -0.02em;
       margin-bottom: 28px;
     }
-    .ai-hero__title em {
-      font-style: italic;
-      color: #c8b99a;
-    }
+    .ai-hero__title em { font-style: italic; color: #c8b99a; }
     .ai-hero__sub {
       font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-weight: 300;
       color: #9a9a8a;
-      max-width: 560px;
-      margin: 0 auto 48px;
+      max-width: 520px;
+      margin: 0 auto;
       line-height: 1.7;
     }
-    .ai-hero__chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
+
+    /* 3-Card Index */
+    .ai-index {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 88vh;
+      min-height: 540px;
+      max-height: 860px;
     }
-    .ai-chip {
+    .ai-index__card {
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+      border-right: 1px solid rgba(255,255,255,0.06);
+    }
+    .ai-index__card:last-child { border-right: none; }
+    .ai-index__card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.9s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .ai-index__card:hover .ai-index__card-bg { transform: scale(1.07); }
+    .ai-index__card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.12) 100%);
+      transition: background 0.4s ease;
+    }
+    .ai-index__card:hover .ai-index__card-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,0.94) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.2) 100%);
+    }
+    .ai-index__card-content {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 52px 40px;
+    }
+    .ai-index__card-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+      display: block;
+      margin-bottom: 16px;
+    }
+    .ai-index__card-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(24px, 2.6vw, 34px);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: #f5f1ea;
+      margin: 0 0 10px;
+    }
+    .ai-index__card-cat {
       font-family: 'Inter', sans-serif;
       font-size: 11px;
-      font-weight: 500;
+      font-weight: 400;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.42);
+      display: block;
+      margin-bottom: 28px;
+    }
+    .ai-index__card-cta {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      border: 1px solid #333;
-      color: #9a9a8a;
-      padding: 8px 18px;
-      border-radius: 100px;
+      color: #f5f1ea;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 4px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .ai-index__card:hover .ai-index__card-cta {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    /* ââ Tool bar ââ */
+    /* Velora dark case study wrapper */
+    .ai-cs-wrap { background: #0e0e0e; }
+    .ai-cs-cover {
+      width: 100%;
+      height: 65vh;
+      min-height: 420px;
+      max-height: 720px;
+      object-fit: cover;
+      display: block;
+    }
+    .ai-cs-intro {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 48px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .ai-cs-brand-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 16px;
+    }
+    .ai-cs-brand {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      line-height: 1.0;
+      color: #f5f1ea;
+    }
+    .ai-cs-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.9;
+      color: #8a8a7a;
+      padding-top: 8px;
+    }
+    .ai-cs-palette { display: flex; gap: 10px; margin-top: 32px; }
+    .ai-cs-swatch {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Tool bar */
     .ai-tools {
       background: #0e0e0e;
       border-top: 1px solid #1e1e1e;
-      padding: 40px 48px;
+      padding: 32px 48px;
       display: flex;
       gap: 48px;
       justify-content: center;
       flex-wrap: wrap;
     }
-    .ai-tool {
-      text-align: center;
-    }
+    .ai-tool { text-align: center; }
     .ai-tool__label {
       font-family: 'Inter', sans-serif;
       font-size: 10px;
@@ -90,243 +206,191 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: #555;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
     .ai-tool__name {
       font-family: 'Fraunces', serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 300;
       color: #f5f1ea;
     }
 
-    /* ââ Project blocks ââ */
-    .ai-project {
-      padding: 100px 48px;
+    /* White case study body */
+    .ai-cs-body { background: #fff; }
+
+    /* Section labels */
+    .ai-cs-section {
       max-width: 1100px;
       margin: 0 auto;
+      padding: 72px 48px 0;
     }
-    .ai-project + .ai-project {
-      border-top: 1px solid #e8e3da;
-    }
-    .ai-project__header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: start;
-      margin-bottom: 72px;
-    }
-    .ai-project__brand-block {
-      border-radius: 4px;
-      aspect-ratio: 4/3;
-      display: flex;
-      align-items: flex-end;
-      padding: 28px;
-      position: relative;
-      overflow: hidden;
-    }
-    .ai-project__brand-label {
-      font-family: 'Fraunces', serif;
-      font-size: 32px;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      position: relative;
-      z-index: 1;
-    }
-    .ai-project__brand-sub {
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      opacity: 0.7;
-      display: block;
-      margin-top: 4px;
-    }
-    .ai-project__info {
-      padding-top: 16px;
-    }
-    .ai-project__num {
+    .ai-cs-label {
       font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: #9a9a8a;
-      margin-bottom: 20px;
-    }
-    .ai-project__title {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(28px, 3.5vw, 42px);
-      font-weight: 300;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin-bottom: 24px;
-      color: #1a1a1a;
-    }
-    .ai-project__desc {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 32px;
-    }
-    .ai-project__meta {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      border-top: 1px solid #e8e3da;
-      padding-top: 24px;
-    }
-    .ai-project__meta-row {
-      display: flex;
-      gap: 16px;
-    }
-    .ai-project__meta-key {
-      font-family: 'Inter', sans-serif;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #9a9a8a;
-      min-width: 90px;
-      padding-top: 2px;
-    }
-    .ai-project__meta-val {
-      font-family: 'Inter', sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      color: #333;
-      line-height: 1.5;
-    }
-
-    /* ââ Deliverables grid ââ */
-    .ai-deliverables {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      margin-bottom: 48px;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-    .ai-deliverable {
-      padding: 28px 24px;
-      background: #f7f4ef;
-    }
-    .ai-deliverable__icon {
-      font-size: 22px;
-      margin-bottom: 14px;
-    }
-    .ai-deliverable__name {
-      font-family: 'Fraunces', serif;
-      font-size: 17px;
-      font-weight: 400;
-      color: #1a1a1a;
-      margin-bottom: 8px;
-    }
-    .ai-deliverable__desc {
-      font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 300;
-      color: #777;
-      line-height: 1.6;
-    }
-
-    /* ââ Colour swatch row ââ */
-    .ai-palette {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-    .ai-swatch {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1px solid rgba(0,0,0,0.08);
-    }
-
-    /* ââ PDF download CTA ââ */
-    .ai-pdf-cta {
+      margin-bottom: 28px;
       display: flex;
       align-items: center;
-      gap: 20px;
-      background: #f7f4ef;
-      border-radius: 4px;
-      padding: 28px 32px;
-      margin-top: 48px;
+      gap: 18px;
     }
-    .ai-pdf-cta__icon {
-      font-size: 32px;
-      flex-shrink: 0;
-    }
-    .ai-pdf-cta__text {
+    .ai-cs-label::after {
+      content: '';
       flex: 1;
+      height: 1px;
+      background: #e8e3da;
     }
+
+    /* Image grids */
+    .ai-cs-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    .ai-cs-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .ai-cs-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    .ai-cs-grid-ig { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .ai-cs-img {
+      width: 100%; aspect-ratio: 1/1;
+      object-fit: cover; display: block; border-radius: 2px;
+    }
+    .ai-cs-img--landscape { aspect-ratio: 4/3; }
+    .ai-cs-img-full {
+      width: 100%; max-height: 560px;
+      object-fit: cover; display: block;
+      border-radius: 2px; margin-top: 6px;
+    }
+
+    /* PDF CTA */
+    .ai-pdf-cta {
+      display: flex; align-items: center;
+      gap: 20px; background: #f7f4ef;
+      border-radius: 4px; padding: 28px 32px; margin-top: 48px;
+    }
+    .ai-pdf-cta__icon { font-size: 28px; flex-shrink: 0; }
+    .ai-pdf-cta__text { flex: 1; }
     .ai-pdf-cta__label {
       font-family: 'Inter', sans-serif;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #9a9a8a;
-      margin-bottom: 6px;
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: #9a9a8a; margin-bottom: 6px;
     }
     .ai-pdf-cta__title {
       font-family: 'Fraunces', serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: #1a1a1a;
+      font-size: 18px; font-weight: 400; color: #1a1a1a;
     }
     .ai-pdf-btn {
       font-family: 'Inter', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #f5f1ea;
-      background: #1a1a1a;
-      padding: 14px 28px;
-      border-radius: 100px;
-      text-decoration: none;
-      white-space: nowrap;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: #f5f1ea; background: #1a1a1a;
+      padding: 14px 28px; border-radius: 100px;
+      text-decoration: none; white-space: nowrap;
       transition: background 0.2s;
     }
     .ai-pdf-btn:hover { background: #333; }
 
-    /* ââ Divider ââ */
-    .ai-divider {
-      max-width: 1100px;
-      margin: 0 auto;
-      border: none;
-      border-top: 1px solid #e8e3da;
+    .ai-back {
+      display: block; text-align: center;
+      padding: 40px 0 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: #aaa; text-decoration: none;
+      transition: color 0.2s;
     }
+    .ai-back:hover { color: #555; }
+    .ai-back--light { color: #666; }
+    .ai-back--light:hover { color: #f5f1ea; }
 
-    /* ââ Back link ââ */
+    /* Light project articles */
+    .ai-light-section { background: #fff; border-top: 1px solid #e8e3da; }
+    .ai-project { padding: 88px 48px; max-width: 1100px; margin: 0 auto; }
+    .ai-project__header {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: start; margin-bottom: 48px;
+    }
+    .ai-project__brand-block {
+      border-radius: 4px; aspect-ratio: 4/3;
+      display: flex; align-items: flex-end;
+      padding: 28px; overflow: hidden;
+    }
+    .ai-project__brand-label {
+      font-family: 'Fraunces', serif;
+      font-size: 48px; font-weight: 300;
+      letter-spacing: -0.02em;
+    }
+    .ai-project__brand-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      opacity: 0.7; display: block; margin-top: 4px;
+    }
+    .ai-project__info { padding-top: 16px; }
+    .ai-project__num {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: #9a9a8a; margin-bottom: 20px;
+    }
+    .ai-project__title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 300; letter-spacing: -0.02em;
+      line-height: 1.15; margin-bottom: 18px; color: #1a1a1a;
+    }
+    .ai-project__desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px; font-weight: 300;
+      line-height: 1.8; color: #555; margin-bottom: 24px;
+    }
+    .ai-project__meta {
+      display: flex; flex-direction: column;
+      gap: 12px; border-top: 1px solid #e8e3da; padding-top: 24px;
+    }
+    .ai-project__meta-row { display: flex; gap: 16px; }
+    .ai-project__meta-key {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: #9a9a8a; min-width: 90px; padding-top: 2px;
+    }
+    .ai-project__meta-val {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px; font-weight: 400;
+      color: #333; line-height: 1.5;
+    }
     .cs-next { background: #0e0e0e; }
 
-    @media (max-width: 768px) {
-      .ai-hero { padding: 100px 24px 72px; }
-      .ai-project { padding: 72px 24px; }
-      .ai-project__header { grid-template-columns: 1fr; gap: 36px; }
-      .ai-deliverables { grid-template-columns: 1fr; }
-      .ai-tools { padding: 32px 24px; gap: 32px; }
+    @media (max-width: 900px) {
+      .ai-index { grid-template-columns: 1fr; height: auto; max-height: none; }
+      .ai-index__card { height: 60vw; min-height: 300px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .ai-index__card:last-child { border-bottom: none; }
+      .ai-index__card-cta { opacity: 1; transform: none; }
+      .ai-cs-intro { grid-template-columns: 1fr; gap: 36px; padding: 48px 24px 56px; }
+      .ai-project__header { grid-template-columns: 1fr; gap: 32px; }
+      .ai-cs-grid-3, .ai-cs-grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .ai-cs-section { padding: 48px 24px 0; }
+      .ai-hero { padding: 100px 24px 56px; }
+      .ai-project { padding: 64px 24px; }
       .ai-pdf-cta { flex-direction: column; text-align: center; }
+      .ai-tools { padding: 28px 24px; gap: 32px; }
+    }
+    @media (max-width: 540px) {
+      .ai-cs-grid-3, .ai-cs-grid-4, .ai-cs-grid-ig { grid-template-columns: 1fr 1fr; }
+      .ai-cs-grid-2 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__pill">
       <a href="index.html" class="nav__avatar-link" aria-label="Home">
         <img src="assets/images/logo.png" alt="Bahareh Ahrabi Logo" class="nav__logo-img">
       </a>
       <ul class="nav__links" id="navLinks" role="list">
-        <li><a href="index.html"     class="nav__link" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html"     class="nav__link" data-i18n="nav.about">About</a></li>
-        <li><a href="projects.html"  class="nav__link nav__link--active" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html"    class="nav__link" data-i18n="nav.about">About</a></li>
+        <li><a href="projects.html" class="nav__link nav__link--active" data-i18n="nav.projects">Projects</a></li>
         <li><a href="assets/Final%20Resume%20Bahareh%20-%202026%20.pdf" target="_blank" rel="noopener" class="nav__link" data-i18n="nav.resume">Resume</a></li>
         <li><a href="index.html#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
       </ul>
@@ -339,187 +403,285 @@
 
   <!-- HERO -->
   <header class="ai-hero">
-    <p class="ai-hero__eyebrow">Brand Identity Â· AI Content</p>
+    <p class="ai-hero__eyebrow">Brand Identity &middot; AI Content</p>
     <h1 class="ai-hero__title">AI Visual Content<br><em>Creation</em></h1>
-    <p class="ai-hero__sub">
-      Three brands. Three industries. One approach â using AI image generation to create complete visual content systems for product photography, social media, and brand campaigns.
-    </p>
-    <div class="ai-hero__chips">
-      <span class="ai-chip">AI Image Generation</span>
-      <span class="ai-chip">Product Photography</span>
-      <span class="ai-chip">Social Media Content</span>
-      <span class="ai-chip">Brand Visual Systems</span>
-    </div>
+    <p class="ai-hero__sub">Three brands. Three industries. One approach &#8212; using AI image generation to create complete visual content systems for product photography, social media, and brand campaigns.</p>
   </header>
 
-  <!-- TOOL STP¢Ð -->
-  <div class="ai-tools">
-    <div class="ai-tool">
-      <p class="ai-tool__label">Primary Tool</p>
-      <p class="ai-tool__name">ChatGPT</p>
-    </div>
-    <div class="ai-tool">
-      <p class="ai-tool__label">Video Generation</p>
-      <p class="ai-tool__name">Higgsfield AI</p>
-    </div>
-    <div class="ai-tool">
-      <p class="ai-tool__label">Art Direction</p>
-      <p class="ai-tool__name">Bahareh Ahrabi</p>
-    </div>
-    <div class="ai-tool">
-      <p class="ai-tool__label">Industries</p>
-      <p class="ai-tool__name">Fashion Â· Food Â· Luxury</p>
-    </div>
-  </div>
+  <!-- 3-CARD INDEX -->
+  <section class="ai-index" aria-label="Select a case study">
+
+    <a href="#velora" class="ai-index__card">
+      <div class="ai-index__card-bg" style="background-image: url('assets/images/velora-ai-13-intro.jpg'); background-color: #1F1E1B;"></div>
+      <div class="ai-index__card-overlay"></div>
+      <div class="ai-index__card-content">
+        <span class="ai-index__card-num">01</span>
+        <h2 class="ai-index__card-title">VELORA<br>STONECRAFT<br>STUDIO</h2>
+        <span class="ai-index__card-cat">Luxury Stone Decor</span>
+        <span class="ai-index__card-cta">View Case Study &#8594;</span>
+      </div>
+    </a>
+
+    <a href="#nava" class="ai-index__card">
+      <div class="ai-index__card-bg" style="background: linear-gradient(135deg, #6B4C2A 0%, #A8784E 40%, #D4A878 70%, #E8C9A0 100%);"></div>
+      <div class="ai-index__card-overlay"></div>
+      <div class="ai-index__card-content">
+        <span class="ai-index__card-num">02</span>
+        <h2 class="ai-index__card-title">NAVA</h2>
+        <span class="ai-index__card-cat">Fashion Accessories</span>
+        <span class="ai-index__card-cta">View Case Study &#8594;</span>
+      </div>
+    </a>
+
+    <a href="#damak" class="ai-index__card">
+      <div class="ai-index__card-bg" style="background: linear-gradient(135deg, #1C0E08 0%, #4A2418 40%, #8B4A2A 70%, #C07A46 100%);"></div>
+      <div class="ai-index__card-overlay"></div>
+      <div class="ai-index__card-content">
+        <span class="ai-index__card-num">03</span>
+        <h2 class="ai-index__card-title">DAMAK</h2>
+        <span class="ai-index__card-cat">Restaurant &amp; Food</span>
+        <span class="ai-index__card-cta">View Case Study &#8594;</span>
+      </div>
+    </a>
+
+  </section>
 
   <main>
 
-    <article class="ai-project">
-      <div class="ai-project__header">
-        <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #8B6F47 0%, #C4956A 45%, #E8C9A0 100%);">
-          <div>
-            <span class="ai-project__brand-sub" style="color: rgba(255,255,255,0.75);">Fashion Accessories</span>
-            <p class="ai-project__brand-label" style="color: #fff; font-size: 48px; font-family: 'Fraunces', serif; font-weight: 300; letter-spacing: -0.02em;">NAVA</p>
+    <!-- VELORA STONECRAFT STUDIO CASE STUDY -->
+    <div id="velora" class="ai-cs-wrap">
+      <img src="assets/images/velora-ai-14-intro.jpg" alt="Velora Stonecraft Studio" class="ai-cs-cover" />
+      <div class="ai-cs-intro">
+        <div>
+          <p class="ai-cs-brand-eyebrow">Luxury Stone Decor &middot; Tehran</p>
+          <h2 class="ai-cs-brand">VELORA<br>STONECRAFT<br>STUDIO</h2>
+          <div class="ai-cs-palette">
+            <div class="ai-cs-swatch" style="background:#F5F1EA;"></div>
+            <div class="ai-cs-swatch" style="background:#D9CFB8;"></div>
+            <div class="ai-cs-swatch" style="background:#8C7A5F;"></div>
+            <div class="ai-cs-swatch" style="background:#4A4843;"></div>
+            <div class="ai-cs-swatch" style="background:#1F1E1B;"></div>
+            <div class="ai-cs-swatch" style="background:#B8A88A;"></div>
           </div>
         </div>
-        <div class="ai-project__info">
-          <p class="ai-project__num">Project 01 / 03</p>
-          <h2 class="ai-project__title">Handmade Crochet Bags â Full AI Content System</h2>
-          <p class="ai-project__desc">NAVA is a handmade accessories brand built around crochet bags â tactile, colourful, and craft-forward. Starting from three original product photographs, I built a complete visual content library using AI generation: studio shots, lifestyle scenes, social media character imagery, and product-in-use photography.</p>
-          <div class="ai-project__meta">
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Brand</span><span class="ai-project__meta-val">NAVA â Handmade &amp; Crochet</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Category</span><span class="ai-project__meta-val">Fashion Accessories</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Output</span><span class="ai-project__meta-val">Studio Photography Â· Lifestyle Â· Social Media Â· Campaign</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Tools</span><span class="ai-project__meta-val">ChatGPT Image Generation</span></div>
-          </div>
+        <div>
+          <p class="ai-cs-desc">All product photography and lifestyle imagery published on the Velora Stonecraft Instagram page was conceived, prompted, and refined using AI generation. Starting from actual product photographs of handcrafted stone sculptures, I built a complete visual content system spanning website hero imagery, Instagram product photography, sculptural scene compositions, and social media character imagery.</p>
+          <p class="ai-cs-desc" style="margin-top:20px;">Tools: <strong style="color:#c8b99a; font-weight:400;">ChatGPT</strong> &middot; <strong style="color:#c8b99a; font-weight:400;">Higgsfield AI</strong></p>
         </div>
       </div>
-      <div class="ai-palette">
-        <div class="ai-swatch" style="background:#8B6F47;" title="Warm Tan"></div>
-        <div class="ai-swatch" style="background:#C4956A;" title="Caramel"></div>
-        <div class="ai-swatch" style="background:#E8C9A0;" title="Sand"></div>
-        <div class="ai-swatch" style="background:#D4523A;" title="Terracotta"></div>
-        <div class="ai-swatch" style="background:#2B5EA7;" title="Electric Blue"></div>
-        <div class="ai-swatch" style="background:#F0EBE1;" title="Off-White"></div>
-      </div>
-      <div class="ai-deliverables">
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¦</div><p class="ai-deliverable__name">Product Photography</p><p class="ai-deliverable__desc">Clean studio shots of each bag style against neutral backgrounds.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">â¨</div><p class="ai-deliverable__name">Studio Lifestyle</p><p class="ai-deliverable__desc">Styled editorial scenes pairing the bags with model imagery.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð±</div><p class="ai-deliverable__name">Social Media Character</p><p class="ai-deliverable__desc">Consistent social media persona for Instagram feed cohesion.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¿ü/div><p class="ai-deliverable__name">Product in Use</p><p class="ai-deliverable__desc">Candid shots showing bags worn in real environments.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ðª</div><p class="ai-deliverable__name">Mirror Photoshoot</p><p class="ai-deliverable__desc">Reflection-based photoshoot creating visual depth.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¨</div><p class="ai-deliverable__name">Different Uses</p><p class="ai-deliverable__desc">Multi-way styling content showing bag versatility.</p></div>
-      </div>
-      <div class="ai-pdf-cta">
-        <div class="ai-pdf-cta__icon">ð<\/div>
-        <div class="ai-pdf-cta__text"><p class="ai-pdf-cta__label">Full Case Study</p><p class="ai-pdf-cta__title">Fashion Accessories AI Content â NAVA</p></div>
-        <a href="assets/case-studies/Fashion_Accessories_AI_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
-      </div>
-    </article>
 
-    <article class="ai-project">
-      <div class="ai-project__header">
-        <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #2C1810 0%, #6B3A2A 45%, #C17A4A 100%);">
-          <div>
-            <span class="ai-project__brand-sub" style="color: rgba(255,255,255,0.7);">Restaurant &amp; Food</span>
-            <p class="ai-project__brand-label" style="color: #fff; font-size: 36px; font-family: 'Fraunces', serif; font-weight: 300; letter-spacing: -0.01em;">DAMAK</p>
-          </div>
-        </div>
-        <div class="ai-project__info">
-          <p class="ai-project__num">Project 02 / 03</p>
-          <h2 class="ai-project__title">Kebab Restaurant â Content Creation &amp; Social Campaign</h2>
-          <p class="ai-project__desc">Starting from three original food photography shots, I built a complete content ecosystem for Damak, a Turkish kebab restaurant.</p>
-          <div class="ai-project__meta">
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Brand</span><span class="ai-project__meta-val">Damak â Turkish Kebab Restaurant</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Category</span><span class="ai-project__meta-val">Food &amp; Restaurant</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Output</span><span class="ai-project__meta-val">Food Photography Â· Campaign Visuals Â· Social Content</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Tools</span><span class="ai-project__meta-val">ChatGPT Image Generation</span></div>
-          </div>
-        </div>
+      <div class="ai-tools">
+        <div class="ai-tool"><p class="ai-tool__label">Primary Tool</p><p class="ai-tool__name">ChatGPT</p></div>
+        <div class="ai-tool"><p class="ai-tool__label">Video Generation</p><p class="ai-tool__name">Higgsfield AI</p></div>
+        <div class="ai-tool"><p class="ai-tool__label">Art Direction</p><p class="ai-tool__name">Bahareh Ahrabi</p></div>
+        <div class="ai-tool"><p class="ai-tool__label">Industry</p><p class="ai-tool__name">Luxury Decor</p></div>
       </div>
-      <div class="ai-palette">
-        <div class="ai-swatch" style="background:#2C1810;"></div>
-        <div class="ai-swatch" style="background:#6B3A2A;"></div>
-        <div class="ai-swatch" style="background:#C17A4A;"></div>
-        <div class="ai-swatch" style="background:#E8A45A;"></div>
-        <div class="ai-swatch" style="background:#4A7A3A;"></div>
-        <div class="ai-swatch" style="background:#F5EDD8;"></div>
-      </div>
-      <div class="ai-deliverables">
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¸</div><p class="ai-deliverable__name">Base Photography</p><p class="ai-deliverable__desc">Enhanced and AI-extended original food photography.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð½ï¸</div><p class="ai-deliverable__name">Restaurant Scenes</p><p class="ai-deliverable__desc">Realistic dining environment photography.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¨</div><p class="ai-deliverable__name">Serving Variations</p><p class="ai-deliverable__desc">Multiple serving styles and presentation layouts.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¡</div><p class="ai-deliverable__name">Creative Concepts</p><p class="ai-deliverable__desc">Conceptual food photography and campaign-ready hero visuals.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð£</div><p class="ai-deliverable__name">Social Campaign</p><p class="ai-deliverable__desc">Full set of branded social media posts and character visuals.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">â</div><p class="ai-deliverable__name">Final Content Set</p><p class="ai-deliverable__desc">Curated final library of campaign-ready visuals.</p></div>
-      </div>
-      <div class="ai-pdf-cta">
-        <div class="ai-pdf-cta__icon">ð<\/div>
-        <div class="ai-pdf-cta__text"><p class="ai-pdf-cta__label">Full Case Study</p><p class="ai-pdf-cta__title">Restaurant &amp; Food AI Content Creation â Damak</p></div>
-        <a href="assets/case-studies/Restaurant_Food_AI_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
-      </div>
-    </article>
 
-    <article class="ai-project">
-      <div class="ai-project__header">
-        <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #1F1E1B 0%, #4A4843 45%, #8C7A5F 100%);">
-          <div>
-            <span class="ai-project__brand-sub" style="color: rgba(245,241,234,0.65);">Luxury Stone Decor</span>
-            <p class="ai-project__brand-label" style="color: #F5F1EA; font-size: 28px; font-family: 'Fraunces', serif; font-weight: 300; letter-spacing: -0.01em;">VELORA<br>STONECRAFT</p>
+      <div class="ai-cs-body">
+
+        <!-- SOURCE OBJECTS -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Source Objects</p>
+          <div class="ai-cs-grid-3">
+            <img src="assets/images/velora-ai-01-cake-stand.png" alt="Velora stone cake stand source" class="ai-cs-img">
+            <img src="assets/images/velora-ai-02.png" alt="Velora stone bowl source" class="ai-cs-img" onerror="this.style.background='#f0ede8';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-ai-03.png" alt="Velora stone piece source" class="ai-cs-img" onerror="this.style.background='#e8e3da';this.removeAttribute('onerror')">
           </div>
         </div>
-        <div class="ai-project__info">
-          <p class="ai-project__num">Project 03 / 03</p>
-          <h2 class="ai-project__title">Luxury Stone Atelier â AI Visual Content System</h2>
-          <p class="ai-project__desc">All product photography and lifestyle imagery published on the Velora Stonecraft Instagram page was conceived, prompted, and refined using AI generation.</p>
-          <div class="ai-project__meta">
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Brand</span><span class="ai-project__meta-val">Velora Stonecraft â Tehran Luxury Atelier</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Category</span><span class="ai-project__meta-val">Luxury Decor &amp; Stone Sculpture</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Output</span><span class="ai-project__meta-val">Website Visuals Â· Instagram Feed Â· AI Video</span></div>
-            <div class="ai-project__meta-row"><span class="ai-project__meta-key">Tools</span><span class="ai-project__meta-val">ChatGPT Â· Higgsfield AI</span></div>
+
+        <!-- WISHED VISUALS -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Wished Visuals</p>
+          <div class="ai-cs-grid-3">
+            <img src="assets/images/velora-cat2-01.png" alt="Wished visual 1" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-cat2-02.png" alt="Wished visual 2" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-cat2-03.png" alt="Wished visual 3" class="ai-cs-img ai-cs-img--landscape">
           </div>
         </div>
-      </div>
-      <div class="ai-palette">
-        <div class="ai-swatch" style="background:#F5F1EA;"></div>
-        <div class="ai-swatch" style="background:#D9CFB8;"></div>
-        <div class="ai-swatch" style="background:#8C7A5F;"></div>
-        <div class="ai-swatch" style="background:#4A4843;"></div>
-        <div class="ai-swatch" style="background:#1F1E1B;"></div>
-        <div class="ai-swatch" style="background:#B8A88A;"></div>
-      </div>
-      <div class="ai-deliverables">
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ðª¨</div><p class="ai-deliverable__name">Source Objects</p><p class="ai-deliverable__desc">Source photography of physical stone sculptures.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð</div><p class="ai-deliverable__name">Website Visuals</p><p class="ai-deliverable__desc">Hero imagery and product scenes for the Velora website.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð±</div><p class="ai-deliverable__name">Instagram Visuals</p><p class="ai-deliverable__desc">Product photography with architectural interiors for Instagram.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ðï¸</div><p class="ai-deliverable__name">Sculptural Scenes</p><p class="ai-deliverable__desc">Full-scene compositions in luxury architectural environments.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¬</div><p class="ai-deliverable__name">AI Video â Higgsfield</p><p class="ai-deliverable__desc">Cinematic product videos for Instagram Reels.</p></div>
-        <div class="ai-deliverable"><div class="ai-deliverable__icon">ð¤</div><p class="ai-deliverable__name">Social Character</p><p class="ai-deliverable__desc">Lifestyle imagery with a consistent social character for brand storytelling.</p></div>
-      </div>
-      <div class="ai-pdf-cta">
-        <div class="ai-pdf-cta__icon">ð<\/div>
-        <div class="ai-pdf-cta__text"><p class="ai-pdf-cta__label">Full Case Study</p><p class="ai-pdf-cta__title">Velora AI Visual Content Case Study</p></div>
-        <a href="assets/case-studies/Velora_AI_Visual_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
-      </div>
-    </article>
 
-    <section class="cs-section" style="background:#f7f4ef; padding: 80px 48px; margin: 0;">
-      <div style="max-width:1100px; margin:0 auto;">
-        <h2 class="cs-section__title" style="text-align:center; margin-bottom:64px;">The Process</h2>
-        <div class="cs-insights">
-          <div class="cs-insight"><span class="cs-insight__num">01</span><p class="cs-insight__title">Start with the product</p><p class="cs-insight__text">Every project begins from actual product photography. AI extends what exists, never invents from nothing.</p></div>
-          <div class="cs-insight"><span class="cs-insight__num">02</span><p class="cs-insight__title">Prompt with brand language</p><p class="cs-insight__text">Prompts are written using the brand's visual vocabulary so every output feels native to the brand.</p></div>
-          <div class="cs-insight"><span class="cs-insight__num">03</span><p class="cs-insight__title">Iterate until it fits</p><p class="cs-insight__text">AI generation is an iterative craft. Each output is refined until it matches the editorial quality expected from traditional photography.</p></div>
-          <div class="cs-insight"><span class="cs-insight__num">04</span><p class="cs-insight__title">Art-direct and deliver</p><p class="cs-insight__text">Final images are selected, cropped, and sequenced into cohesive content sets ready to deploy.</p></div>
+        <!-- INSTAGRAM PRODUCT VISUALS -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Instagram Product Visuals</p>
+          <div class="ai-cs-grid-ig">
+            <img src="assets/images/velora-ig-01.png" alt="Instagram visual 1" class="ai-cs-img">
+            <img src="assets/images/velora-ig-02.png" alt="Instagram visual 2" class="ai-cs-img">
+            <img src="assets/images/velora-ig-03.png" alt="Instagram visual 3" class="ai-cs-img">
+            <img src="assets/images/velora-ig-04.png" alt="Instagram visual 4" class="ai-cs-img">
+            <img src="assets/images/velora-ig-05.png" alt="Instagram visual 5" class="ai-cs-img">
+            <img src="assets/images/velora-ig-06.png" alt="Instagram visual 6" class="ai-cs-img">
+            <img src="assets/images/velora-ig-07.png" alt="Instagram visual 7" class="ai-cs-img">
+            <img src="assets/images/velora-ig-08.png" alt="Instagram visual 8" class="ai-cs-img">
+            <img src="assets/images/velora-ig-09.png" alt="Instagram visual 9" class="ai-cs-img">
+          </div>
         </div>
-      </div>
-    </section>
 
+        <!-- PRODUCT USE CASES -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Product Use Cases</p>
+          <div class="ai-cs-grid-2">
+            <img src="assets/images/velora-ai-04.png" alt="Use case 1" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.background='#f0ede8';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-ai-05.png" alt="Use case 2" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.background='#e8e3da';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-ai-06.png" alt="Use case 3" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.background='#dedad4';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-ai-07.png" alt="Use case 4" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.background='#f0ede8';this.removeAttribute('onerror')">
+          </div>
+        </div>
+
+        <!-- SCULPTURAL STONE PIECES -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Sculptural Stone Pieces</p>
+          <div class="ai-cs-grid-3">
+            <img src="assets/images/velora-cat2-04.png" alt="Stone sculpture 1" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-cat2-05.png" alt="Stone sculpture 2" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-cat2-06.png" alt="Stone sculpture 3" class="ai-cs-img ai-cs-img--landscape">
+          </div>
+          <img src="assets/images/velora-ai-15-intro.jpg" alt="Velora sculptural stone hero scene" class="ai-cs-img-full">
+        </div>
+
+        <!-- MATERIAL DETAILS -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Material Details</p>
+          <div class="ai-cs-grid-4">
+            <img src="assets/images/velora-ai-08.png" alt="Material detail 1" class="ai-cs-img" onerror="this.style.background='#f0ede8';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-ai-09.png" alt="Material detail 2" class="ai-cs-img" onerror="this.style.background='#e8e3da';this.removeAttribute('onerror')">
+            <img src="assets/images/velora-cat2-07.png" alt="Material detail 3" class="ai-cs-img">
+            <img src="assets/images/velora-cat2-08.png" alt="Material detail 4" class="ai-cs-img">
+          </div>
+        </div>
+
+        <!-- SOCIAL MEDIA CHARACTER -->
+        <div class="ai-cs-section">
+          <p class="ai-cs-label">Social Media Character</p>
+          <div class="ai-cs-grid-3">
+            <img src="assets/images/velora-new-01.png" alt="Social character 1" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-new-02.png" alt="Social character 2" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-new-03.png" alt="Social character 3" class="ai-cs-img ai-cs-img--landscape">
+          </div>
+          <div class="ai-cs-grid-3" style="margin-top:6px;">
+            <img src="assets/images/velora-new-04.png" alt="Social character 4" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-new-05.png" alt="Social character 5" class="ai-cs-img ai-cs-img--landscape">
+            <img src="assets/images/velora-new-06.png" alt="Social character 6" class="ai-cs-img ai-cs-img--landscape">
+          </div>
+          <div class="ai-cs-grid-3" style="margin-top:6px;">
+            <img src="assets/images/velora-new-07.png" alt="Social character 7" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.display='none'">
+            <img src="assets/images/velora-new-08.png" alt="Social character 8" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.display='none'">
+            <img src="assets/images/velora-new-09.png" alt="Social character 9" class="ai-cs-img ai-cs-img--landscape" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <!-- PDF CTA -->
+        <div class="ai-cs-section" style="padding-bottom:80px;">
+          <div class="ai-pdf-cta">
+            <div class="ai-pdf-cta__icon">&#128196;</div>
+            <div class="ai-pdf-cta__text">
+              <p class="ai-pdf-cta__label">Full Case Study</p>
+              <p class="ai-pdf-cta__title">Velora Stonecraft Studio &#8212; AI Visual Content System</p>
+            </div>
+            <a href="assets/case-studies/Velora_AI_Visual_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
+          </div>
+          <a href="#" class="ai-back ai-back--light">&#8593; Back to Case Studies</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NAVA — FASHION ACCESSORIES -->
+    <div id="nava" class="ai-light-section">
+      <article class="ai-project">
+        <div class="ai-project__header">
+          <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #8B6F47 0%, #C4956A 45%, #E8C9A0 100%);">
+            <div>
+              <span class="ai-project__brand-sub" style="color:rgba(255,255,255,0.75);">Fashion Accessories</span>
+              <p class="ai-project__brand-label" style="color:#fff;">NAVA</p>
+            </div>
+          </div>
+          <div class="ai-project__info">
+            <p class="ai-project__num">Project 02 / 03</p>
+            <h2 class="ai-project__title">Handmade Crochet Bags &#8212; Full AI Content System</h2>
+            <p class="ai-project__desc">NAVA is a handmade accessories brand built around crochet bags &#8212; tactile, colourful, and craft-forward. Starting from three original product photographs, I built a complete visual content library using AI generation: studio shots, lifestyle scenes, social media character imagery, and product-in-use photography.</p>
+            <div class="ai-project__meta">
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Brand</span>
+                <span class="ai-project__meta-val">NAVA &#8212; Handmade &amp; Crochet</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Category</span>
+                <span class="ai-project__meta-val">Fashion Accessories</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Output</span>
+                <span class="ai-project__meta-val">Studio &middot; Lifestyle &middot; Social Media &middot; Campaign</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Tools</span>
+                <span class="ai-project__meta-val">ChatGPT Image Generation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-pdf-cta">
+          <div class="ai-pdf-cta__icon">&#128196;</div>
+          <div class="ai-pdf-cta__text">
+            <p class="ai-pdf-cta__label">Full Case Study</p>
+            <p class="ai-pdf-cta__title">Fashion Accessories AI Content &#8212; NAVA</p>
+          </div>
+          <a href="assets/case-studies/Fashion_Accessories_AI_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
+        </div>
+        <a href="#" class="ai-back">&#8593; Back to Case Studies</a>
+      </article>
+    </div>
+
+    <!-- DAMAK — RESTAURANT & FOOD -->
+    <div id="damak" class="ai-light-section">
+      <article class="ai-project">
+        <div class="ai-project__header">
+          <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #2C1810 0%, #6B3A2A 45%, #C17A4A 100%);">
+            <div>
+              <span class="ai-project__brand-sub" style="color:rgba(255,255,255,0.7);">Restaurant &amp; Food</span>
+              <p class="ai-project__brand-label" style="color:#fff; font-size:36px;">DAMAK</p>
+            </div>
+          </div>
+          <div class="ai-project__info">
+            <p class="ai-project__num">Project 03 / 03</p>
+            <h2 class="ai-project__title">Kebab Restaurant &#8212; Content Creation &amp; Social Campaign</h2>
+            <p class="ai-project__desc">Starting from three original food photography shots, I built a complete content ecosystem for Damak, a Turkish kebab restaurant. AI-generated food photography, restaurant scene imagery, and social media campaign visuals, all from a minimal source set.</p>
+            <div class="ai-project__meta">
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Brand</span>
+                <span class="ai-project__meta-val">Damak &#8212; Turkish Kebab Restaurant</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Category</span>
+                <span class="ai-project__meta-val">Food &amp; Restaurant</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Output</span>
+                <span class="ai-project__meta-val">Food Photography &middot; Campaign &middot; Social Content</span>
+              </div>
+              <div class="ai-project__meta-row">
+                <span class="ai-project__meta-key">Tools</span>
+                <span class="ai-project__meta-val">ChatGPT Image Generation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-pdf-cta">
+          <div class="ai-pdf-cta__icon">&#128196;</div>
+          <div class="ai-pdf-cta__text">
+            <p class="ai-pdf-cta__label">Full Case Study</p>
+            <p class="ai-pdf-cta__title">Restaurant &amp; Food AI Content &#8212; Damak</p>
+          </div>
+          <a href="assets/case-studies/Restaurant_Food_AI_Content_Case_Study_Bahareh_Ahrabi.pdf" class="ai-pdf-btn" target="_blank" rel="noopener">View PDF</a>
+        </div>
+        <a href="#" class="ai-back">&#8593; Back to Case Studies</a>
+      </article>
+    </div>
+
+    <!-- NEXT PROJECT -->
     <section class="cs-next">
       <a href="velora-stonecraft.html" class="cs-next__inner">
         <span class="cs-next__label">Next Project</span>
-        <span class="cs-next__title">Velora Stonecraft â Brand Identity</span>
-        <span class="cs-next__link">View Case Study â</span>
+        <span class="cs-next__title">Velora Stonecraft &#8212; Brand Identity</span>
+        <span class="cs-next__link">View Case Study &#8594;</span>
       </a>
     </section>
 
