@@ -377,6 +377,30 @@
       .ai-cs-grid-3, .ai-cs-grid-4, .ai-cs-grid-ig { grid-template-columns: 1fr 1fr; }
       .ai-cs-grid-2 { grid-template-columns: 1fr; }
     }
+  
+    /* ── Prototype CTA ── */
+    .cs-proto-cta-wrap {
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+    }
+    .cs-proto-cta {
+      display: inline-block;
+      padding: 1rem 2.75rem;
+      border: 1.5px solid #1a1a1a;
+      border-radius: 100px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      text-decoration: none;
+      background: transparent;
+      transition: background 0.2s, color 0.2s;
+    }
+    .cs-proto-cta:hover {
+      background: #1a1a1a;
+      color: #f5f3ef;
+    }
   </style>
 </head>
 <body>
@@ -594,7 +618,12 @@
       </a>
     </section>
 
-  </main>
+  
+      <!-- Prototype CTA -->
+      <div class="cs-proto-cta-wrap">
+        <a href="#" target="_blank" rel="noopener" class="cs-proto-cta">VIEW PROTOTYPE →</a>
+      </div>
+</main>
 
   <script src="components/nav.js" defer></script>
   <script src="components/lang.js" defer></script>
