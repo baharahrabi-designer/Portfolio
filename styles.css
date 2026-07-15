@@ -689,6 +689,7 @@ input,textarea,select{font:inherit}
    BLOG / INSIGHTS
 ============================================================ */
 .blog{background:var(--bg);border-top:1px solid var(--border)}
+.blog{padding-bottom:clamp(2rem,4vw,3rem)}
 .blog__header{margin-bottom:2.5rem}
 .blog__sub{font-size:.95rem;color:var(--text-dim);line-height:1.8;max-width:52ch}
 .blog__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
