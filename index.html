@@ -522,30 +522,31 @@
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: rgba(255,255,255,0.55);
-  margin-bottom: 7px;
+  margin-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
+  transition: opacity 0.3s ease, max-height 0.35s ease, margin-bottom 0.3s ease;
 }
 .ai-case-card__title {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   line-height: 1.35;
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 }
 .ai-case-card__desc {
   font-size: 13px;
   color: rgba(255,255,255,0.72);
   line-height: 1.6;
-  margin: 0 0 18px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  transition: opacity 0.3s ease 0.05s, max-height 0.4s ease, margin 0.3s ease;
 }
 .ai-case-card__btn {
   display: inline-block;
@@ -558,16 +559,24 @@
   text-transform: uppercase;
   border-radius: 50px;
   text-decoration: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s;
-  align-self: flex-start;
-}
-.ai-case-card:hover .ai-case-card__tag,
-.ai-case-card:hover .ai-case-card__desc,
-.ai-case-card:hover .ai-case-card__btn {
   opacity: 1;
   transform: translateY(0);
+  margin-top: 14px;
+  align-self: flex-start;
+  transition: background 0.2s ease;
+}
+.ai-case-card:hover .ai-case-card__btn {
+  background: #e8e8e8;
+}
+.ai-case-card:hover .ai-case-card__tag {
+  opacity: 1;
+  max-height: 30px;
+  margin-bottom: 7px;
+}
+.ai-case-card:hover .ai-case-card__desc {
+  opacity: 1;
+  max-height: 120px;
+  margin: 8px 0 0;
 }
 @media (max-width: 900px) {
   .ai-case-grid { grid-template-columns: 1fr 1fr; }
