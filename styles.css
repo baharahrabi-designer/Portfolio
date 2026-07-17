@@ -9,10 +9,10 @@
   src: url('assets/fonts/DxGrafik-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: swa
 }
 @font-face {
-  font-family: 'DxGrafik';
+  font-family: 'DxGrafik'
   src: url('assets/fonts/DxGrafik-BlackItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
@@ -341,9 +341,9 @@ input,textarea,select{font:inherit}
 
 /* Right image */
 .services__right{display:flex;align-items:flex-start;justify-content:center;padding-top:1rem}
-.services__img-wrap{width:100%;max-width:420px;border-radius:20px;overflow:hidden;transform:rotate(3deg);box-shadow:0 20px 60px rgba(0,0,0,.12);transition:transform .4s var(--ease)}
+.services__img-wrap{width:100%;max-width:540px;border-radius:20px;overflow:hidden;transform:rotate(3deg);box-shadow:0 20px 60px rgba(0,0,0,.12);transition:transform .4s var(--ease)}
 .services__img-wrap:hover{transform:rotate(0deg)}
-.services__img{width:100%;height:380px;object-fit:cover;object-position:top center}
+.services__img{width:100%;height:520px;object-fit:cover;object-position:top center}
 
 /* ============================================================
    ABOUT
