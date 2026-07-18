@@ -601,7 +601,7 @@
   <script>
     // -- Smooth scroll with nav offset
     document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a'�ddEventListener('click', e => {
+      a.addEventListener('click', e => {
         const href = a.getAttribute('href');
         if (!href || href === '#') return;
         const target = document.querySelector(href);
