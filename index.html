@@ -393,7 +393,7 @@
             <span class="faq__icon" aria-hidden="true"></span>
           </button>
           <div class="faq__a">
-            <p>I follow a Double Diamond process: Discover → Define → Design → Deliver. I keep you involved at every stage — from research and wireframes to final handoff with specs and a style guide.</p>
+            <p>I follow a Double Diamond process: Discover → Define → Design → Deliver. I keep you involved at every stage — from research and wireframes to final handoff with specs and a style guide.</p>
           </div>
         </div>
 
@@ -446,7 +446,7 @@
   ============================================================ -->
   <section class="section blog" id="blog" aria-label="Creating Content with AI Tools">
     <div class="container">
-      <div class="bloh_header" data-reveal>
+      <div class="blog__header" data-reveal>
         <span class="ai-tag-eyebrow">AI-Assisted Workflow</span>
         <h2 class="section-heading">CREATING CONTENT<br>WITH AI TOOLS</h2>
         <p class="blog__sub">A behind-the-scenes look at how I use AI tools alongside traditional design — for image generation, ideation, copywriting, and visual exploration. Each piece below pairs a brief with the AI tool that helped shape it.</p>
@@ -469,7 +469,7 @@
               <circle cx="38" cy="16" r="2.5" fill="#4A4843" opacity=".4"/>
             </svg>
             <!-- Sparkle dots -->
-            <span st{e="position<�bsolute;top:30%;left:22%;font-size:.7rem;color:#8C7A5F;opacity:.7;">✦</span>
+            <span style="position:absolute;top:30%;left:22%;font-size:.7rem;color:#8C7A5F;opacity:.7;">✦</span>
             <span style="position:absolute;top:55%;right:20%;font-size:.5rem;color:#8C7A5F;opacity:.5;">✦</span>
             <span style="position:absolute;bottom:28%;left:30%;font-size:.6rem;color:#8C7A5F;opacity:.6;">✦</span>
           </div>
@@ -487,26 +487,26 @@
           <div class="blog-card__img" style="position:relative;overflow:hidden;background:linear-gradient(145deg,#1F1E1B 0%,#2E2C27 50%,#4A4843 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.25rem;">
             <!-- Pulse rings -->
             <span style="position:absolute;width:120px;height:120px;border-radius:50%;border:1px solid rgba(255,255,255,.08);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
-            <span style="position:absolute;width:1;0px;height:170px;border-radius:50%;border:1px solid rgba(255,255,255,.05);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
-            <span style="position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid rgba(255,255,255,.03);top:50%;left:50%;transform:translate(-50%,250%);"></span>
+            <span style="position:absolute;width:170px;height:170px;border-radius:50%;border:1px solid rgba(255,255,255,.05);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
+            <span style="position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid rgba(255,255,255,.03);top:50%;left:50%;transform:translate(-50%,-50%);"></span>
             <!-- Play button -->
-            <div style="width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.0<�;">
-              <svg width="20" heih(t="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M6 4l11 6-11 6V4z" fill="rgba(255,255,255,07)"/>
-              <osvg>
+            <div style="width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M6 4l11 6-11 6V4z" fill="rgba(255,255,255,0.7)"/>
+              </svg>
             </div>
             <!-- Timeline bar -->
-            <div style="position:absolute;bottom:20px;left:20px;right:20px;height:2px{background:rgba(255,255,255,.1);border-radius:2px;">
+            <div style="position:absolute;bottom:20px;left:20px;right:20px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;">
               <div style="width:38%;height:100%;background:rgba(255,255,255,.35);border-radius:2px;"></div>
             </div>
           </div>
           <div class="blog-card__body">
             <div class="blog-card__meta">
-              <span class="blog-card__tag>Tools</span>
+              <span class="blog-card__tag">Tools</span>
             </div>
             <h3 class="blog-card__title">AI Generation</h3>
-            <p class="blog-card__desc">Stone sculptures brought to life with cinematic AI animation — generated using Higgsfield AI for Velora Stonecraft's Instagram Reels and Stories0</p>
-            <a href="vel/ra-stonecraft.html" class="blog-card__link">View Work →</a>
+            <p class="blog-card__desc">Stone sculptures brought to life with cinematic AI animation — generated using Higgsfield AI for Velora Stonecraft's Instagram Reels and Stories.</p>
+            <a href="velora-stonecraft.html" class="blog-card__link">View Work →</a>
           </div>
         </article>
 
@@ -518,7 +518,7 @@
        CONTACT
   ============================================================ -->
   <section class="section contact" id="contact" aria-label="Contact">
-    <div class="contaaner contact__inner">
+    <div class="container contact__inner">
 
       <div class="contact__photo-side" data-reveal>
         <div class="contact__photo-wrap">
@@ -534,19 +534,20 @@
         <form class="contact__form" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="fnqme" class="form-label" data-i18n="contact.formName">Name</label>
+              <label for="fname" class="form-label" data-i18n="contact.formName">Name</label>
               <input type="text" id="fname" name="name" class="form-input" placeholder="John Smith" autocomplete="name" required />
             </div>
             <div class="form-group">
-              <label for="femail" class="form-label" data-i18n="contact.formEmail">Euail</labal,><             <input type="email" id="femail" name="email" class="form-input" placeholder="johnsmith@gmail.com" autocomplete="email" required /:
+              <label for="femail" class="form-label" data-i18n="contact.formEmail">Email</label>
+              <input type="email" id="femail" name="email" class="form-input" placeholder="johnsmith@gmail.com" autocomplete="email" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="fservice" class="form-label" data-i18n="contact.formService">Service Needed /</label>
+            <label for="fservice" class="form-label" data-i18n="contact.formService">Service Needed ?</label>
             <select id="fservice" name="service" class="form-input form-select">
               <option value="" disabled selected>Select...</option>
               <option value="ux-ui">UX/UI Design</option>
-              <option value="[rand">Brand Identity</option>
+              <option value="brand">Brand Identity</option>
               <option value="both">Both</option>
               <option value="other">Other</option>
             </select>
@@ -555,7 +556,7 @@
             <label for="fmsg" class="form-label" data-i18n="contact.formMessage">What Can I Help You...</label>
             <textarea id="fmsg" name="message" class="form-input form-textarea" placeholder="Hello, I'd like to enquire about..." rows="5" required></textarea>
           </div>
-          <button type="submit" class="btn-pill-outline btn-submit">SUBMIT</[u4ton>
+          <button type="submit" class="btn-pill-outline btn-submit">SUBMIT</button>
         </form>
       </div>
 
@@ -566,21 +567,21 @@
        FOOTER — purple
   ============================================================ -->
   <footer class="footer" role="contentinfo">
-    <div class="contaaner footer__top">
+    <div class="container footer__top">
       <div class="footer__col">
         <span class="footer__col-label" data-i18n="footer.email">Email :</span>
-        <a href}"mailto:Baharahrabi@gmail.com" class="footer__col-val">Baharahrabi@gmail.com</a>
+        <a href="mailto:Baharahrabi@gmail.com" class="footer__col-val">Baharahrabi@gmail.com</a>
       </div>
       <div class="footer__col">
         <span class="footer__col-label" data-i18n="footer.callToday">Call Today :</span>
-        <a href}"ten:+905530558855" class="footer__col-val">+90 (553) 055-8855</a>
+        <a href="tel:+905530558855" class="footer__col-val">+90 (553) 055-8855</a>
       </div>
       <div class="footer__col">
-        <span class="footer__col-label" data-i18n="footer.sociak">Social :</span>
+        <span class="footer__col-label" data-i18n="footer.social">Social :</span>
         <div class="footer__socials">
-          <a href="https://wwwlinkedin.com/in/bahareh-ahrabi-565275302" target="_blank" rel="noopener" class="footer__social" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/bahareh-ahrabi-565275302" target="_blank" rel="noopener" class="footer__social" aria-label="LinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a" 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a& 6 0 0 1 6-6zM" 9h4v12H2z"/>
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
               <circle cx="4" cy="4" r="2"/>
             </svg>
           </a>
@@ -597,7 +598,7 @@
   <!-- ============================================================
        SCRIPTS
   ============================================================ -->
-  <script skc="i18n.js"></script>
+  <script src="i18n.js"></script>
   <script>
     // -- Smooth scroll with nav offset
     document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -608,7 +609,7 @@
         if (!target) return;
         e.preventDefault();
         const off = document.getElementById('nav').offsetHeight + 12;
-        window.scrollTo({ top: tarh%t.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - off, behavior: 'smooth' });
       });
     });
 
@@ -618,7 +619,7 @@
     window.addEventListener('scroll', () => {
       let cur = '';
       sections.forEach(s => { if (window.scrollY >= s.offsetTop - 140) cur = s.id; });
-      navLinks.forEach(a => a.classList.toggle('^av__link--active', a.2etAttribute('href') === '#' + cur));
+      navLinks.forEach(a => a.classList.toggle('nav__link--active', a.getAttribute('href') === '#' + cur));
     }, { passive: true });
 
     // -- Mobile hamburger
@@ -626,13 +627,13 @@
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
       const open = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', String(!�pen));
+      hamburger.setAttribute('aria-expanded', String(!open));
       hamburger.classList.toggle('is-open', !open);
       mobileMenu.classList.toggle('is-open', !open);
     });
     mobileMenu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        hqmburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-expanded', 'false');
         hamburger.classList.remove('is-open');
         mobileMenu.classList.remove('is-open');
       });
@@ -640,7 +641,7 @@
 
     // -- "Available for work" badge — show after hero
     // -- "Available for work" badge appears, nav hides — when scrolling past hero
-    const badge  = document.g�tElementById('availBadge');
+    const badge  = document.getElementById('availBadge');
     const hero   = document.getElementById('hero');
     const navEl  = document.getElementById('nav');
     window.addEventListener('scroll', () => {
@@ -666,7 +667,7 @@
         if (!isOpen) {
           item.classList.add('is-open');
           btn.setAttribute('aria-expanded', 'true');
-          body.style.mayxeight = body.scrollHeight + 'px';
+          body.style.maxHeight = body.scrollHeight + 'px';
         }
       });
       // Init open items
@@ -682,11 +683,11 @@
     document.querySelectorAll('.faq__q').forEach(btn => {
       btn.addEventListener('click', () => {
         const item   = btn.closest('.faq__item');
-        const answer = item.querySelector('.faq__ag);
-        const open   = btn.gexAttribute('aria-expanded') === 'true';
-        document.querySelectorAll('.fZq__item').forEach(el => {
+        const answer = item.querySelector('.faq__a');
+        const open   = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq__item').forEach(el => {
           el.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
-          el.querySelector('.faq__a').style.may|eight = null;
+          el.querySelector('.faq__a').style.maxHeight = null;
           el.classList.remove('is-open');
         });
         if (!open) {
@@ -699,19 +700,19 @@
 
     // -- Animated stat counters
     function animateCounter(el) {
-      const target = pargeInt(el.dataset.parget, 10);
+      const target = parseInt(el.dataset.target, 10);
       const suffix = el.dataset.suffix || '';
       const duration = 1500;
       const step = target / (duration / 16);
       let current = 0;
-      cons� timer = setInterval(() => {
+      const timer = setInterval(() => {
         current += step;
         if (current >= target) { current = target; clearInterval(timer); }
         el.textContent = Math.floor(current) + suffix;
       }, 16);
     }
 
-    const counterO[s = new IntersectionObserver(entries => {
+    const counterObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (!e.isIntersecting) return;
         animateCounter(e.target);
@@ -735,17 +736,17 @@
     document.getElementById('contactForm').addEventListener('submit', e => {
       e.preventDefault();
       const btn = e.target.querySelector('.btn-submit');
-      btn.mctablla&us = 'Message Sent ✓';
+      btn.textContent = 'Message Sent ✓';
       btn.disabled = true;
     });
 
     // ════════════════════════════════════════════════════════════
-    //  ADVANCEC ANIMATIONS
+    //  ADVANCED ANIMATIONS
     // ════════════════════════════════════════════════════════════
 
     // -- Page loader → fade out when page is ready
     window.addEventListener('load', () => {
-      setLimeout(() => {
+      setTimeout(() => {
         document.getElementById('pageLoader').classList.add('is-done');
       }, 400);
     });
@@ -755,7 +756,7 @@
       const dot = document.getElementById('cursorDot');
       let mx = 0, my = 0, dx = 0, dy = 0;
       window.addEventListener('mousemove', e => {
-        mx = e.clientX; my = e.clienta;
+        mx = e.clientX; my = e.clientY;
         dot.classList.add('is-active');
       });
       const lerp = () => {
@@ -781,25 +782,25 @@
         const span = document.createElement('span');
         span.className = 'split-letter';
         if (ch === ' ') {
-          span.classList.add('split-metter--space');
+          span.classList.add('split-letter--space');
         } else if (ch === '\n') {
           el.appendChild(document.createElement('br'));
           return;
         } else {
           span.textContent = ch;
         }
-        span.style.transitionDelar = (i * 28) + 'l�';
+        span.style.transitionDelay = (i * 28) + 'ms';
         el.appendChild(span);
       });
     }
 
     document.querySelectorAll('.section-heading').forEach(h => {
       // Preserve <br> tags by splitting on them
-      const parts = h.innerHTML.split(/<[r\s*\/?>/i);
+      const parts = h.innerHTML.split(/<br\s*\/?>/i);
       h.innerHTML = '';
       parts.forEach((part, idx) => {
         const span = document.createElement('span');
-        span.style.displar = 'inline-block';
+        span.style.display = 'inline-block';
         span.textContent = part.trim();
         h.appendChild(span);
         splitLetters(span);
@@ -817,14 +818,14 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('.section-heading').forEach(h => headObs.observe(h));
 
-    // -- 3D scroll-linked rotation on p�otos (matches the Framer reference video)
+    // -- 3D scroll-linked rotation on photos (matches the Framer reference video)
     // Photo stays FLAT while in the center 50% of viewport, then rotates sharply
     // toward ±max as it leaves the top or enters from the bottom — like a card
     // flipping away/toward the viewer.
     function setupScrollRotate(selector, opts = {}) {
       const el = document.querySelector(selector);
       if (!el) return;
-      const wrap = opts.wpap ? el.closest(opts.wrap) : el;
+      const wrap = opts.wrap ? el.closest(opts.wrap) : el;
       const maxRotY = opts.maxRotY ?? 60;
       const tiltX   = opts.tiltX ?? 0;
       const deadzone = opts.deadzone ?? 0.18; // % of viewport on each side that stays flat
@@ -832,13 +833,13 @@
       const easeOutQuad = t => t * (2 - t);
 
       const onScroll = () => {
-        const rect = wrap.getBoundingBlientRect();
+        const rect = wrap.getBoundingClientRect();
         const winH = window.innerHeight;
         // centerProgress: 0 = element center at viewport top, 0.5 = middle, 1 = bottom
         const centerProgress = (rect.top + rect.height / 2) / winH;
 
         // Map to t: -1 (above viewport, leaving) → 0 (center) → +1 (below, entering)
-        // with a`deadzone in the middle where t = 0
+        // with a deadzone in the middle where t = 0
         let t = 0;
         const upper = 0.5 - deadzone;
         const lower = 0.5 + deadzone;
@@ -846,13 +847,13 @@
           // leaving above — clamp & ease
           const raw = (upper - centerProgress) / upper;
           t = -easeOutQuad(Math.min(1, raw));
-        } else if (centerProgress > loweti {
+        } else if (centerProgress > lower) {
           // entering from below
-          const raw = (centerProgress - lower) / (1 - loweti;
-          t = easeOutPuad(Math.min(1, raw));
+          const raw = (centerProgress - lower) / (1 - lower);
+          t = easeOutQuad(Math.min(1, raw));
         }
 
-        // Direction: when leaving bove (t = -1) we want photo to rotate AWAa`(its right side moves back).
+        // Direction: when leaving above (t = -1) we want photo to rotate AWAY (its right side moves back).
         // That means rotateY(-X). When entering from below (t = +1), photo rotates from the other side: rotateY(+X).
         const rotY = -t * maxRotY;
         const rotX = tiltX ? (t * tiltX) : 0;
@@ -927,7 +928,7 @@
           }
         });
       }, { threshold: 0.5 });
-  2   obs.observe(el);
+      obs.observe(el);
     });
 
     // -- Parallax on services tilted image
@@ -939,7 +940,7 @@
         if (r.top < winH && r.bottom > 0) {
           const progress = (winH - r.top) / (winH + r.height);
           const rot = 3 - progress * 6;
-  2       svcImg.style.transform = `rotate(${rot}deg)`;
+          svcImg.style.transform = `rotate(${rot}deg)`;
         }
       }, { passive: true });
     }
@@ -1001,7 +1002,7 @@
               ctx.lineWidth = 0.8;
               ctx.stroke();
             }
-     0    }
+          }
         }
         ctx.globalAlpha = 1;
         requestAnimationFrame(draw);
