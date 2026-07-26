@@ -7,11 +7,12 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Bahareh Ahrabi" />
   <title>AI Content Creation — Bahareh Ahrabi</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@qpokychuk/gilroy/index.css">
-    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/e37c5bb24acd803973c692c8c59a6230?family=Benzin-Bold">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="animations.css" /
-  <link rel="stylesheet" href="case-study.css" 
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="case-study.css" />
   <link rel="stylesheet" href="case-study-fonts.css" />
   <style>
     .ai-hero {
@@ -21,7 +22,7 @@
       text-align: center;
     }
     .ai-hero__eyebrow {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.2em;
@@ -30,7 +31,7 @@
       margin-bottom: 24px;
     }
     .ai-hero__title {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(42px, 6vw, 80px);
       font-weight: 300;
       line-height: 1.05;
@@ -39,7 +40,7 @@
     }
     .ai-hero__title em { font-style: italic; color: #c8b99a; }
     .ai-hero__sub {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-weight: 300;
       color: #9a9a8a;
@@ -87,7 +88,7 @@
       padding: 52px 40px;
     }
     .ai-index__card-num {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.24em;
@@ -97,7 +98,7 @@
       margin-bottom: 16px;
     }
     .ai-index__card-title {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(24px, 2.6vw, 34px);
       font-weight: 300;
       line-height: 1.08;
@@ -106,7 +107,7 @@
       margin: 0 0 10px;
     }
     .ai-index__card-cat {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.13em;
@@ -116,7 +117,7 @@
       margin-bottom: 28px;
     }
     .ai-index__card-cta {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.12em;
@@ -153,10 +154,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
-      align-items: stretch;
+      align-items: start;
     }
     .ai-cs-brand-eyebrow {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.22em;
@@ -165,7 +166,7 @@
       margin-bottom: 16px;
     }
     .ai-cs-brand {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(36px, 5vw, 60px);
       font-weight: 300;
       letter-spacing: -0.02em;
@@ -173,7 +174,7 @@
       color: #f5f1ea;
     }
     .ai-cs-desc {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 1.9;
@@ -199,7 +200,7 @@
     }
     .ai-tool { text-align: center; }
     .ai-tool__label {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.18em;
@@ -208,7 +209,7 @@
       margin-bottom: 7px;
     }
     .ai-tool__name {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: 18px;
       font-weight: 300;
       color: #f5f1ea;
@@ -224,7 +225,7 @@
       padding: 72px 48px 0;
     }
     .ai-cs-label {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.22em;
@@ -251,6 +252,7 @@
       width: 100%; aspect-ratio: 1/1;
       object-fit: cover; display: block; border-radius: 2px;
     }
+    .ai-cs-img--landscape { aspect-ratio: 4/3; }
     .ai-cs-img-full {
       width: 100%; max-height: 560px;
       object-fit: cover; display: block;
@@ -266,17 +268,17 @@
     .ai-pdf-cta__icon { font-size: 28px; flex-shrink: 0; }
     .ai-pdf-cta__text { flex: 1; }
     .ai-pdf-cta__label {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px; font-weight: 600;
       letter-spacing: 0.18em; text-transform: uppercase;
       color: #9a9a8a; margin-bottom: 6px;
     }
     .ai-pdf-cta__title {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: 18px; font-weight: 400; color: #1a1a1a;
     }
     .ai-pdf-btn {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 12px; font-weight: 600;
       letter-spacing: 0.1em; text-transform: uppercase;
       color: #f5f1ea; background: #1a1a1a;
@@ -289,7 +291,7 @@
     .ai-back {
       display: block; text-align: center;
       padding: 40px 0 0;
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 11px; font-weight: 500;
       letter-spacing: 0.15em; text-transform: uppercase;
       color: #aaa; text-decoration: none;
@@ -304,39 +306,39 @@
     .ai-project { padding: 88px 48px; max-width: 1100px; margin: 0 auto; }
     .ai-project__header {
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 64px; align-items: stretch; margin-bottom: 48px;
+      gap: 64px; align-items: start; margin-bottom: 48px;
     }
     .ai-project__brand-block {
-      border-radius: 4px;
+      border-radius: 4px; aspect-ratio: 4/3;
       display: flex; align-items: flex-end;
       padding: 28px; overflow: hidden;
     }
     .ai-project__brand-label {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: 48px; font-weight: 300;
       letter-spacing: -0.02em;
     }
     .ai-project__brand-sub {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 11px; font-weight: 500;
       letter-spacing: 0.15em; text-transform: uppercase;
       opacity: 0.7; display: block; margin-top: 4px;
     }
     .ai-project__info { padding-top: 16px; }
     .ai-project__num {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px; font-weight: 600;
       letter-spacing: 0.2em; text-transform: uppercase;
       color: #9a9a8a; margin-bottom: 20px;
     }
     .ai-project__title {
-      font-family: 'Benzin-Bold', serif;
+      font-family: 'Fraunces', serif;
       font-size: clamp(26px, 3.5vw, 40px);
       font-weight: 300; letter-spacing: -0.02em;
       line-height: 1.15; margin-bottom: 18px; color: #1a1a1a;
     }
     .ai-project__desc {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 15px; font-weight: 300;
       line-height: 1.8; color: #555; margin-bottom: 24px;
     }
@@ -346,13 +348,13 @@
     }
     .ai-project__meta-row { display: flex; gap: 16px; }
     .ai-project__meta-key {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 10px; font-weight: 600;
       letter-spacing: 0.15em; text-transform: uppercase;
       color: #9a9a8a; min-width: 90px; padding-top: 2px;
     }
     .ai-project__meta-val {
-      font-family: 'Gilroy', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 13px; font-weight: 400;
       color: #333; line-height: 1.5;
     }
@@ -376,7 +378,6 @@
       .ai-cs-grid-3, .ai-cs-grid-4, .ai-cs-grid-ig { grid-template-columns: 1fr 1fr; }
       .ai-cs-grid-2 { grid-template-columns: 1fr; }
     }
-  
   </style>
 </head>
 <body>
@@ -411,7 +412,7 @@
   <section class="ai-index" aria-label="Select a case study">
 
     <a href="#velora" class="ai-index__card">
-      <div class="ai-index__card-bg" style="background-image: url('assets/images/velora-cover.png'); background-size: cover; background-position: center;"></div>
+      <div class="ai-index__card-bg" style="background-image: url('assets/images/velora-ai-13-intro.jpg'); background-color: #1F1E1B;"></div>
       <div class="ai-index__card-overlay"></div>
       <div class="ai-index__card-content">
         <span class="ai-index__card-num">01</span>
@@ -422,7 +423,7 @@
     </a>
 
     <a href="#nava" class="ai-index__card">
-      <div class="ai-index__card-bg" style="background-image: url('assets/images/nava-cover.jpg'); background-size: cover; background-position: center top;"></div>
+      <div class="ai-index__card-bg" style="background: linear-gradient(135deg, #6B4C2A 0%, #A8784E 40%, #D4A878 70%, #E8C9A0 100%);"></div>
       <div class="ai-index__card-overlay"></div>
       <div class="ai-index__card-content">
         <span class="ai-index__card-num">02</span>
@@ -433,7 +434,7 @@
     </a>
 
     <a href="#damak" class="ai-index__card">
-      <div class="ai-index__card-bg" style="background-image: url('assets/images/damak-cover.png'); background-size: cover; background-position: center;"></div>
+      <div class="ai-index__card-bg" style="background: linear-gradient(135deg, #1C0E08 0%, #4A2418 40%, #8B4A2A 70%, #C07A46 100%);"></div>
       <div class="ai-index__card-overlay"></div>
       <div class="ai-index__card-content">
         <span class="ai-index__card-num">03</span>
@@ -451,7 +452,7 @@
     <div id="velora" class="ai-light-section">
       <article class="ai-project">
         <div class="ai-project__header">
-          <div class="ai-project__brand-block" style="background-image: url('assets/images/velora-cover.png'); background-size: cover; background-position: center top;">
+          <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #1F1E1B 0%, #4A4843 45%, #8C7A5F 100%);">
             <div>
               <span class="ai-project__brand-sub" style="color:rgba(255,255,255,0.75);">Luxury Stone Decor &middot; Tehran</span>
               <p class="ai-project__brand-label" style="color:#fff;">VELORA</p>
@@ -497,7 +498,7 @@
     <div id="nava" class="ai-light-section">
       <article class="ai-project">
         <div class="ai-project__header">
-          <div class="ai-project__brand-block" style="background-image: url('assets/images/nava-cover.jpg'); background-size: cover; background-position: center top;">
+          <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #8B6F47 0%, #C4956A 45%, #E8C9A0 100%);">
             <div>
               <span class="ai-project__brand-sub" style="color:rgba(255,255,255,0.75);">Fashion Accessories</span>
               <p class="ai-project__brand-label" style="color:#fff;">NAVA</p>
@@ -543,7 +544,7 @@
     <div id="damak" class="ai-light-section">
       <article class="ai-project">
         <div class="ai-project__header">
-          <div class="ai-project__brand-block" style="background-image: url(assets/images/damak-cover.png); background-size: cover; background-position: center;">
+          <div class="ai-project__brand-block" style="background: linear-gradient(135deg, #2C1810 0%, #6B3A2A 45%, #C17A4A 100%);">
             <div>
               <span class="ai-project__brand-sub" style="color:rgba(255,255,255,0.7);">Restaurant &amp; Food</span>
               <p class="ai-project__brand-label" style="color:#fff; font-size:36px;">DAMAK</p>
@@ -586,21 +587,7 @@
     </div>
 
     <!-- NEXT PROJECT -->
-            <!-- Prototype -->
-        <section class="cs-section cs-section--center" id="prototype" data-reveal>
-          <h2 class="cs-section__title">Prototype</h2>
-          <div class="cs-section__body">
-            <p>Explore the interactive prototypes created for the AI content projects — including NAVA, Damak, and Velora Stonecraft.</p>
-          </div>
-          <a href="#" class="btn-pill-outline cs-cta-large" target="_blank" rel="noopener">
-            View the Prototype
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </section>
-
-        <section class="cs-next">
+    <section class="cs-next">
       <a href="velora-stonecraft.html" class="cs-next__inner">
         <span class="cs-next__label">Next Project</span>
         <span class="cs-next__title">Velora Stonecraft &#8212; Brand Identity</span>
@@ -608,8 +595,7 @@
       </a>
     </section>
 
-  
-</main>
+  </main>
 
   <script src="components/nav.js" defer></script>
   <script src="components/lang.js" defer></script>
