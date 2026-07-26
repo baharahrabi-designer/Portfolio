@@ -265,6 +265,7 @@
         </div>
       </div>
 
+
     </div>
   </section>
 
@@ -357,6 +358,23 @@
               <a href="velora-stonecraft.html" class="proj-card-cta">Brand Identity <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
               <a href="velora-stonecraft-ux.html" class="proj-card-cta">UX/UI Website <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
+          </div>
+        </div>
+
+      <div class="proj-flip" data-reveal>
+        <div class="proj-flip__inner">
+          <a href="ai-content.html" class="proj-stack-card proj-flip__front">
+            <img src="assets/images/velora-ai-13-intro.jpg" alt="AI Visual Content Creation" class="proj-stack-card__bg">
+            <div class="proj-stack-card__overlay"></div>
+            <div class="proj-stack-card__content">
+              <h3 class="proj-stack-card__title">AI CONTENT CREATOR</h3>
+            </div>
+          </a>
+          <div class="proj-flip__back">
+            <span class="proj-flip__back-pill">AI · Content Creation</span>
+            <h3 class="proj-flip__back-title">AI CONTENT CREATOR</h3>
+            <p class="proj-flip__back-desc">AI-generated visual content for fashion accessories, restaurant identity, and luxury stone sculpture — produced with Midjourney.</p>
+            <a href="ai-content.html" class="btn-pill-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Case Study →</a>
           </div>
         </div>
       </div>
@@ -600,7 +618,7 @@
   ============================================================ -->
   <script src="i18n.js"></script>
   <script>
-    // -- Smooth scroll with nav offset
+    // ── Smooth scroll with nav offset
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
         const href = a.getAttribute('href');
@@ -613,7 +631,7 @@
       });
     });
 
-    // -- Nav active link
+    // ── Nav active link
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__link');
     window.addEventListener('scroll', () => {
@@ -622,7 +640,7 @@
       navLinks.forEach(a => a.classList.toggle('nav__link--active', a.getAttribute('href') === '#' + cur));
     }, { passive: true });
 
-    // -- Mobile hamburger
+    // ── Mobile hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -639,8 +657,8 @@
       });
     });
 
-    // -- "Available for work" badge — show after hero
-    // -- "Available for work" badge appears, nav hides — when scrolling past hero
+    // ── "Available for work" badge — show after hero
+    // ── "Available for work" badge appears, nav hides — when scrolling past hero
     const badge  = document.getElementById('availBadge');
     const hero   = document.getElementById('hero');
     const navEl  = document.getElementById('nav');
@@ -650,8 +668,12 @@
       badge.classList.toggle('is-visible', past);
       navEl.classList.toggle('nav--hidden', past);
     }, { passive: true });
+    // Initialise nav state immediately (handles browser scroll restoration)
+    { const past = hero.getBoundingClientRect().bottom < 0;
+      badge.classList.toggle('is-visible', past);
+      navEl.classList.toggle('nav--hidden', past); }
 
-    // -- Services accordion
+    // ── Services accordion
     document.querySelectorAll('.svc-acc__btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const item   = btn.closest('.svc-acc__item');
@@ -679,7 +701,7 @@
       }
     });
 
-    // -- FAQ accordion
+    // ── FAQ accordion
     document.querySelectorAll('.faq__q').forEach(btn => {
       btn.addEventListener('click', () => {
         const item   = btn.closest('.faq__item');
@@ -698,7 +720,7 @@
       });
     });
 
-    // -- Animated stat counters
+    // ── Animated stat counters
     function animateCounter(el) {
       const target = parseInt(el.dataset.target, 10);
       const suffix = el.dataset.suffix || '';
@@ -721,7 +743,7 @@
     }, { threshold: 0.5 });
     document.querySelectorAll('.stat__num').forEach(el => counterObs.observe(el));
 
-    // -- Scroll reveal
+    // ── Scroll reveal
     const revealObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (!e.isIntersecting) return;
@@ -732,7 +754,7 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
 
-    // -- Contact form
+    // ── Contact form
     document.getElementById('contactForm').addEventListener('submit', e => {
       e.preventDefault();
       const btn = e.target.querySelector('.btn-submit');
@@ -744,14 +766,14 @@
     //  ADVANCED ANIMATIONS
     // ════════════════════════════════════════════════════════════
 
-    // -- Page loader → fade out when page is ready
+    // ── Page loader → fade out when page is ready
     window.addEventListener('load', () => {
       setTimeout(() => {
         document.getElementById('pageLoader').classList.add('is-done');
       }, 400);
     });
 
-    // -- Cursor follower (desktop only)
+    // ── Cursor follower (desktop only)
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
       const dot = document.getElementById('cursorDot');
       let mx = 0, my = 0, dx = 0, dy = 0;
@@ -774,7 +796,7 @@
       });
     }
 
-    // -- Letter-by-letter reveal for section headings
+    // ── Letter-by-letter reveal for section headings
     function splitLetters(el) {
       const text = el.textContent;
       el.textContent = '';
@@ -818,7 +840,7 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('.section-heading').forEach(h => headObs.observe(h));
 
-    // -- 3D scroll-linked rotation on photos (matches the Framer reference video)
+    // ── 3D scroll-linked rotation on photos (matches the Framer reference video)
     // Photo stays FLAT while in the center 50% of viewport, then rotates sharply
     // toward ±max as it leaves the top or enters from the bottom — like a card
     // flipping away/toward the viewer.
@@ -867,7 +889,7 @@
     // Apply to all the photos
     setupScrollRotate('.hero__photo-rot',    { maxRotY: 65 });
 
-    // -- Hero badge: "Hi" → 👋 on photo hover
+    // ── Hero badge: "Hi" → 👋 on photo hover
     (function () {
       const photoWrap = document.querySelector('.hero__photo-wrap');
       const badge = document.querySelector('.hero__badge');
@@ -892,7 +914,7 @@
     setupScrollRotate('.about__img',         { wrap: '.about__img-wrap',   maxRotY: 65, tiltX: 6 });
     setupScrollRotate('.contact__photo',     { wrap: '.contact__photo-wrap', maxRotY: 45 });
 
-    // -- 3D card tilt on hover (project cards + blog cards)
+    // ── 3D card tilt on hover (project cards + blog cards)
     document.querySelectorAll('.proj-stack-card, .blog-card').forEach(card => {
       card.addEventListener('mousemove', e => {
         const r = card.getBoundingClientRect();
@@ -905,7 +927,7 @@
       });
     });
 
-    // -- Magnetic buttons (CTAs)
+    // ── Magnetic buttons (CTAs)
     document.querySelectorAll('.btn, .nav__cta, .btn-pill-outline').forEach(btn => {
       btn.addEventListener('mousemove', e => {
         const r = btn.getBoundingClientRect();
@@ -918,7 +940,7 @@
       });
     });
 
-    // -- Pulse stat numbers when they finish counting (already animated, just add the pulse class)
+    // ── Pulse stat numbers when they finish counting (already animated, just add the pulse class)
     document.querySelectorAll('.stat__num').forEach(el => {
       const obs = new IntersectionObserver(es => {
         es.forEach(en => {
@@ -931,7 +953,7 @@
       obs.observe(el);
     });
 
-    // -- Parallax on services tilted image
+    // ── Parallax on services tilted image
     const svcImg = document.querySelector('.services__img-wrap');
     if (svcImg) {
       window.addEventListener('scroll', () => {
@@ -945,7 +967,7 @@
       }, { passive: true });
     }
 
-    // -- Hero particle canvas
+    // ── Hero particle canvas
     (function () {
       const canvas = document.getElementById('heroCanvas');
       if (!canvas) return;
