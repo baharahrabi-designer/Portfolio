@@ -23,33 +23,33 @@
    VARIABLES
 ============================================================ */
 :root {
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Backgrounds ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
-  --bg:           #FAFAF7;          /* off-white ÃÂ¢ÃÂÃÂ body */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Backgrounds ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
+  --bg:           #FAFAF7;          /* off-white ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ body */
   --surface:      #FFFFFF;          /* card / elevated */
   --bg-alt:       #F4F2EC;          /* section alternation */
-  --bg-alt-soft:  #F7F6F3;          /* gentler alt ÃÂ¢ÃÂÃÂ kept for compat */
+  --bg-alt-soft:  #F7F6F3;          /* gentler alt ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ kept for compat */
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Borders ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Borders ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --border:        #E5E2DC;
   --border-strong: #C9C5BC;
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Text ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Text ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --text:       #1A1A1A;
   --text-dim:   #5C5C5C;
   --text-muted: #8F8F8F;
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Primary (Forest Green) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
-  --purple:        #346739;          /* Forest 600 ÃÂ¢ÃÂÃÂ main accent */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Primary (Forest Green) ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
+  --purple:        #346739;          /* Forest 600 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ main accent */
   --purple-dim:    rgba(52,103,57,0.1);
-  --purple-lt:     #4F8E54;          /* Forest 500 ÃÂ¢ÃÂÃÂ focus/hover */
-  --purple-darker: #1F4423;          /* Forest 800 ÃÂ¢ÃÂÃÂ deep hover */
-  --purple-tint:   #E8F0E9;          /* Forest 50 ÃÂ¢ÃÂÃÂ soft fill */
+  --purple-lt:     #4F8E54;          /* Forest 500 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ focus/hover */
+  --purple-darker: #1F4423;          /* Forest 800 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ deep hover */
+  --purple-tint:   #E8F0E9;          /* Forest 50 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ soft fill */
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Secondary (Warm Sand) ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Secondary (Warm Sand) ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --accent-warm:      #C8956D;       /* highlights, badges */
   --accent-warm-soft: #F5E9DC;       /* gentle fill */
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Semantic ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Semantic ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --success: #22C55E;
   --warning: #F59E0B;
   --error:   #EF4444;
@@ -57,26 +57,26 @@
 
   --green:   #22C55E;                /* legacy alias for the pulsing dot */
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Typography ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Typography ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --font-hero: 'Benzin', 'Bebas Neue', Impact, sans-serif;
   --font-body: 'Gilroy', 'Inter', system-ui, -apple-system, sans-serif;
   --font-disp:    'Fraunces', 'Playfair Display', Georgia, serif;
   --font-serif:   'Fraunces', 'Playfair Display', Georgia, serif;
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;  /* alias */
 
-  /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Layout ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+  /* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Layout ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
   --max-w:  1440px;
   --gutter: clamp(1rem, 3vw, 2rem);
   --ease:   cubic-bezier(0.25,0.1,0.25,1);
   --ease-o: cubic-bezier(0,0,0.2,1);
 }
-/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Global: all headings uppercase ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
+/* ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Global: all headings uppercase ÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂ */
 
 
 
 /* ============================================================
    QUIET-FOREST ACCENT TOUCHES (skill-recommended)
-   Use Warm Sand sparingly ÃÂ¢ÃÂÃÂ only on premium-feel highlights
+   Use Warm Sand sparingly ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ only on premium-feel highlights
 ============================================================ */
 .hero__fullname { color: var(--accent-warm); font-weight: 600; }
 .hero__sep { color: var(--accent-warm); opacity: 0.5; }
@@ -103,7 +103,7 @@ input,textarea,select{font:inherit}
 .section{padding-block:clamp(4rem,8vw,7rem)}
 
 /* ============================================================
-   TYPOGRAPHY ÃÂ¢ÃÂÃÂ section headings
+   TYPOGRAPHY ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ section headings
 ============================================================ */
 .section-heading{
   font-family:var(--font-hero);
@@ -220,7 +220,7 @@ input,textarea,select{font:inherit}
 .avail-badge__dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;box-shadow:0 0 6px var(--green)}
 
 /* ============================================================
-   NAVIGATION ÃÂ¢ÃÂÃÂ centered pill
+   NAVIGATION ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ centered pill
 ============================================================ */
 .nav{
   position:fixed;
@@ -321,7 +321,7 @@ input,textarea,select{font:inherit}
 .hero__scroll-link svg{animation:bounce-y 2s ease-in-out infinite}
 
 /* ============================================================
-   SERVICES ÃÂ¢ÃÂÃÂ accordion
+   SERVICES ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ accordion
 ============================================================ */
 .services{background:var(--bg);border-top:1px solid var(--border)}
 .services__inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
@@ -376,11 +376,11 @@ input,textarea,select{font:inherit}
 .about__img-wrap:hover .about__img{transform:scale(1.03)}
 
 /* ============================================================
-   PROJECTS ÃÂ¢ÃÂÃÂ full-width stacked
+   PROJECTS ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ full-width stacked
 ============================================================ */
 .projects{background:var(--bg);border-top:1px solid var(--border)}
 .projects__header{margin-bottom:2rem}
-.proj-stack{display:flex;flex-direction:column;gap:1.5rem;padding-inline:var(--gutter);max-width:var(--max-w);margin-inline:auto}
+.proj-stack{display:flex;flex-direction:column;gap:1.5rem;padding-inline:var(--gutter);max-width:var(--max-w);margin-inline:auto;overflow:hidden}
 
 .proj-stack-card{
   position:relative;
@@ -398,7 +398,7 @@ input,textarea,select{font:inherit}
   box-shadow:0 24px 60px rgba(0,0,0,.18);
 }
 
-/* Image ÃÂ¢ÃÂÃÂ fill card; centered on the laptop/device */
+/* Image ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ fill card; centered on the laptop/device */
 .proj-stack-card__bg{
   position:absolute;
   inset:0;
@@ -462,7 +462,7 @@ input,textarea,select{font:inherit}
   text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 
-/* Dual-CTA project card (Velora ÃÂ¢ÃÂÃÂ Brand Identity + UX/UI) */
+/* Dual-CTA project card (Velora ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Brand Identity + UX/UI) */
 .proj-stack-card--dual { cursor: default; }
 .proj-stack-card--dual:hover .proj-stack-card__bg { transform: scale(1.02); }
 .proj-stack-card__ctas {
@@ -694,7 +694,7 @@ input,textarea,select{font:inherit}
 .blog__sub{font-size:.95rem;color:var(--text-dim);line-height:1.8;max-width:52ch}
 .blog__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .ai-tag-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--purple);background:var(--purple-tint);border:1px solid rgba(52,103,57,.2);border-radius:999px;padding:.35rem .9rem;margin-bottom:1rem}
-.ai-tag-eyebrow::before{content:'ÃÂ¢ÃÂÃÂ¦';font-size:.85em}
+.ai-tag-eyebrow::before{content:'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¦';font-size:.85em}
 .blog-card__img--placeholder{display:flex;align-items:center;justify-content:center;position:relative}
 .blog-card__placeholder-label{position:relative;z-index:1;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .blog-card__img-photo{width:100%;height:100%;object-fit:cover;display:block}
@@ -746,7 +746,7 @@ input,textarea,select{font:inherit}
 .form-textarea{resize:vertical;min-height:120px;line-height:1.6}
 
 /* ============================================================
-   FOOTER ÃÂ¢ÃÂÃÂ purple
+   FOOTER ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ purple
 ============================================================ */
 .footer{background:var(--purple);color:#fff}
 .footer__top{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding-top:3rem;padding-bottom:2rem}
@@ -775,10 +775,10 @@ input,textarea,select{font:inherit}
 @keyframes bounce-y{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
 /* ============================================================
-   RESPONSIVE ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 900px
+   RESPONSIVE ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¤ 900px
 ============================================================ */
 /* ============================================================
-   RESPONSIVE ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 900px  (tablets)
+   RESPONSIVE ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¤ 900px  (tablets)
 ============================================================ */
 @media(max-width:900px){
   .hero__meta{display:none}
@@ -798,7 +798,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 768px  (large phones / small tablets)
+   RESPONSIVE ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¤ 768px  (large phones / small tablets)
 ============================================================ */
 @media(max-width:768px){
   .section-heading{font-size:clamp(2rem,7vw,3rem)}
@@ -813,7 +813,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 600px  (phones)
+   RESPONSIVE ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¤ 600px  (phones)
 ============================================================ */
 @media(max-width:600px){
   .nav__links{display:none}
@@ -849,7 +849,7 @@ input,textarea,select{font:inherit}
 }
 
 /* ============================================================
-   RESPONSIVE ÃÂ¢ÃÂÃÂ ÃÂ¢ÃÂÃÂ¤ 480px  (small phones)
+   RESPONSIVE ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¤ 480px  (small phones)
 ============================================================ */
 @media(max-width:480px){
   :root{--gutter:1rem}
@@ -864,7 +864,7 @@ input,textarea,select{font:inherit}
   .faq__q{font-size:clamp(1rem,4vw,1.2rem)}
 }
 
-/* Ã¢ÂÂÃ¢ÂÂ Global: all headings uppercase Ã¢ÂÂÃ¢ÂÂ */
+/* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ Global: all headings uppercase ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 
-/* ââ Global: all headings uppercase ââ */
+/* Ã¢ÂÂÃ¢ÂÂ Global: all headings uppercase Ã¢ÂÂÃ¢ÂÂ */
 h1, h2, h3 { text-transform: uppercase; }
