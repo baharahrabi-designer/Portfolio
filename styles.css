@@ -868,3 +868,19 @@ input,textarea,select{font:inherit}
 
 /* Ã¢ÂÂÃ¢ÂÂ Global: all headings uppercase Ã¢ÂÂÃ¢ÂÂ */
 h1, h2, h3 { text-transform: uppercase; }
+
+/* ── AI Index Cards ─────────────────── */
+.ai-index{display:grid;grid-template-columns:repeat(3,1fr);height:88vh;min-height:540px;max-height:860px}
+.ai-index__card{position:relative;overflow:hidden;text-decoration:none;display:block;border-right:1px solid rgba(255,255,255,0.06)}
+.ai-index__card:last-child{border-right:none}
+.ai-index__card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .9s cubic-bezier(.25,.46,.45,.94)}
+.ai-index__card:hover .ai-index__card-bg{transform:scale(1.07)}
+.ai-index__card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.90) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.12) 100%);transition:background .4s ease}
+.ai-index__card:hover .ai-index__card-overlay{background:linear-gradient(to top,rgba(0,0,0,.94) 0%,rgba(0,0,0,.45) 55%,rgba(0,0,0,.2) 100%)}
+.ai-index__card-content{position:absolute;bottom:0;left:0;right:0;padding:52px 40px}
+.ai-index__card-num{font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.38);display:block;margin-bottom:16px}
+.ai-index__card-title{font-family:'Fraunces',serif;font-size:clamp(24px,2.6vw,34px);font-weight:300;line-height:1.08;letter-spacing:-.01em;color:#f5f1ea;margin:0 0 10px}
+.ai-index__card-cat{font-family:'Inter',sans-serif;font-size:11px;font-weight:400;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.42);display:block;margin-bottom:28px}
+.ai-index__card-cta{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#f5f1ea;display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px;opacity:0;transform:translateY(10px);transition:opacity .35s ease,transform .35s ease}
+.ai-index__card:hover .ai-index__card-cta{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.ai-index{grid-template-columns:1fr;height:auto;max-height:none}.ai-index__card{height:60vw;min-height:300px;border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}.ai-index__card:last-child{border-bottom:none}.ai-index__card-cta{opacity:1;transform:none}}
